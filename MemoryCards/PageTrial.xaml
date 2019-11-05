@@ -1,0 +1,61 @@
+﻿<Page x:Class="MemoryCards.PageTrial"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MemoryCards"
+      mc:Ignorable="d"
+      Title="PageTrial" ShowsNavigationUI="False" MinWidth="1280" MinHeight="960">
+    <Page.Resources>
+        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
+        <BitmapImage x:Key="woodWhite" UriSource="/Images/woodWhite.png"/>
+    </Page.Resources>
+    <Page.Background>
+        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+    </Page.Background>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0"/>
+
+        <ContentControl Grid.Column="1" Grid.Row="1" Style="{DynamicResource CustomBorder}" >
+        <StackPanel>
+            <TextBlock x:Name="trialName" Style="{DynamicResource CustomTitle}" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDown="TextBlock_MouseDown"/>
+            <Border BorderThickness="0,0,0,4" >
+                <Border.BorderBrush>
+                    <ImageBrush ImageSource="{StaticResource woodWhite}"/>
+                </Border.BorderBrush>
+            </Border>
+            <Grid x:Name="gridCards" Margin="40 30">
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </StackPanel>
+    </ContentControl>
+        <StackPanel Grid.Column="2"/>
+    </Grid>
+</Page>

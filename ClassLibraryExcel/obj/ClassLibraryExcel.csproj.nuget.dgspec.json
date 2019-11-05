@@ -1,0 +1,244 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryExcel\\ClassLibraryExcel.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryExcel\\ClassLibraryExcel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryExcel\\ClassLibraryExcel.csproj",
+        "projectName": "ClassLibraryExcel",
+        "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryExcel\\ClassLibraryExcel.csproj",
+        "packagesPath": "C:\\Users\\benoi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryExcel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\benoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj": {
+                "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.94.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj",
+        "projectName": "ClassLibraryMemento",
+        "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj",
+        "packagesPath": "C:\\Users\\benoi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\benoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj": {
+                "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.94.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
+        "projectName": "ClassLibraryViewModel",
+        "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
+        "packagesPath": "C:\\Users\\benoi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\benoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
+                "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.94.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
+        "projectName": "LibraryCommands",
+        "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
+        "packagesPath": "C:\\Users\\benoi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\benoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.94.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

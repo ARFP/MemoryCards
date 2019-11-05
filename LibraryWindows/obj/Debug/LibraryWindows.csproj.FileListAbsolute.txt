@@ -1,0 +1,6 @@
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryWindows\bin\Debug\LibraryWindows.dll
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryWindows\bin\Debug\LibraryWindows.pdb
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryWindows\obj\Debug\LibraryWindows.csprojAssemblyReference.cache
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryWindows\obj\Debug\LibraryWindows.csproj.CoreCompileInputs.cache
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryWindows\obj\Debug\LibraryWindows.dll
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryWindows\obj\Debug\LibraryWindows.pdb

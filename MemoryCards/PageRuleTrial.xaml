@@ -1,0 +1,42 @@
+﻿<Page x:Class="MemoryCards.PageRuleTrial"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MemoryCards"
+      mc:Ignorable="d" 
+      Title="PageRuleTrial" ShowsNavigationUI="False" MinWidth="1280" MinHeight="960">
+    <Page.Resources>
+        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
+    </Page.Resources>
+    <Page.Background>
+        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+    </Page.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ContentControl Grid.Row="1" Grid.Column="1" Style="{DynamicResource CustomBorder}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+                <TextBlock Style="{DynamicResource CustomTitle}" Grid.Row="0" Text="Régles du jeu" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="36" FontFamily="{DynamicResource GeneralFont}" TextDecorations="{x:Null}" />
+                <TextBlock Style="{DynamicResource CustomText}" Padding="20 0" Grid.Row="1" x:Name="RegleTB" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Justify" FontFamily="{DynamicResource GeneralFont}" FontSize="18" Margin="0,20" >
+Toutes les cartes sont étalées faces cachées sur le plateau. Le joueur retourne deux cartes. Si c'est la même image ou le même son qui apparaît sur les deux cartes, le joueur valide les cartes et en retourne à nouveau deux.
+Si les deux cartes ne vont pas ensemble, les cartes se remettent face cachée à l'endroit exact où elles étaient, une fois toutes les cartes trouvées l'essai est validé, quand le joueur valide ses 6 essais la partie est terminée. Le 6ème essai laisse visible toutes les cartes trouvées.
+                </TextBlock>
+                <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Row="2" Click="Validate_Click" Width="250" Height="35" />
+            </Grid>
+        </ContentControl>
+    </Grid>
+</Page>

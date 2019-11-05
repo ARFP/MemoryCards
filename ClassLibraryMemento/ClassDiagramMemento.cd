@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibraryMemento.Test" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAACABAAQAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.Trial" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCEgAAQwAAACAAAEAAAAAAAAEAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Trial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.TestAbstract" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestAbstract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.TestColor" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.TestDigit" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestDigit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.TestImage" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.TestNumber" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.TestWord" Collapsed="true">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestWord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryMemento.Card" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLibraryMemento.TestSound" Collapsed="true">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestSound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

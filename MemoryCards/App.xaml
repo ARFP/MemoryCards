@@ -1,0 +1,158 @@
+﻿<Application x:Class="MemoryCards.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MemoryCards"
+             StartupUri="MainWindow.xaml">
+
+    <Application.Resources>
+        <!-- FONTS -->
+
+        <ResourceDictionary>
+
+            <FontFamily x:Key="GeneralFont">Times New Roman</FontFamily>
+
+            <Style x:Key="CustomText" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="{DynamicResource GeneralFont}"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Foreground">
+                    <Setter.Value>
+                        <ImageBrush ImageSource = "{DynamicResource  woodGold}"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="CustomTitle" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="{DynamicResource GeneralFont}"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontSize" Value="36"/>
+                <Setter Property="Foreground">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="{DynamicResource  woodGold}"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!--#region Border Style-->
+            <Style x:Key="CustomBorder" TargetType="{x:Type ContentControl}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ContentControl">
+                            <Grid>
+                                <Border BorderThickness="4" Margin="10" Padding="2" CornerRadius="15">
+                                    <Border.BorderBrush>
+                                        <ImageBrush  ImageSource="{DynamicResource  woodGold}"/>
+                                    </Border.BorderBrush>
+                                    <Border BorderThickness="4" CornerRadius="13">
+                                        <Border.Background>
+                                            <ImageBrush  ImageSource="{DynamicResource  woodGrey}"/>
+                                        </Border.Background>
+                                        <Border.BorderBrush>
+                                            <ImageBrush  ImageSource="{DynamicResource  woodWhite}"/>
+                                        </Border.BorderBrush>
+                                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </Border>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <!--#endregion-->
+
+            <!--<FontFamily x:Key="Tangerine">pack://application:,,,/fonts/#Tangerine</FontFamily>-->
+
+            <!--#region ColorBrush-->
+            <!-- GENERAL COLORS SOLID BRUSH PALETE-->
+            <SolidColorBrush x:Key="ColShadow" Color="#2A3132"/>
+            <SolidColorBrush x:Key="ColLightBlue" Color="#90AFC5"/>
+            <SolidColorBrush x:Key="ColDarkBlue" Color="#336B87"/>
+            <SolidColorBrush x:Key="ColBrown" Color="#763626"/>
+            <SolidColorBrush x:Key="ColWhite" Color="#FFF"/>
+            <!-- GENERAL COLORS FOR GRADIENTBRUSH-->
+            <Color x:Key="RadColShadow" >#FF2A3132</Color>
+            <Color x:Key="RadColLightBlue" >#FF90AFC5</Color>
+            <Color x:Key="RadColDarkBlue" >#FF336B87</Color>
+            <Color x:Key="RadColBrown" >#FF763626</Color>
+            <Color x:Key="RadColWhite" >#FFFF</Color>
+            <Color x:Key="RadColWhiteDim" >#4FFF</Color>
+            <!--#endregion-->
+
+            <!--#region Button style-->
+            <!--Style for button-->
+            <Style x:Key="CustomButton" TargetType="{x:Type Button}">
+                <!--Template relation with composent which calls this style-->
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <!--Target Element-->
+                        <ControlTemplate TargetType="Button">
+                            <!--Create a container-->
+                            <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                                <!--Create Border-->
+                                <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2">
+                                    <Border.BorderBrush>
+                                        <ImageBrush ImageSource="{DynamicResource  woodGold}"/>
+                                    </Border.BorderBrush>
+                                    <Border.Background>
+                                        <ImageBrush ImageSource="{DynamicResource  woodWhite}"/>
+                                    </Border.Background>
+                                </Border>
+                                <DockPanel>
+                                    <!--Area composent-->
+                                    <ContentPresenter TextElement.FontSize="24" TextElement.FontFamily="{DynamicResource GeneralFont}" TextElement.FontWeight="Black" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding Content}">
+                                        <TextElement.Foreground>
+                                            <ImageBrush ImageSource="{DynamicResource  woodGrey}"/>
+                                        </TextElement.Foreground>
+                                    </ContentPresenter>
+                                </DockPanel>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+
+                <!--seems a switch case-->
+                <Style.Triggers>
+                    <MultiTrigger>
+                        <!--Conditions-->
+                        <MultiTrigger.Conditions>
+                            <!--First-->
+                            <Condition Property="Button.IsMouseOver" Value="True"/>
+                        </MultiTrigger.Conditions>
+                        <!--Value-->
+                        <MultiTrigger.Setters>
+                            <!--First-->
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                                            <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2">
+                                                <Border.BorderBrush>
+                                                    <ImageBrush ImageSource="{DynamicResource  woodGold}"/>
+                                                </Border.BorderBrush>
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="{DynamicResource  woodBlack}"/>
+                                                </Border.Background>
+                                            </Border>
+                                            <DockPanel>
+                                                <ContentPresenter TextElement.FontSize="24" TextElement.FontFamily="{DynamicResource GeneralFont}" TextElement.FontWeight="Black" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding Content}" >
+                                                    <TextElement.Foreground>
+                                                        <ImageBrush ImageSource="{DynamicResource  woodWhite}"/>
+                                                    </TextElement.Foreground>
+                                                </ContentPresenter>
+                                            </DockPanel>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </MultiTrigger.Setters>
+                    </MultiTrigger>
+                </Style.Triggers>
+            </Style>
+            <!--#endregion-->
+            <BitmapImage x:Key="woodGold" UriSource="/Images/woodGold.png"/>
+            <BitmapImage x:Key="woodGrey" UriSource="/Images/woodGrey.png"/>
+            <BitmapImage x:Key="woodWhite" UriSource="/Images/woodWhite.png"/>
+            <BitmapImage x:Key="woodBlack" UriSource="/Images/woodBlack.png"/>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

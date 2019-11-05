@@ -1,0 +1,42 @@
+﻿<Page x:Class="MemoryCards.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MemoryCards"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage" ShowsNavigationUI="False"
+      MouseDown="Run_Click" MinWidth="1280" MinHeight="960">
+    <Page.Resources>
+        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
+        <BitmapImage x:Key="woodGold" UriSource="/Images/woodGold.png"/>
+    </Page.Resources>
+    <Page.Background>
+
+        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+        <!--C:/Users/CRM/Documents/GitHub/WpfTTS/MemoryCards/Images/backgroundCartesBlue.png-->
+
+        <!--<Grid >
+            <Image Source="{StaticResource lafille}"  HorizontalAlignment="Left" Height="114" Margin="250,173,0,0" VerticalAlignment="Top" Width="314"/>
+        </Grid>-->
+    </Page.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <ContentControl Style="{DynamicResource CustomBorder}" Width="700" Height="475"  Grid.Row="1" Grid.Column="1">
+            <Grid>
+                <TextBlock Text="Memory Cards" FontSize="72" FontWeight="Black" 
+                    FontFamily="{DynamicResource GeneralFont}" TextAlignment="Center" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="{x:Null}">
+                    <TextBlock.Foreground>
+                        <ImageBrush ImageSource="{StaticResource woodGold}"/>
+                    </TextBlock.Foreground>
+                </TextBlock>
+            </Grid>
+        </ContentControl>
+    </Grid>
+</Page>

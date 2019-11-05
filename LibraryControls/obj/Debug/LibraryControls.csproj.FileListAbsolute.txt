@@ -1,0 +1,15 @@
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\bin\Debug\LibraryControls.dll
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\bin\Debug\LibraryControls.pdb
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\ControlGame.g.cs
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\ControlMainPage.g.cs
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\ControlRuleGame.g.cs
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\LibraryControls_MarkupCompile.cache
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\LibraryControls_MarkupCompile.lref
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\ControlGame.baml
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\ControlMainPage.baml
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\ControlRuleGame.baml
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\LibraryControls.g.resources
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\LibraryControls.csproj.CoreCompileInputs.cache
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\LibraryControls.dll
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\LibraryControls.pdb
+C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\LibraryControls\obj\Debug\LibraryControls.csprojAssemblyReference.cache

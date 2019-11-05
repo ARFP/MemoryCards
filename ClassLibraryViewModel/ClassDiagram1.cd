@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibraryViewModel.ViewModelCard">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAQAAAEAAAAAAAQEQAABIAAAAAgABAAAAIAAA=</HashCode>
+      <FileName>ViewModelCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryViewModel.ViewModelTest">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAACAAAAAAABAAAAAAAAYAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModelTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryViewModel.ViewModelTrial">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIhAAAAAAAAAAAAAAAAAAAAABBIAAAAAkAA=</HashCode>
+      <FileName>ViewModelTrial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,40 @@
+﻿<Page x:Class="MemoryCards.TimerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MemoryCards"
+      mc:Ignorable="d" 
+      Title="TimerPage" ShowsNavigationUI="False" Loaded="Page_Loaded" MinWidth="1280" MinHeight="960">
+    <Page.Resources>
+        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
+    </Page.Resources>
+    <Page.Background>
+        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+    </Page.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ContentControl  Style="{DynamicResource CustomBorder}" Width="450" Height="250" Grid.Row="1" Grid.Column="1" MouseDown="ContentControl_MouseDown" >
+            <Grid Width="250">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <TextBlock Style="{DynamicResource CustomTitle}" Grid.Row="0" Text="Compteur" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" Background="{x:Null}"/>
+                <TextBlock Style="{DynamicResource CustomText}" Grid.Row="1" Text="{Binding Path=TimeInProgress}" x:Name="TimerTB" Padding="0,20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Background="{x:Null}"/>
+                <Button x:Name="btn" Style="{DynamicResource CustomButton}" Content="Continuer" Margin="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="35" Click="Btn_Click"  Visibility="{Binding Path=EndTimer, Converter={StaticResource BoolToVisConverter} }"/>
+            </Grid>
+        </ContentControl>
+    </Grid>
+</Page>
