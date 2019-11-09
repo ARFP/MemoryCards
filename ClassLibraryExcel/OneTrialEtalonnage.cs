@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ClassLibraryExcel
 {
-    public struct OneTrialEtalonnage
+    public class OneTrialEtalonnage
     {
         private string trial;
         private double averageMove;

@@ -3,7 +3,10 @@ using ClassLibraryViewModel;
 using ClosedXML.Excel;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ClassLibraryExcel
 {
@@ -12,14 +15,14 @@ namespace ClassLibraryExcel
         public static void WriteInExecel(ViewModelTest _vmTest)
         {
             int i = 0;
-            var workbook = new XLWorkbook(@"C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\TestsSaveExcel\ModelResult.xlsx");
+            var workbook = new XLWorkbook(ConfigurationManager.AppSettings["ModelResultBen"]);
             var worksheet = workbook.Worksheet("Resultat");
             worksheet.Cell("B3").Value = _vmTest.User.LastName + " " + _vmTest.User.FirstName;
             worksheet.Cell("B4").Value = _vmTest.User.Genre;
             worksheet.Cell("B5").Value = _vmTest.User.Age;
             worksheet.Cell("B6").Value = _vmTest.User.DateOfTheDay.Date;
             worksheet.Cell("B7").Value = _vmTest.User.DateOfTheDay.Hour + " : " + _vmTest.User.DateOfTheDay.Minute + " : " + _vmTest.User.DateOfTheDay.Second;
-            foreach(TrialScore ts in _vmTest.TestScore.TrialsScore)
+            foreach (TrialScore ts in _vmTest.TestScore.TrialsScore)
             {
                 worksheet.Cell(13 + i, "A").Value = ts.TrialNumber;
                 worksheet.Cell(13 + i, "B").Value = ts.TypeTest;
@@ -34,7 +37,7 @@ namespace ClassLibraryExcel
             TrialEtalonnage te = ReadEtalonnage(_vmTest.User.Age);
             worksheet.Cell("A28").Value = te.Name;
             i = 0;
-            foreach(OneTrialEtalonnage ote in te.TrialEtalonnages)
+            foreach (OneTrialEtalonnage ote in te.TrialEtalonnages)
             {
                 worksheet.Cell(28 + i, "B").Value = ote.Trial;
                 worksheet.Cell(28 + i, "C").Value = ote.AverageMove;
@@ -47,8 +50,8 @@ namespace ClassLibraryExcel
             }
             worksheet.Cell("B20").Value = _vmTest.TestScore.AverageMove;
             worksheet.Cell("B21").Value = _vmTest.TestScore.AvergaeRepeat;
-            worksheet.Cell("B22").Value = _vmTest.TestScore.AverageScore;
-            workbook.SaveAs(@"C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\TestsSaveExcel\"+ _vmTest.User.FirstName + _vmTest.User.LastName +".xlsx");
+            worksheet.Cell("B22").Value = _vmTest.TestScore.AverageScore;       
+            workbook.SaveAs(ConfigurationManager.AppSettings["SaveExcelBen"] + _vmTest.User.FirstName + _vmTest.User.LastName + ".xlsx");
         }
 
         public static TrialEtalonnage ReadEtalonnage(int _age)
@@ -56,7 +59,7 @@ namespace ClassLibraryExcel
             int i = 0;
             TrialEtalonnage trialEtalonnage = new TrialEtalonnage();
             trialEtalonnage.TrialEtalonnages = new List<OneTrialEtalonnage>();
-            var workbook = new XLWorkbook(@"C:\Users\CRM\Documents\GitHub\WpfTTS\MemoryCards\TestsSaveExcel\Etalonnage.xlsx");
+            var workbook = new XLWorkbook(ConfigurationManager.AppSettings["EtalonnageResultBen"]);
             var worksheet = workbook.Worksheet("Etalonnage");
             if (_age < 30) { i = 3; }
             else if (_age < 40) { i = 11; }
@@ -65,7 +68,7 @@ namespace ClassLibraryExcel
             else if (_age < 70) { i = 35; }
             else { i = 43; }
             trialEtalonnage.Name = worksheet.Cell(i, "A").Value.ToString();
-            for(int j = 0; j < 7; j++)
+            for (int j = 0; j < 7; j++)
             {
                 OneTrialEtalonnage oneTrialEtalonnage = new OneTrialEtalonnage();
                 oneTrialEtalonnage.Trial = worksheet.Cell(i + j, "B").Value.ToString();

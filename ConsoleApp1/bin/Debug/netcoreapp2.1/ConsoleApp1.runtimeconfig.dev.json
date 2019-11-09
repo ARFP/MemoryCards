@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\CRM\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\CRM\\.nuget\\packages",
+      "C:\\Users\\benoi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\benoi\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }

@@ -5386,23 +5386,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CRM\\.nuget\\packages\\": {},
+    "C:\\Users\\benoi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
+      "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
       "projectName": "LibraryCommands",
-      "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
-      "packagesPath": "C:\\Users\\CRM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\LibraryCommands\\obj\\",
+      "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
+      "packagesPath": "C:\\Users\\benoi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\CRM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\benoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

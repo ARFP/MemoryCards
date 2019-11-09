@@ -190,7 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibraryExcel\ClassLibraryExcel.csproj">
-      <Project>{869017E9-045B-422F-8AC7-0E7513C594D9}</Project>
+      <Project>{3d65cc53-6fb2-4346-b446-56f2e1e1d586}</Project>
       <Name>ClassLibraryExcel</Name>
     </ProjectReference>
     <ProjectReference Include="..\ClassLibraryMemento\ClassLibraryMemento.csproj">

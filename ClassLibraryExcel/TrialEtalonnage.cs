@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ClassLibraryExcel
 {
-    public struct TrialEtalonnage
+    public class TrialEtalonnage
     {
         private string name;
         private List<OneTrialEtalonnage> trialEtalonnages;
