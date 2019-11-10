@@ -7,9 +7,9 @@
              mc:Ignorable="d">
     <Grid  Height="19" x:Name="GridUserCtrl">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="0" Text="{Binding Path=Move}" HorizontalAlignment="Center"/>
         <TextBlock Grid.Column="1" Text="{Binding Path=Repeat}" HorizontalAlignment="Center"/>

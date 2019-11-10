@@ -65,8 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Excel.cs" />
+    <Compile Include="OneRangeAgeEtalonnage.cs" />
     <Compile Include="OneTrialEtalonnage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeAgeEtalonnage.cs" />
     <Compile Include="TrialEtalonnage.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\App.xaml
-111064876339
+13-631295105
 
-16-754230714
+18-1800274083
 1291846199175
-ButtonControl.xaml;MainPage.xaml;MainWindow.xaml;PageCongratulation.xaml;PageData.xaml;PageMode.xaml;PageRuleTrial.xaml;PageTrial.xaml;TimerPage.xaml;UserControlResumeScoreOneTrial.xaml;UserControlScoreOneTrial.xaml;
+ButtonControl.xaml;MainPage.xaml;MainWindow.xaml;PageCongratulation.xaml;PageData.xaml;PageMode.xaml;PageRuleTrial.xaml;PageTrial.xaml;TimerPage.xaml;UserControlAllEtalonnage.xaml;UserControlRangeEtalonnage.xaml;UserControlResumeScoreOneTrial.xaml;UserControlScoreOneTrial.xaml;
 
-False
+True
 

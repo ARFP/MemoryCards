@@ -9,7 +9,7 @@
         <BoolToStringConverter x:Key="BooleanToStringConverter" FalseValue="Non" TrueValue="Oui"/>
         , Converter={StaticResource BooleanToStringConverter}       
     </UserControl.Resources>-->
-    <Grid Height="19" x:Name="GridUserCtrl" Width="525">
+    <Grid Height="19" x:Name="gridUserControl" Width="525">
         <Grid.FocusVisualStyle>
             <Style/>
         </Grid.FocusVisualStyle>

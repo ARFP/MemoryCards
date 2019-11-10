@@ -87,7 +87,7 @@ namespace ClassLibraryMemento
                 {
                     averageRepeat += (double)t.Score.Repeat;
                 }
-                testScore.AvergaeRepeat = Math.Round(averageRepeat / (double)listTrials.Count, 2);
+                testScore.AverageRepeat = Math.Round(averageRepeat / (double)listTrials.Count, 2);
                 return averageRepeat = Math.Round(averageRepeat / (double)listTrials.Count, 2);
             }
 

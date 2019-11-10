@@ -100,6 +100,12 @@
     <Compile Include="TimerPage.xaml.cs">
       <DependentUpon>TimerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlAllEtalonnage.xaml.cs">
+      <DependentUpon>UserControlAllEtalonnage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlRangeEtalonnage.xaml.cs">
+      <DependentUpon>UserControlRangeEtalonnage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlResumeScoreOneTrial.xaml.cs">
       <DependentUpon>UserControlResumeScoreOneTrial.xaml</DependentUpon>
     </Compile>
@@ -147,6 +153,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TimerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlAllEtalonnage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlRangeEtalonnage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

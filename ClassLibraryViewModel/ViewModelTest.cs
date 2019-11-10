@@ -15,79 +15,45 @@ namespace ClassLibraryViewModel
 
         public string TestName
         {
-            get
-            {
-                return test.TestName;
-            }
-            set
-            {
-                test.TestName = value;
-                OnPropertyChanged(nameof(TestName));
-            }
+            get { return test.TestName; }
+            set { test.TestName = value; OnPropertyChanged(nameof(TestName)); }
         }
         public List<ViewModelTrial> ListTrials;
         public int NumberTrials
         {
             get
-            {
-                return test.NumberTrials;
-            }
-            set
-            {
-                test.NumberTrials = value;
-                OnPropertyChanged(nameof(NumberTrials));
-            }
+            { return test.NumberTrials; }
+            set { test.NumberTrials = value; OnPropertyChanged(nameof(NumberTrials)); }
         }
         public int Timer
         {
-            get
-            {
-                return test.Timer;
-            }
-            set
-            {
-                test.Timer = value;
-                OnPropertyChanged(nameof(Timer));
-            }
+            get { return test.Timer; }
+            set { test.Timer = value; OnPropertyChanged(nameof(Timer)); }
         }
         public string TimeInProgress
         {
-            get
-            {
-                return test.TimeInProgress;
-            }
-            set
-            {
-                test.TimeInProgress = value;
-                OnPropertyChanged(nameof(TimeInProgress));
-            }
+            get { return test.TimeInProgress; }
+            set { test.TimeInProgress = value; OnPropertyChanged(nameof(TimeInProgress)); }
         }
         public int TrialRun
         {
-            get
-            {
-                return test.TrialRun;
-            }
-            set
-            {
-                test.TrialRun = value;
-                OnPropertyChanged(nameof(TrialRun));
-            }
+            get { return test.TrialRun; }
+            set { test.TrialRun = value; OnPropertyChanged(nameof(TrialRun)); }
         }
         public bool EndTimer
         {
-            get
-            {
-                return test.EndTimer;
-            }
-            set
-            {
-                test.EndTimer = value;
-                OnPropertyChanged(nameof(EndTimer));
-            }
+            get { return test.EndTimer; }
+            set { test.EndTimer = value; OnPropertyChanged(nameof(EndTimer)); }
         }
-        public TestScore TestScore { get { return test.TestScore; } set { test.TestScore = value; OnPropertyChanged(nameof(TestScore)); } }
-        public ViewModelUser User { get { return user; } set { user = value; OnPropertyChanged(nameof(User)); } }
+        public TestScore TestScore {
+            get { return test.TestScore; }
+            set { test.TestScore = value; OnPropertyChanged(nameof(TestScore)); }
+        }
+        public ViewModelUser User
+        {
+            get { return user; }
+            set { user = value; OnPropertyChanged(nameof(User)); }
+        }
 
         public ViewModelTest(string _mode)
         {

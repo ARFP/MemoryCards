@@ -42,14 +42,14 @@ namespace ClassLibraryExcel
                 worksheet.Cell(28 + i, "B").Value = ote.Trial;
                 worksheet.Cell(28 + i, "C").Value = ote.AverageMove;
                 worksheet.Cell(28 + i, "D").Value = ote.SDMove;
-                worksheet.Cell(28 + i, "E").Value = ote.AverageReapeat;
+                worksheet.Cell(28 + i, "E").Value = ote.AverageRepeat;
                 worksheet.Cell(28 + i, "F").Value = ote.SDRepeat;
                 worksheet.Cell(28 + i, "G").Value = ote.AverageScore;
                 worksheet.Cell(28 + i, "H").Value = ote.SDScore;
                 i++;
             }
             worksheet.Cell("B20").Value = _vmTest.TestScore.AverageMove;
-            worksheet.Cell("B21").Value = _vmTest.TestScore.AvergaeRepeat;
+            worksheet.Cell("B21").Value = _vmTest.TestScore.AverageRepeat;
             worksheet.Cell("B22").Value = _vmTest.TestScore.AverageScore;       
             workbook.SaveAs(ConfigurationManager.AppSettings["SaveExcelBen"] + _vmTest.User.FirstName + _vmTest.User.LastName + ".xlsx");
         }
@@ -72,15 +72,34 @@ namespace ClassLibraryExcel
             {
                 OneTrialEtalonnage oneTrialEtalonnage = new OneTrialEtalonnage();
                 oneTrialEtalonnage.Trial = worksheet.Cell(i + j, "B").Value.ToString();
-                oneTrialEtalonnage.AverageMove = (double)worksheet.Cell(i + j, "C").Value;
-                oneTrialEtalonnage.SDMove = (double)worksheet.Cell(i + j, "D").Value;
-                oneTrialEtalonnage.AverageReapeat = (double)worksheet.Cell(i + j, "E").Value;
-                oneTrialEtalonnage.SDRepeat = (double)worksheet.Cell(i + j, "F").Value;
-                oneTrialEtalonnage.AverageScore = (double)worksheet.Cell(i + j, "G").Value;
-                oneTrialEtalonnage.SDScore = (double)worksheet.Cell(i + j, "H").Value;
+                oneTrialEtalonnage.AverageMove = worksheet.Cell(i + j, "C").Value.ToString();
+                oneTrialEtalonnage.SDMove = worksheet.Cell(i + j, "D").Value.ToString();
+                oneTrialEtalonnage.AverageRepeat = worksheet.Cell(i + j, "E").Value.ToString();
+                oneTrialEtalonnage.SDRepeat = worksheet.Cell(i + j, "F").Value.ToString();
+                oneTrialEtalonnage.AverageScore = worksheet.Cell(i + j, "G").Value.ToString();
+                oneTrialEtalonnage.SDScore = worksheet.Cell(i + j, "H").Value.ToString();
                 trialEtalonnage.TrialEtalonnages.Add(oneTrialEtalonnage);
             }
             return trialEtalonnage;
+        }
+
+        public static RangeAgeEtalonnage AllRangeEtalonnage()
+        {
+            RangeAgeEtalonnage rae = new RangeAgeEtalonnage();
+            rae.LOrae = new List<OneRangeAgeEtalonnage>();
+            var workbook = new XLWorkbook(ConfigurationManager.AppSettings["EtalonnageResultBen"]);
+            var worksheet = workbook.Worksheet("ResumeAll");
+            rae.TotalPersone = worksheet.Cell("B1").Value.ToString();
+            for( int i = 0; i < 8; i++)
+            {
+                OneRangeAgeEtalonnage orae = new OneRangeAgeEtalonnage();
+                orae.AgeRange = worksheet.Cell(3 + i, "A").Value.ToString();
+                orae.NumberPersoneTest = worksheet.Cell(3 + i, "B").Value.ToString();
+                orae.AverageAge = worksheet.Cell(3 + i, "C").Value.ToString();
+                orae.SDAge = worksheet.Cell(3 + i, "D").Value.ToString();
+                rae.LOrae.Add(orae);
+            }
+            return rae;
         }
     }
 }

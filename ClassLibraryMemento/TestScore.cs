@@ -8,12 +8,12 @@ namespace ClassLibraryMemento
     {
         private List<TrialScore> trialsScore;
         private double averageMove;
-        private double avergaeRepeat;
+        private double averageRepeat;
         private double averageScore;
 
         public List<TrialScore> TrialsScore { get => trialsScore; set => trialsScore = value; }
         public double AverageMove { get => averageMove; set => averageMove = value; }
-        public double AvergaeRepeat { get => avergaeRepeat; set => avergaeRepeat = value; }
+        public double AverageRepeat { get => averageRepeat; set => averageRepeat = value; }
         public double AverageScore { get => averageScore; set => averageScore = value; }
     }
 }

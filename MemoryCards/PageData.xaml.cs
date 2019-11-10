@@ -26,15 +26,10 @@ namespace MemoryCards
         public PageData(ViewModelTest _test)
         {
             InitializeComponent();
-            TrialEtalonnage t = Excel.ReadEtalonnage(20);//Excel tab etalonnage
-            listViewTrialScore.ItemsSource = _test.TestScore.TrialsScore;
-            listViewAverageScore.ItemsSource = _test.TestScore.TrialsScore;
-            AverageMoveTB.DataContext = _test.TestScore.AverageMove;
-            AverageRepeatTB.DataContext = _test.TestScore.AvergaeRepeat;
-            AverageScoreTB.DataContext = _test.TestScore.AverageScore;
-            ResumeAverageMoveTB.Text = _test.TestScore.AverageMove.ToString();
-            ResumeAverageRepeatTB.Text = _test.TestScore.AvergaeRepeat.ToString();
-            ResumeAverageScoreTB.Text = _test.TestScore.AverageScore.ToString();
+            DataContext = _test;
+            headerTrainee.Text = "Stagiare (Age : " + _test.User.Age + ")";
+            etalonnageAll.DataContext = Excel.AllRangeEtalonnage();
+            rangeEtalonnage.DataContext = Excel.ReadEtalonnage(_test.User.Age);
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {

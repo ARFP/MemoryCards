@@ -450,3 +450,7 @@ C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.e
 C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.pdb
 C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\bin\Debug\ClassLibraryExcel.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\bin\Debug\ClassLibraryExcel.pdb
+C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\UserControlAllEtalonnage.g.cs
+C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\UserControlRangeEtalonnage.g.cs
+C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\UserControlAllEtalonnage.baml
+C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\UserControlRangeEtalonnage.baml
