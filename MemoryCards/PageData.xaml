@@ -14,6 +14,7 @@
         <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
     </Page.Background>
     <ContentControl Style="{DynamicResource CustomBorder}" Width="900" Height="850"  Foreground="White" FontSize="14">
+        
         <Grid>
             <Grid.RowDefinitions>
 
@@ -76,10 +77,10 @@
             <!--
             </StackPanel>-->
             <!--Trainee score-->
-            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible">
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible" Margin="5">
                 <StackPanel >
                     <StackPanel >
-                        <Grid Margin="5 10 0 10">
+                        <Grid Margin="0 10 0 10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="19"/>
                                 <RowDefinition Height="Auto"/>
@@ -95,16 +96,16 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <!--Header-->
-                            <TextBlock Text="Manche" Padding="5 0" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Images" Padding="5 0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Cartes" Padding="5 0" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Son" Padding="5 0" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Mélangé" Padding="5 0" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Mouvements"  Padding="5 0" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Répétition" Padding="5 0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Score" Padding="5 0" Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Manche" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Images" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Cartes" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Son" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Mélangé" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Mouvements" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Répétition" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Score" Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center"/>
                             <!--Value-->
-                            <ListView ItemsSource="{Binding Path=TestScore.TrialsScore}" Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0" Padding="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <ListView ItemsSource="{Binding Path=TestScore.TrialsScore}" Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <local:UserControlScoreOneTrial 
@@ -121,7 +122,8 @@
                             </ListView>
                         </Grid>
                     </StackPanel>
-                    <StackPanel  Margin="5 0 0 10" DataContext="{Binding Path=TestScore}">
+                    
+                    <StackPanel  Margin="0 0 0 10" DataContext="{Binding Path=TestScore}">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Moyenne des mouvements : "/>
                             <TextBlock Text="{Binding Path=AverageMove}"/>
@@ -136,11 +138,11 @@
                         </StackPanel>
                     </StackPanel>
 
-                    <StackPanel >
+                    <StackPanel>
                         <!--Normed statistics-->
-                        <TextBlock Text="Etalonnage" Margin="5, 0, 0, 0"/>
+                        <TextBlock Text="Etalonnage"/>
                         <!--Table resume all decades-->
-                        <Grid x:Name="etalonnageAll" Margin="0">
+                        <Grid x:Name="etalonnageAll" Margin="-5 0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="19"/>
                                 <RowDefinition Height="19"/>
@@ -153,13 +155,13 @@
                                 <ColumnDefinition Width="70"/>
                             </Grid.ColumnDefinitions>
                             <!--Header-->
-                            <TextBlock Text="Tranche d'Age" Padding="5 0" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                            <TextBlock Text="{Binding Path=TotalPersone}" Padding="5 0" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                            <TextBlock Text="Age moyen" Padding="5 0" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Moyenne" Padding="5 0" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Ecart type" Padding="5 0" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Tranche d'Age" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding Path=TotalPersone}" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Text="Age moyen" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Moyenne" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Ecart type" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center"/>
                             <!--Value-->
-                            <ListView ItemsSource="{Binding Path=LOrae}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0" Padding="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <ListView ItemsSource="{Binding Path=LOrae}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <local:UserControlAllEtalonnage 
@@ -174,8 +176,8 @@
                     </StackPanel>
 
                     <!--Table decade of trainee-->
-                    <StackPanel >
-                        <Grid Margin="5 10 0 0">
+                    <StackPanel>
+                        <Grid Margin="0 10 0 0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="19"/>
                                 <RowDefinition Height="19"/>
@@ -197,29 +199,31 @@
                             </Grid.ColumnDefinitions>
                             <!--Header-->
                             <!--Normed-->
-                            <TextBlock Text="Tranche d'age" Padding="5 0" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Essai" Padding="5 0" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Mouvement" Padding="5 0" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Moyenne" Padding="5 0" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Ecart type" Padding="5 0" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Répétition" Padding="5 0" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Moyenne" Padding="5 0" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Ecart type" Padding="5 0" Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Score (%)" Padding="5 0" Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Moyenne" Padding="5 0" Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Ecart type" Padding="5 0" Grid.Row="1" Grid.Column="7" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Tranche d'age" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Essai" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Mouvement" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Moyenne" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Ecart type" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Répétition" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Moyenne" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Ecart type" Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Score (%)" Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Moyenne" Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Ecart type" Grid.Row="1" Grid.Column="7" HorizontalAlignment="Center"/>
                             <!--Trainee-->
-                            <TextBlock x:Name="headerTrainee" Padding="5 0" Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Mouvements" Padding="5 0" Grid.Row="1" Grid.Column="9" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Répétition" Padding="5 0" Grid.Row="1" Grid.Column="10" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Score" Padding="5 0" Grid.Row="1" Grid.Column="11" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="headerTrainee" Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Mouvements" Grid.Row="1" Grid.Column="9" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Répétition" Grid.Row="1" Grid.Column="10" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Score" Grid.Row="1" Grid.Column="11" HorizontalAlignment="Center"/>
                             <!--Value-->
-                            <StackPanel x:Name="rangeEtalonnage" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="8" Orientation="Horizontal">
+                            <StackPanel x:Name="rangeEtalonnage" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="8" Orientation="Horizontal" Width="570">
                                 <!--Normed-->
                                 <!--Randge of age-->
-                                <TextBlock Text="{Binding Path=Name}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+                                <StackPanel Width="100" VerticalAlignment="Center" >
+                                    <TextBlock Text="{Binding Path=Name}" HorizontalAlignment="Center"/>
+                                </StackPanel>
                                 <!--first trial-->
-                                <ListView ItemsSource="{Binding Path=TrialEtalonnages}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0" Padding="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False">
+                                <ListView ItemsSource="{Binding Path=TrialEtalonnages}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False">
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <local:UserControlRangeEtalonnage 
@@ -235,8 +239,8 @@
                                 </ListView>
                             </StackPanel>
                             <!--Trainee-->
-                            <StackPanel DataContext="{Binding Path=TestScore}" Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3" Margin="0">
-                                <ListView ItemsSource="{Binding Path=TrialsScore}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Margin="0" Padding="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                            <StackPanel DataContext="{Binding Path=TestScore}" Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3">
+                                <ListView ItemsSource="{Binding Path=TrialsScore}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <local:UserControlResumeScoreOneTrial 
@@ -248,10 +252,10 @@
                                     </ListView.ItemTemplate>
                                 </ListView>
                                 <local:UserControlResumeScoreOneTrial
-                                Move="{Binding Path=AverageMove}"
-                                Repeat="{Binding Path=AverageRepeat}"
-                                Score="{Binding Path=AverageScore}"
-                                 ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False"/>
+                                        Move="{Binding Path=AverageMove}"
+                                        Repeat="{Binding Path=AverageRepeat}"
+                                        Score="{Binding Path=AverageScore}"
+                                         ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False"/>
                             </StackPanel>
                         </Grid>
                     </StackPanel>

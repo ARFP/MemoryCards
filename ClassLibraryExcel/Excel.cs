@@ -27,8 +27,8 @@ namespace ClassLibraryExcel
                 worksheet.Cell(13 + i, "A").Value = ts.TrialNumber;
                 worksheet.Cell(13 + i, "B").Value = ts.TypeTest;
                 worksheet.Cell(13 + i, "C").Value = ts.NumberCards;
-                worksheet.Cell(13 + i, "D").Value = ts.Sound;
-                worksheet.Cell(13 + i, "E").Value = ts.Shuffle;
+                worksheet.Cell(13 + i, "D").Value = ts.Sound ? "Oui" : "Non";
+                worksheet.Cell(13 + i, "E").Value = ts.Shuffle ? "Oui" : "Non";
                 worksheet.Cell(13 + i, "F").Value = ts.Move;
                 worksheet.Cell(13 + i, "G").Value = ts.Repeat;
                 worksheet.Cell(13 + i, "H").Value = ts.ScoreTrial;
@@ -40,12 +40,12 @@ namespace ClassLibraryExcel
             foreach (OneTrialEtalonnage ote in te.TrialEtalonnages)
             {
                 worksheet.Cell(28 + i, "B").Value = ote.Trial;
-                worksheet.Cell(28 + i, "C").Value = ote.AverageMove;
-                worksheet.Cell(28 + i, "D").Value = ote.SDMove;
-                worksheet.Cell(28 + i, "E").Value = ote.AverageRepeat;
-                worksheet.Cell(28 + i, "F").Value = ote.SDRepeat;
-                worksheet.Cell(28 + i, "G").Value = ote.AverageScore;
-                worksheet.Cell(28 + i, "H").Value = ote.SDScore;
+                worksheet.Cell(28 + i, "C").Value = double.Parse(ote.AverageMove);
+                worksheet.Cell(28 + i, "D").Value = double.Parse(ote.SDMove);
+                worksheet.Cell(28 + i, "E").Value = double.Parse(ote.AverageRepeat);
+                worksheet.Cell(28 + i, "F").Value = double.Parse(ote.SDRepeat);
+                worksheet.Cell(28 + i, "G").Value = double.Parse(ote.AverageScore);
+                worksheet.Cell(28 + i, "H").Value = double.Parse(ote.SDScore);
                 i++;
             }
             worksheet.Cell("B20").Value = _vmTest.TestScore.AverageMove;
