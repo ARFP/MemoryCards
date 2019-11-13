@@ -5956,23 +5956,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\benoi\\.nuget\\packages\\": {},
+    "C:\\Users\\CRM\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\benoi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\CRM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\benoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CRM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5985,8 +5985,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
-              "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
+            "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
+              "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
             }
           }
         }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\
 MemoryCards
 none
 false
 DEBUG;TRACE
-C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\App.xaml
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\App.xaml
 13-631295105
 
-17-506434672
-1291846199175
+211550319635
+129-993711333
 ButtonControl.xaml;MainPage.xaml;MainWindow.xaml;PageCongratulation.xaml;PageData.xaml;PageMode.xaml;PageRuleTrial.xaml;PageTrial.xaml;TimerPage.xaml;UserControlAllEtalonnage.xaml;UserControlRangeEtalonnage.xaml;UserControlResumeScoreOneTrial.xaml;UserControlScoreOneTrial.xaml;
 
-False
+True
 
