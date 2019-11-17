@@ -9,6 +9,8 @@
     ".NETStandard,Version=v2.0/": {
       "ClassLibraryMemento/1.0.0": {
         "dependencies": {
+          "ClassLibraryIPersistance": "1.0.0",
+          "ClassLibraryPersistance": "1.0.0",
           "ClosedXML": "0.94.2",
           "LibraryCommands": "1.0.0",
           "NETStandard.Library": "2.0.3"
@@ -1072,6 +1074,21 @@
           }
         }
       },
+      "ClassLibraryIPersistance/1.0.0": {
+        "runtime": {
+          "ClassLibraryIPersistance.dll": {}
+        }
+      },
+      "ClassLibraryPersistance/1.0.0": {
+        "dependencies": {
+          "ClassLibraryIPersistance": "1.0.0",
+          "System.Configuration": "4.0.0.0",
+          "System.Security": "4.0.0.0"
+        },
+        "runtime": {
+          "ClassLibraryPersistance.dll": {}
+        }
+      },
       "LibraryCommands/1.0.0": {
         "dependencies": {
           "ClosedXML": "0.94.2",
@@ -1079,17 +1096,23 @@
           "WindowsBase": "4.0.0.0",
           "System.Xaml": "4.0.0.0",
           "UIAutomationTypes": "4.0.0.0",
-          "System.Configuration": "4.0.0.0",
           "System.Windows.Input.Manipulations": "4.0.0.0",
           "UIAutomationProvider": "4.0.0.0",
           "System.Deployment": "4.0.0.0",
           "Accessibility": "4.0.0.0",
-          "System.Security": "4.0.0.0",
           "System.Windows.Forms": "4.0.0.0",
           "System.Runtime.Serialization.Formatters.Soap": "4.0.0.0"
         },
         "runtime": {
           "LibraryCommands.dll": {}
+        }
+      },
+      "System.Configuration.Reference/4.0.0.0": {
+        "runtime": {
+          "System.Configuration.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.1055.0"
+          }
         }
       },
       "PresentationCore.Reference/4.0.0.0": {
@@ -1124,14 +1147,6 @@
           }
         }
       },
-      "System.Configuration.Reference/4.0.0.0": {
-        "runtime": {
-          "System.Configuration.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
       "System.Windows.Input.Manipulations.Reference/4.0.0.0": {
         "runtime": {
           "System.Windows.Input.Manipulations.dll": {
@@ -1156,17 +1171,17 @@
           }
         }
       },
-      "Accessibility.Reference/4.0.0.0": {
+      "System.Security.Reference/4.0.0.0": {
         "runtime": {
-          "Accessibility.dll": {
+          "System.Security.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.6.1055.0"
           }
         }
       },
-      "System.Security.Reference/4.0.0.0": {
+      "Accessibility.Reference/4.0.0.0": {
         "runtime": {
-          "System.Security.dll": {
+          "Accessibility.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.6.1055.0"
           }
@@ -1840,8 +1855,23 @@
       "path": "system.xml.readerwriter/4.3.0",
       "hashPath": "system.xml.readerwriter.4.3.0.nupkg.sha512"
     },
+    "ClassLibraryIPersistance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibraryPersistance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "LibraryCommands/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration.Reference/4.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
@@ -1865,11 +1895,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Configuration.Reference/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Windows.Input.Manipulations.Reference/4.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -1885,12 +1910,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Accessibility.Reference/4.0.0.0": {
+    "System.Security.Reference/4.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "System.Security.Reference/4.0.0.0": {
+    "Accessibility.Reference/4.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -33,7 +33,7 @@ namespace MemoryCards
             vMTest = _test;
             int i = 0;
             trialName.Text = "Manche n°" + (vMTest.TrialRun + 1);
-            foreach (ViewModelCard c in vMTest.ListTrials[vMTest.TrialRun].ListCards)
+            foreach (ViewModelCard c in vMTest.Trials.LVMTrial[vMTest.TrialRun].ListCards)
             {
                 ButtonControl ControlCard = new ButtonControl();
                 Binding b = new Binding();
@@ -81,20 +81,26 @@ namespace MemoryCards
                     {
                         interrup = true;
                         tsk2 = Task.Factory.StartNew(() => Verrify(vmc));
-                        vMTest.ListTrials[vMTest.TrialRun].AddMove();
+                        vMTest.Trials.LVMTrial[vMTest.TrialRun].AddMove();
                         if (vmc.Tested || firstCard.Tested)
                         {
-                            vMTest.ListTrials[vMTest.TrialRun].AddRepeat();
+                            vMTest.Trials.LVMTrial[vMTest.TrialRun].AddRepeat();
                         }
                         if (vmc.Compare(firstCard))
                         {
                             firstCard.CurrentStatus = StatusCard.found;
                             vmc.CurrentStatus = StatusCard.found;
-                            if (vMTest.ListTrials[vMTest.TrialRun].TrialFinish())
+                            if (vMTest.Trials.LVMTrial[vMTest.TrialRun].TrialFinish())
                             {
                                 if(vMTest.TestVerify())
                                 {
-                                    Excel.WriteInExecel(vMTest);
+                                    //Placer les etalonnages (Classe etalonnage et etalonages List<rtalonnage>) 
+                                    //Classe AllEtalonnage Crécation après validation ref user création page user champ
+
+                                    vMTest.Save();
+                                    vMTest.Trials.Save();
+                                    vMTest.User.Save();
+                                    //Excel.WriteInExecel(vMTest);
                                     NavigationService.Navigate(new PageCongratulation(vMTest));
                                 }
                                 else

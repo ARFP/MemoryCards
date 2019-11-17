@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibraryMemento;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,13 +23,13 @@ namespace MemoryCards
     {
         public MainPage()
         {
-            InitializeComponent();
-
+            InitializeComponent();           
         }
 
         private void Run_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new PageMode());
+            User u = new User();
+            this.NavigationService.Navigate(new PageMode(new ClassLibraryViewModel.ViewModelUser(u)));
         }
     }
 }

@@ -7,9 +7,8 @@ namespace ClassLibraryMemento
 {
     public class TestAbstract : Test
     {
-
         private List<object> listAbstract;
-        public TestAbstract(int _nbrTrials, int _timer, bool _sound) : base("Abstrait", _nbrTrials, _timer)
+        public TestAbstract(User _user,  int _nbrTrials, int _timer, bool _sound) : base(_user, "Abstrait", _nbrTrials, _timer)
         {
             listAbstract = new List<object>() {
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Abstracts\abstrait1.jpg"),

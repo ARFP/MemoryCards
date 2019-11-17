@@ -7,7 +7,7 @@ namespace ClassLibraryViewModel
 {
     public class ViewModelUser : ObservableObject
     {
-        private User user = new User();
+        private User user;
         public string FirstName { get { return user.FirstName; } set { user.FirstName = value; } }
         public string LastName { get {return user.LastName; } set { user.LastName = value; } }
         public string Genre { get { return user.Genre; } set { user.Genre = value; } }
@@ -19,8 +19,15 @@ namespace ClassLibraryViewModel
             user = _user;
         }
 
-        public ViewModelUser()
+        public static implicit operator User(ViewModelUser _user)
         {
+            return _user.user;
+        }
+
+
+        public bool Save()
+        {
+            return user.Save();
         }
     }
 }

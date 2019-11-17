@@ -19,6 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryIPersistance\ClassLibraryIPersistance.csproj" />
+    <ProjectReference Include="..\ClassLibraryPersistance\ClassLibraryPersistance.csproj" />
     <ProjectReference Include="..\LibraryCommands\LibraryCommands.csproj" />
   </ItemGroup>
 

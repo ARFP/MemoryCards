@@ -8,7 +8,7 @@ namespace ClassLibraryMemento
     public class TestWord : Test
     {
         private List<object> listWord;
-        public TestWord(int _nbrTrials, int _timer, bool _sound) : base("Mots", _nbrTrials, _timer)
+        public TestWord(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Mots", _nbrTrials, _timer)
         {
             listWord = new List<object>() {
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Words\cuir.png"),

@@ -10,7 +10,6 @@ namespace ClassLibraryMemento
 
         private Alea()
         {
-
         }
 
         public static Alea Instance()

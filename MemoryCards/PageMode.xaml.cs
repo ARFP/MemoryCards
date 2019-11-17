@@ -1,4 +1,5 @@
-﻿using ClassLibraryViewModel;
+﻿using ClassLibraryMemento;
+using ClassLibraryViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,17 +22,19 @@ namespace MemoryCards
     /// </summary>
     public partial class PageMode : Page
     {
+        ViewModelUser user;
         ViewModelTest test;
-        public PageMode()
+        public PageMode(ViewModelUser _user)
         {
             InitializeComponent();
+            user = _user;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if(sender is Button b)
             {
-                test = new ViewModelTest(b.Tag.ToString());
+                test = new ViewModelTest(user, b.Tag.ToString());
             }
             if(test != null )
             {

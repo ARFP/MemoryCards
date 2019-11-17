@@ -9,7 +9,7 @@ namespace ClassLibraryMemento
     {
 
         private List<object> listDigit;
-        public TestDigit(int _nbrTrials, int _timer, bool _sound) : base("Nombres", _nbrTrials, _timer)
+        public TestDigit(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Nombres", _nbrTrials, _timer)
         {
             listDigit = new List<object>() {
                 String.Concat(System.IO.Directory.GetCurrentDirectory(),@"\Digits\164.png"),

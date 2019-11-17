@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryCommands", "LibraryC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryExcel", "ClassLibraryExcel\ClassLibraryExcel.csproj", "{3D65CC53-6FB2-4346-B446-56F2E1E1D586}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryPersistance", "ClassLibraryPersistance\ClassLibraryPersistance.csproj", "{3CFD008E-7F04-48D5-83B9-AC1FB20A1140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryIPersistance", "ClassLibraryIPersistance\ClassLibraryIPersistance.csproj", "{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{3D65CC53-6FB2-4346-B446-56F2E1E1D586}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D65CC53-6FB2-4346-B446-56F2E1E1D586}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D65CC53-6FB2-4346-B446-56F2E1E1D586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFD008E-7F04-48D5-83B9-AC1FB20A1140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFD008E-7F04-48D5-83B9-AC1FB20A1140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFD008E-7F04-48D5-83B9-AC1FB20A1140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFD008E-7F04-48D5-83B9-AC1FB20A1140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

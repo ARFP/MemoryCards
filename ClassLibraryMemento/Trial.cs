@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibraryIPersistance;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,42 +8,67 @@ namespace ClassLibraryMemento
     public class Trial
     {
         private List<Card> listCards;
-        private TrialScore score;
+        private int trialNumber;
+        private string typeTest;
+        private int numberCards;
+        private bool sound;
+        private bool shuffle;
+        private int move;
+        private int repeat;
 
+        private TrialScore score;
         public TrialScore Score { get => score; set => score = value; }
+
+
         public List<Card> ListCards { get => listCards; set => listCards = value; }
+        public int TrialNumber { get => trialNumber; set => trialNumber = value; }
+        public string TypeTest { get => typeTest; set => typeTest = value; }
+        public int NumberCards { get => numberCards; set => numberCards = value; }
+        public bool Sound { get => sound; set => sound = value; }
+        public bool Shuffle { get => shuffle; set => shuffle = value; }
+        public int Move { get => move; set => move = value; }
+        public int Repeat { get => repeat; set => repeat = value; }
 
         public Trial(string _typeTest, List<object> _card, int _trialNumber, bool _sound, bool _shuffle)
         {
             listCards = new List<Card>();
             AddCard(_card);
-            score = new TrialScore();
-            score.TrialNumber = _trialNumber;
-            score.TypeTest = _typeTest;
-            score.NumberCards = listCards.Count;
-            score.Sound = _sound;
-            score.Shuffle = _shuffle;
-            score.Move = 0;
-            score.Repeat = 0;
-            score.ScoreTrial = 0;
-            if (score.Shuffle)
-            {
-                ShuffleCards();
-            }
+            trialNumber = _trialNumber;
+            typeTest = _typeTest;
+            numberCards = listCards.Count;
+            sound = _sound;
+            shuffle = _shuffle;
+            move = 0;
+            repeat = 0;
+            ShuffleCards();
         }
 
         public Trial(Trial _trial, int _trailNumber)
         {
             listCards = new List<Card>();
             Clonecardlist(_trial.listCards);
-            score.TrialNumber = _trailNumber;
-            score.TypeTest = _trial.score.TypeTest;
-            score.NumberCards = _trial.score.NumberCards;
-            score.Sound = _trial.score.Sound;
-            score.Shuffle = false;
-            score.Move = 0;
-            score.Repeat = 0;
-            score.ScoreTrial = 0;
+            trialNumber = _trailNumber;
+            typeTest = _trial.TypeTest;
+            numberCards = _trial.NumberCards;
+            sound = _trial.Sound;
+            shuffle = false;
+            move = 0;
+            repeat = 0;
+        }
+
+        public static implicit operator sTrialScore(Trial _trial)
+        {
+            return new sTrialScore
+            {
+                TrialNumber = _trial.TrialNumber,
+                TypeTest = _trial.TypeTest,
+                NumberCards = _trial.NumberCards,
+                Sound = _trial.Sound,
+                Shuffle = _trial.Shuffle,
+                Move = _trial.Move,
+                Repeat = _trial.Repeat,
+                ScoreTrial = _trial.ScoreTrial()
+            };
         }
 
         public void AddCard(List<object> _image)
@@ -78,7 +104,7 @@ namespace ClassLibraryMemento
 
         private void ShuffleCards()
         {
-            if (score.Shuffle && listCards.Count > 0)
+            if (shuffle && listCards.Count > 0)
             {
                 Card temp;
                 for (int i = 0; i < listCards.Count; i++)
@@ -93,18 +119,18 @@ namespace ClassLibraryMemento
         
         public void AddMove()
         {
-            score.Move++;
+            move++;
         }
 
         public void AddRepeat()
         {
-            score.Repeat++;
+            repeat++;
         }
 
-        //public void ScoreTrial()
-        //{
-        //    score.ScoreTrial = Math.Round((double)100 - (((double)score.Repeat / (double)score.Move) * (double)100), 2);
-        //}
+        public double ScoreTrial()
+        {
+            return Math.Round((double)100 - (((double)repeat / (double)move) * (double)100), 2);
+        }
 
         public bool TrialFinish()
         {
@@ -115,7 +141,6 @@ namespace ClassLibraryMemento
                     return false;
                 }
             }
-            score.ScoreTrial = Math.Round((double)100 - (((double)score.Repeat / (double)score.Move) * (double)100), 2);
             return true;
         }
 

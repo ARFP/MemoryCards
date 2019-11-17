@@ -4,6 +4,17 @@
     "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
+    "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryIPersistance\\ClassLibraryIPersistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryIPersistance\\ClassLibraryIPersistance.csproj",
+        "projectName": "ClassLibraryIPersistance",
+        "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryIPersistance\\ClassLibraryIPersistance.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
     "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,6 +41,12 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
+              "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryIPersistance\\ClassLibraryIPersistance.csproj": {
+                "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryIPersistance\\ClassLibraryIPersistance.csproj"
+              },
+              "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryPersistance\\ClassLibraryPersistance.csproj": {
+                "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryPersistance\\ClassLibraryPersistance.csproj"
+              },
               "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj": {
                 "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj"
               }
@@ -62,6 +79,26 @@
           "assetTargetFallback": true,
           "warn": true
         }
+      }
+    },
+    "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryPersistance\\ClassLibraryPersistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryPersistance\\ClassLibraryPersistance.csproj",
+        "projectName": "ClassLibraryPersistance",
+        "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryPersistance\\ClassLibraryPersistance.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryIPersistance\\ClassLibraryIPersistance.csproj": {
+                "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryIPersistance\\ClassLibraryIPersistance.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
       }
     },
     "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ConsoleApp1\\ConsoleApp1.csproj": {

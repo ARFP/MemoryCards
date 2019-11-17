@@ -140,7 +140,9 @@ C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.dev.json
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.pdb
+C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ClassLibraryIPersistance.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ClassLibraryMemento.dll
+C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ClassLibraryPersistance.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\LibraryCommands.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\PresentationCore.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\System.Xaml.dll
@@ -152,6 +154,8 @@ C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\Accessibility.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\System.Runtime.Serialization.Formatters.Soap.dll
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ClassLibraryMemento.pdb
+C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ClassLibraryIPersistance.pdb
+C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\ClassLibraryPersistance.pdb
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\bin\Debug\netcoreapp2.1\LibraryCommands.pdb
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csprojAssemblyReference.cache
 C:\Users\benoi\Programmation\WPF\MemoryCards\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CoreCompileInputs.cache

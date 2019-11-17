@@ -9,7 +9,7 @@ namespace ClassLibraryMemento
     {
         private List<object> listColor;
 
-        public TestColor(int _nbrTrials, int _timer, bool _sound) : base("Couleurs", _nbrTrials, _timer)
+        public TestColor(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Couleurs", _nbrTrials, _timer)
         {
             listColor = new List<object>() {
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgBlack.png"),

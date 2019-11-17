@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClassLibraryIPersistance;
+using ClassLibraryPersistance;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,6 +13,7 @@ namespace ClassLibraryMemento
         private string genre;
         private int age;
         private DateTime dateOfTheDay;
+        private IPersistanceUser iPersistance;
 
         public string FirstName { get => firstName; set => firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
@@ -25,6 +28,7 @@ namespace ClassLibraryMemento
             genre = "COD";
             Age = 32;
             dateOfTheDay = DateTime.Now;
+            iPersistance = new Persistance(FirstName + LastName);
         }
 
         public User(string _FirstName, string _LastName, string _genre, int _Age)
@@ -34,6 +38,23 @@ namespace ClassLibraryMemento
             genre = _genre;
             Age = _Age;
             dateOfTheDay = DateTime.Now;
+        }
+
+        public static implicit operator sUser(User _user)
+        {
+            return new sUser
+            {
+                FirstName = _user.FirstName,
+                LastName = _user.LastName,
+                Genre = _user.Genre,
+                Age = _user.Age,
+                DateOfTheDay = _user.DateOfTheDay
+            };
+        }
+
+        public bool Save()
+        {
+            return iPersistance.Write(this);
         }
     }
 }

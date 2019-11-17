@@ -9,7 +9,7 @@ namespace ClassLibraryMemento
     {
         private List<object> listImage;
 
-        public TestImage(int _nbrTrials, int _timer, bool _sound) : base("Images", _nbrTrials, _timer)
+        public TestImage(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Images", _nbrTrials, _timer)
         {
             listImage = new List<object>() {
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\airship.png"),

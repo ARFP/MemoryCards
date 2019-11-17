@@ -21,7 +21,7 @@ namespace ClassLibraryMemento
             "C:/Users/CRM/Documents/GitHub/WpfTTS/MemoryCards/Images/black.png"
         };
 
-        public TestSound(int _nbrTrials, int _timer, bool _sound) : base("Sons", _nbrTrials, _timer)
+        public TestSound(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Sons", _nbrTrials, _timer)
         {
             AddTrial(listSounds, _sound);
         }

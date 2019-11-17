@@ -1567,10 +1567,21 @@
           "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {}
         }
       },
+      "ClassLibraryIPersistance/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ClassLibraryIPersistance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibraryIPersistance.dll": {}
+        }
+      },
       "ClassLibraryMemento/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "ClassLibraryIPersistance": "1.0.0",
+          "ClassLibraryPersistance": "1.0.0",
           "ClosedXML": "0.94.2",
           "LibraryCommands": "1.0.0"
         },
@@ -1579,6 +1590,18 @@
         },
         "runtime": {
           "bin/placeholder/ClassLibraryMemento.dll": {}
+        }
+      },
+      "ClassLibraryPersistance/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "ClassLibraryIPersistance": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ClassLibraryPersistance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibraryPersistance.dll": {}
         }
       },
       "LibraryCommands/1.0.0": {
@@ -5405,10 +5428,20 @@
         "system.xml.readerwriter.nuspec"
       ]
     },
+    "ClassLibraryIPersistance/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibraryIPersistance/ClassLibraryIPersistance.csproj",
+      "msbuildProject": "../ClassLibraryIPersistance/ClassLibraryIPersistance.csproj"
+    },
     "ClassLibraryMemento/1.0.0": {
       "type": "project",
       "path": "../ClassLibraryMemento/ClassLibraryMemento.csproj",
       "msbuildProject": "../ClassLibraryMemento/ClassLibraryMemento.csproj"
+    },
+    "ClassLibraryPersistance/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibraryPersistance/ClassLibraryPersistance.csproj",
+      "msbuildProject": "../ClassLibraryPersistance/ClassLibraryPersistance.csproj"
     },
     "LibraryCommands/1.0.0": {
       "type": "project",
@@ -5424,23 +5457,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CRM\\.nuget\\packages\\": {},
+    "C:\\Users\\benoi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
+      "projectUniqueName": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
       "projectName": "ClassLibraryViewModel",
-      "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
-      "packagesPath": "C:\\Users\\CRM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryViewModel\\obj\\",
+      "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
+      "packagesPath": "C:\\Users\\benoi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\CRM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\benoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5453,8 +5486,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
-              "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
+            "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
+              "projectPath": "C:\\Users\\benoi\\Programmation\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
             }
           }
         }
