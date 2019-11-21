@@ -16,10 +16,6 @@ namespace ClassLibraryMemento
         private int move;
         private int repeat;
 
-        private TrialScore score;
-        public TrialScore Score { get => score; set => score = value; }
-
-
         public List<Card> ListCards { get => listCards; set => listCards = value; }
         public int TrialNumber { get => trialNumber; set => trialNumber = value; }
         public string TypeTest { get => typeTest; set => typeTest = value; }

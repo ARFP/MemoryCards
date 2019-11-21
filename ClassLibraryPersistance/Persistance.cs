@@ -18,35 +18,39 @@ namespace ClassLibraryPersistance
 
         sResumeEtalonnagesAllAge IPersistanceResumeEtalonnageAllAge.Read()
         {
-            sResumeEtalonnagesAllAge resaa = new sResumeEtalonnagesAllAge();
-            resaa.EtalonnageAllAges = new List<sResumeEtalonnageAllAge>();
+            sResumeEtalonnagesAllAge resaa = new sResumeEtalonnagesAllAge
+            {
+                EtalonnageAllAges = new List<sResumeEtalonnageAllAge>()
+            };
             try
             {
                 var sheet = ConnectionEtalonnage.Connect();
                 resaa.TotalNumber = int.Parse(sheet.Cell("B1").Value.ToString());
                 for (int i = 0; i < 8; i++)
                 {
-                    sResumeEtalonnageAllAge lreaa = new sResumeEtalonnageAllAge();
-                    lreaa.AgeRange = sheet.Cell(3 + i, "A").Value.ToString();
-                    lreaa.NumberPersoneTest = int.Parse(sheet.Cell(3 + i, "B").Value.ToString());
-                    lreaa.AverageAge = double.Parse(sheet.Cell(3 + i, "C").Value.ToString());
-                    lreaa.SDAge = double.Parse(sheet.Cell(3 + i, "D").Value.ToString());
+                    sResumeEtalonnageAllAge lreaa = new sResumeEtalonnageAllAge
+                    {
+                        AgeRange = sheet.Cell(3 + i, "A").Value.ToString(),
+                        NumberPersoneTest = int.Parse(sheet.Cell(3 + i, "B").Value.ToString()),
+                        AverageAge = double.Parse(sheet.Cell(3 + i, "C").Value.ToString()),
+                        SDAge = double.Parse(sheet.Cell(3 + i, "D").Value.ToString())
+                    };
                     resaa.EtalonnageAllAges.Add(lreaa);
                 }
-                return resaa;
             }
             catch(Exception e)
             {
-                string a = e.Message;
-                return default;
             }
+            return resaa;
         }
 
         sEtalonnages IPersistancesEtalonnages.Read(int _age)
         {
             int i = 0;
-            sEtalonnages etalonnages = new sEtalonnages();
-            etalonnages.Etalonnages = new List<sEtalonnage>();
+            sEtalonnages etalonnages = new sEtalonnages
+            {
+                Etalonnages = new List<sEtalonnage>()
+            };
             try
             {
                 var sheet = ConnectionEtalonnage.Connect();
@@ -59,23 +63,24 @@ namespace ClassLibraryPersistance
                 etalonnages.Name = sheet.Cell(i, "A").Value.ToString();
                 for (int j = 0; j < 7; j++)
                 {
-                    sEtalonnage etalonnage = new sEtalonnage();
-                    etalonnage.Trial = int.Parse(sheet.Cell(i + j, "B").Value.ToString());
-                    etalonnage.AverageMove = double.Parse(sheet.Cell(i + j, "C").Value.ToString());
-                    etalonnage.SDMove = double.Parse(sheet.Cell(i + j, "D").Value.ToString());
-                    etalonnage.AverageRepeat = double.Parse(sheet.Cell(i + j, "E").Value.ToString());
-                    etalonnage.SDRepeat = double.Parse(sheet.Cell(i + j, "F").Value.ToString());
-                    etalonnage.AverageScore = double.Parse(sheet.Cell(i + j, "G").Value.ToString());
-                    etalonnage.SDScore = double.Parse(sheet.Cell(i + j, "H").Value.ToString());
+                    sEtalonnage etalonnage = new sEtalonnage
+                    {
+                        Trial = int.Parse(sheet.Cell(i + j, "B").Value.ToString()),
+                        AverageMove = double.Parse(sheet.Cell(i + j, "C").Value.ToString()),
+                        SDMove = double.Parse(sheet.Cell(i + j, "D").Value.ToString()),
+                        AverageRepeat = double.Parse(sheet.Cell(i + j, "E").Value.ToString()),
+                        SDRepeat = double.Parse(sheet.Cell(i + j, "F").Value.ToString()),
+                        AverageScore = double.Parse(sheet.Cell(i + j, "G").Value.ToString()),
+                        SDScore = double.Parse(sheet.Cell(i + j, "H").Value.ToString())
+                    };
                     etalonnages.Etalonnages.Add(etalonnage);
-                }
-                return etalonnages;
+                }               
             }
             catch(Exception e)
             {
-                string a = e.Message;
-                return default;
+                string a = e.Message;               
             }
+            return etalonnages;
         }
 
         bool IPersistancesEtalonnages.Write(sEtalonnages _sEtalonnages)

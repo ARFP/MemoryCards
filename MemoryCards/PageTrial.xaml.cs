@@ -1,5 +1,4 @@
-﻿using ClassLibraryExcel;
-using ClassLibraryMemento;
+﻿using ClassLibraryMemento;
 using ClassLibraryViewModel;
 using LibraryCommands;
 using System;
@@ -36,8 +35,10 @@ namespace MemoryCards
             foreach (ViewModelCard c in vMTest.Trials.LVMTrial[vMTest.TrialRun].ListCards)
             {
                 ButtonControl ControlCard = new ButtonControl();
-                Binding b = new Binding();
-                b.Source = c;
+                Binding b = new Binding
+                {
+                    Source = c
+                };
 
                 ControlCard.SetBinding(ButtonControl.dependencyPropertyCard, b);
                 ControlCard.Tag = i;

@@ -19,7 +19,7 @@ namespace ClassLibraryPersistance
         {
             if (sheet is null)
             {
-                book = new XLWorkbook(ConfigurationManager.AppSettings["ModelResultBen"]);
+                book = new XLWorkbook(ConfigurationManager.AppSettings["ModelResultCrm"]);
                 sheet = book.Worksheet("Resultat");
             }
             return sheet;
@@ -29,12 +29,11 @@ namespace ClassLibraryPersistance
         {
             try
             {
-                book.SaveAs(ConfigurationManager.AppSettings["SaveExcelBen"] + _path + ".xlsx");
+                book.SaveAs(ConfigurationManager.AppSettings["SaveExcelCrm"] + _path + ".xlsx");
                 return true;
             }
             catch(Exception e)
             {
-                string a = e.Message;
                 return false;
             }
         }
