@@ -8,6 +8,6 @@ namespace ClassLibraryIPersistance
 {
     public interface IPersistanceTestScore
     {
-        bool Write(sTestScore _score);
+        bool Write(sTestScore _score, string _pathSave);
     }
 }

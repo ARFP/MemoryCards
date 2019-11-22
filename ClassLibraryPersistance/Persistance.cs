@@ -9,33 +9,26 @@ namespace ClassLibraryPersistance
 {
     public class Persistance : IPersistanceTestScore, IPersistanceTrialsScore, IPersistanceUser, IPersistancesEtalonnages, IPersistanceResumeEtalonnageAllAge
     {
-        string pathSave;
-
-        public Persistance(string _pathSave)
-        {
-            pathSave = _pathSave;
-        }
-
         sResumeEtalonnagesAllAge IPersistanceResumeEtalonnageAllAge.Read()
         {
             sResumeEtalonnagesAllAge resaa = new sResumeEtalonnagesAllAge
             {
-                EtalonnageAllAges = new List<sResumeEtalonnageAllAge>()
+                LEtalonnageAllAges = new List<sResumeEtalonnageAllAge>()
             };
             try
             {
                 var sheet = ConnectionEtalonnage.Connect();
-                resaa.TotalNumber = int.Parse(sheet.Cell("B1").Value.ToString());
+                resaa.TotalNumber = sheet.Cell(1, "K").Value.ToString();
                 for (int i = 0; i < 8; i++)
                 {
                     sResumeEtalonnageAllAge lreaa = new sResumeEtalonnageAllAge
                     {
-                        AgeRange = sheet.Cell(3 + i, "A").Value.ToString(),
-                        NumberPersoneTest = int.Parse(sheet.Cell(3 + i, "B").Value.ToString()),
-                        AverageAge = double.Parse(sheet.Cell(3 + i, "C").Value.ToString()),
-                        SDAge = double.Parse(sheet.Cell(3 + i, "D").Value.ToString())
+                        AgeRange = sheet.Cell(3 + i, "J").Value.ToString(),
+                        NumberPersoneTest = int.Parse(sheet.Cell(3 + i, "K").Value.ToString()),
+                        AverageAge = double.Parse(sheet.Cell(3 + i, "L").Value.ToString()),
+                        SDAge = double.Parse(sheet.Cell(3 + i, "M").Value.ToString())
                     };
-                    resaa.EtalonnageAllAges.Add(lreaa);
+                    resaa.LEtalonnageAllAges.Add(lreaa);
                 }
             }
             catch(Exception e)
@@ -49,12 +42,12 @@ namespace ClassLibraryPersistance
             int i = 0;
             sEtalonnages etalonnages = new sEtalonnages
             {
-                Etalonnages = new List<sEtalonnage>()
+                LEtalonnages = new List<sEtalonnage>()
             };
             try
             {
                 var sheet = ConnectionEtalonnage.Connect();
-            if (_age < 30) { i = 3; }
+                if (_age < 30) { i = 3; }
                 else if (_age < 40) { i = 11; }
                 else if (_age < 50) { i = 19; }
                 else if (_age < 60) { i = 27; }
@@ -65,7 +58,7 @@ namespace ClassLibraryPersistance
                 {
                     sEtalonnage etalonnage = new sEtalonnage
                     {
-                        Trial = int.Parse(sheet.Cell(i + j, "B").Value.ToString()),
+                        NumberTrial = sheet.Cell(i + j, "B").Value.ToString(),
                         AverageMove = double.Parse(sheet.Cell(i + j, "C").Value.ToString()),
                         SDMove = double.Parse(sheet.Cell(i + j, "D").Value.ToString()),
                         AverageRepeat = double.Parse(sheet.Cell(i + j, "E").Value.ToString()),
@@ -73,25 +66,25 @@ namespace ClassLibraryPersistance
                         AverageScore = double.Parse(sheet.Cell(i + j, "G").Value.ToString()),
                         SDScore = double.Parse(sheet.Cell(i + j, "H").Value.ToString())
                     };
-                    etalonnages.Etalonnages.Add(etalonnage);
+                    etalonnages.LEtalonnages.Add(etalonnage);
                 }               
             }
             catch(Exception e)
-            {
-                string a = e.Message;               
+            {              
             }
             return etalonnages;
         }
 
-        bool IPersistancesEtalonnages.Write(sEtalonnages _sEtalonnages)
+        bool IPersistancesEtalonnages.Write(sEtalonnages _sEtalonnages, string _pathSave)
         {
             int i = 0;
-            var sheet = ConnectionResult.Connect();
             try
             {
-                foreach (sEtalonnage etalonnage in _sEtalonnages.Etalonnages)
+                var sheet = ConnectionResult.Connect();
+                sheet.Cell(28 + i, "A").Value = _sEtalonnages.Name;
+                foreach (sEtalonnage etalonnage in _sEtalonnages.LEtalonnages)
                 {
-                    sheet.Cell(28 + i, "B").Value = etalonnage.Trial;
+                    sheet.Cell(28 + i, "B").Value = etalonnage.NumberTrial;
                     sheet.Cell(28 + i, "C").Value = etalonnage.AverageMove;
                     sheet.Cell(28 + i, "D").Value = etalonnage.SDMove;
                     sheet.Cell(28 + i, "E").Value = etalonnage.AverageRepeat;
@@ -100,17 +93,16 @@ namespace ClassLibraryPersistance
                     sheet.Cell(28 + i, "H").Value = etalonnage.SDScore;
                     i++;
                 }
-                return ConnectionResult.Save(pathSave);
+                return ConnectionResult.Save(_pathSave);
             }
             catch(Exception e)
             {
-                string a = e.Message;
                 return false;
             }
 
         }
 
-        bool IPersistanceTestScore.Write(sTestScore _score)
+        bool IPersistanceTestScore.Write(sTestScore _score, string _pathSave)
         {
             try
             {
@@ -118,16 +110,15 @@ namespace ClassLibraryPersistance
                 sheet.Cell("B20").Value = _score.AverageMove;
                 sheet.Cell("B21").Value = _score.AverageRepeat;
                 sheet.Cell("B22").Value = _score.AverageScore;
-                return ConnectionResult.Save(pathSave);
+                return ConnectionResult.Save(_pathSave);
             }
             catch(Exception e)
             {
-                string a = e.Message;
                 return false;
             }
         }
 
-        bool IPersistanceTrialsScore.Write(sTrialsScore _score)
+        bool IPersistanceTrialsScore.Write(sTrialsScore _score, string _pathSave)
         {
             int i = 0;
             try
@@ -145,16 +136,15 @@ namespace ClassLibraryPersistance
                     sheet.Cell(13 + i, "H").Value = t.ScoreTrial;
                     i++;
                 }
-                return ConnectionResult.Save(pathSave);
+                return ConnectionResult.Save(_pathSave);
             }
             catch(Exception e)
             {
-                string a = e.Message;
                 return false;
             }
         }
 
-        bool IPersistanceUser.Write(sUser _user)
+        bool IPersistanceUser.Write(sUser _user, string _pathSave)
         {
             try
             {
@@ -164,11 +154,10 @@ namespace ClassLibraryPersistance
                 sheet.Cell("B5").Value = _user.Age;
                 sheet.Cell("B6").Value = _user.DateOfTheDay.Date;
                 sheet.Cell("B7").Value = _user.DateOfTheDay.Hour + " : " + _user.DateOfTheDay.Minute + " : " + _user.DateOfTheDay.Second;        
-                return ConnectionResult.Save(pathSave);
+                return ConnectionResult.Save(_pathSave);
             }
             catch(Exception e)
             {
-                string a = e.Message;
                 return false;
             }
         }

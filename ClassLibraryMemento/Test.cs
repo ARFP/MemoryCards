@@ -35,7 +35,7 @@ namespace ClassLibraryMemento
         public Test(User _user, string _testName, int _numberTrials, int _timer)
         {
             user = _user;
-            iPersistance = new Persistance(_user.FirstName + _user.LastName);
+            iPersistance = new Persistance();
             testName = _testName;
             trials = new Trials(_user.FirstName + _user.LastName);
             numberTrials = _numberTrials;
@@ -123,7 +123,7 @@ namespace ClassLibraryMemento
 
         public bool Save()
         {
-            return iPersistance.Write(this);
+            return iPersistance.Write(this, user.FirstName + user.LastName);
         }
         #endregion
         #endregion

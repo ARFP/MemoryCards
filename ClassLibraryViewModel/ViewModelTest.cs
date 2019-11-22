@@ -11,8 +11,9 @@ namespace ClassLibraryViewModel
     public class ViewModelTest : ObservableObject
     {
         private Test test;
-        private ViewModelUser user;
-        private ViewModelTrials trials;
+        private ViewModelUser vmUser;
+        private ViewModelTrials vmTrials;
+        private ViewModelEtalonnages vmEtalonnages;
 
         public string TestName { get { return test.TestName; } set { test.TestName = value; OnPropertyChanged(nameof(TestName)); } }
         public int NumberTrials { get { return test.NumberTrials; } set { test.NumberTrials = value; OnPropertyChanged(nameof(NumberTrials)); } }
@@ -20,9 +21,12 @@ namespace ClassLibraryViewModel
         public string TimeInProgress { get { return test.TimeInProgress; } set { test.TimeInProgress = value; OnPropertyChanged(nameof(TimeInProgress)); } }
         public int TrialRun { get { return test.TrialRun; } set { test.TrialRun = value; OnPropertyChanged(nameof(TrialRun)); } }
         public bool EndTimer { get { return test.EndTimer; } set { test.EndTimer = value; OnPropertyChanged(nameof(EndTimer)); } }
-        //public TestScore TestScore { get { return test.TestScore; } set { test.TestScore = value; OnPropertyChanged(nameof(TestScore)); } }
-        public ViewModelUser User { get { return user; } set { user = value; OnPropertyChanged(nameof(User)); } }
-        public ViewModelTrials Trials { get { return trials; } set { trials = value; OnPropertyChanged(nameof(Trials)); } }
+        public double AverageMove { get { return test.AverageMove(); } }
+        public double AverageRepeat { get { return test.AverageRepeat(); } }
+        public double AverageScore { get { return test.AverageScore(); } }
+        public ViewModelUser VMUser { get { return vmUser; } set { vmUser = value; OnPropertyChanged(nameof(VMUser)); } }
+        public ViewModelTrials VMTrials { get { return vmTrials; } set { vmTrials = value; OnPropertyChanged(nameof(VMTrials)); } }
+        public ViewModelEtalonnages VMEtalonnages { get => vmEtalonnages; set => vmEtalonnages = value; }
 
         public ViewModelTest(ViewModelUser _user, string _mode)
         {
@@ -52,24 +56,12 @@ namespace ClassLibraryViewModel
                 default:
                     break;
             }
-            user = new ViewModelUser(test.User);
-            trials = new ViewModelTrials(test.Trials);
+            vmUser = new ViewModelUser(test.User);
+            vmTrials = new ViewModelTrials(test.Trials);
+            Etalonnages e = new Etalonnages();
+            //e.Load(vmUser.Age);
+            vmEtalonnages = new ViewModelEtalonnages(e);
         }
-
-        //public double AverageRepeat()
-        //{
-        //    return test.AverageRepeat();
-        //}
-
-        //public double AverageMove()
-        //{
-        //    return test.AverageMove();
-        //}
-
-        //public double AverageScore()
-        //{
-        //    return test.AverageScore();
-        //}
 
         public bool TestVerify()
         {

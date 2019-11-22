@@ -41,10 +41,5 @@ namespace ClassLibraryViewModel
         {
             return trial.TrialFinish();
         }
-
-        //public void GetScoreTrial()
-        //{
-        //    trial.StatsTrial();
-        //}
     }
 }

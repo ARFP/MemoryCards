@@ -9,6 +9,6 @@ namespace ClassLibraryIPersistance
     public interface IPersistancesEtalonnages
     {
         sEtalonnages Read(int _age);
-        bool Write(sEtalonnages _sEtalonnages);
+        bool Write(sEtalonnages _sEtalonnages, string _pathSave);
     }
 }

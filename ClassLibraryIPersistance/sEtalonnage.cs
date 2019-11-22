@@ -8,7 +8,7 @@ namespace ClassLibraryIPersistance
 {
     public struct sEtalonnage
     {
-        private int trial;
+        private string numberTrial;
         private double averageMove;
         private double sDMove;
         private double averageRepeat;
@@ -16,7 +16,7 @@ namespace ClassLibraryIPersistance
         private double averageScore;
         private double sDScore;
 
-        public int Trial { get => trial; set => trial = value; }
+        public string NumberTrial { get => numberTrial; set => numberTrial = value; }
         public double AverageMove { get => averageMove; set => averageMove = value; }
         public double SDMove { get => sDMove; set => sDMove = value; }
         public double AverageRepeat { get => averageRepeat; set => averageRepeat = value; }

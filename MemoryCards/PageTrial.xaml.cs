@@ -32,7 +32,7 @@ namespace MemoryCards
             vMTest = _test;
             int i = 0;
             trialName.Text = "Manche n°" + (vMTest.TrialRun + 1);
-            foreach (ViewModelCard c in vMTest.Trials.LVMTrial[vMTest.TrialRun].ListCards)
+            foreach (ViewModelCard c in vMTest.VMTrials.LVMTrial[vMTest.TrialRun].ListCards)
             {
                 ButtonControl ControlCard = new ButtonControl();
                 Binding b = new Binding
@@ -82,26 +82,26 @@ namespace MemoryCards
                     {
                         interrup = true;
                         tsk2 = Task.Factory.StartNew(() => Verrify(vmc));
-                        vMTest.Trials.LVMTrial[vMTest.TrialRun].AddMove();
+                        vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddMove();
                         if (vmc.Tested || firstCard.Tested)
                         {
-                            vMTest.Trials.LVMTrial[vMTest.TrialRun].AddRepeat();
+                            vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
                         }
                         if (vmc.Compare(firstCard))
                         {
                             firstCard.CurrentStatus = StatusCard.found;
                             vmc.CurrentStatus = StatusCard.found;
-                            if (vMTest.Trials.LVMTrial[vMTest.TrialRun].TrialFinish())
+                            if (vMTest.VMTrials.LVMTrial[vMTest.TrialRun].TrialFinish())
                             {
                                 if(vMTest.TestVerify())
                                 {
                                     //Placer les etalonnages (Classe etalonnage et etalonages List<rtalonnage>) 
                                     //Classe AllEtalonnage Crécation après validation ref user création page user champ
-
+                                    vMTest.VMEtalonnages.Load(vMTest.VMUser.Age);
+                                    vMTest.VMEtalonnages.Save(vMTest.VMUser.FirstName + vMTest.VMUser.LastName);
                                     vMTest.Save();
-                                    vMTest.Trials.Save();
-                                    vMTest.User.Save();
-                                    //Excel.WriteInExecel(vMTest);
+                                    vMTest.VMTrials.Save();
+                                    vMTest.VMUser.Save();
                                     NavigationService.Navigate(new PageCongratulation(vMTest));
                                 }
                                 else
@@ -125,7 +125,7 @@ namespace MemoryCards
 
         private void Verrify(ViewModelCard vmc)
         {
-            //Voir méthode affection EtatImage (Back Found Face) => CardImage par rapport a son etat
+            //Voir méthode affection EtatImage (Back Found Face) => CardImage par rapport a son etat?
             int i = 0;
             vmc.CardImage = vmc.FaceImage;
             if (vmc.CurrentStatus == StatusCard.face)

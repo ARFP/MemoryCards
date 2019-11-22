@@ -28,34 +28,34 @@
         <StackPanel Grid.Column="0"/>
 
         <ContentControl Grid.Column="1" Grid.Row="1" Style="{DynamicResource CustomBorder}" >
-        <StackPanel>
-            <TextBlock x:Name="trialName" Style="{DynamicResource CustomTitle}" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDown="TextBlock_MouseDown"/>
-            <Border BorderThickness="0,0,0,4" >
-                <Border.BorderBrush>
-                    <ImageBrush ImageSource="{StaticResource woodWhite}"/>
-                </Border.BorderBrush>
-            </Border>
-            <Grid x:Name="gridCards" Margin="40 30">
-                <Grid.RowDefinitions>
+            <StackPanel MinHeight="800" MinWidth="900">
+                <TextBlock x:Name="trialName" Style="{DynamicResource CustomTitle}" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDown="TextBlock_MouseDown"/>
+                <Border BorderThickness="0,0,0,4" >
+                    <Border.BorderBrush>
+                        <ImageBrush ImageSource="{StaticResource woodWhite}"/>
+                    </Border.BorderBrush>
+                </Border>
+                <Grid x:Name="gridCards" Margin="40 30">
+                    <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-            </Grid>
-        </StackPanel>
-    </ContentControl>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </StackPanel>
+        </ContentControl>
         <StackPanel Grid.Column="2"/>
     </Grid>
 </Page>

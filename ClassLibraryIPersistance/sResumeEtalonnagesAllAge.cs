@@ -8,10 +8,10 @@ namespace ClassLibraryIPersistance
 {
     public struct sResumeEtalonnagesAllAge
     {
-        private int totalNumber;
-        private List<sResumeEtalonnageAllAge> etalonnageAllAges;
+        private string totalNumber;
+        private List<sResumeEtalonnageAllAge> lEtalonnageAllAges;
 
-        public int TotalNumber { get => totalNumber; set => totalNumber = value; }
-        public List<sResumeEtalonnageAllAge> EtalonnageAllAges { get => etalonnageAllAges; set => etalonnageAllAges = value; }
+        public string TotalNumber { get => totalNumber; set => totalNumber = value; }
+        public List<sResumeEtalonnageAllAge> LEtalonnageAllAges { get => lEtalonnageAllAges; set => lEtalonnageAllAges = value; }
     }
 }

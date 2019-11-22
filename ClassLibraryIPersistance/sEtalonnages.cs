@@ -9,9 +9,9 @@ namespace ClassLibraryIPersistance
     public struct sEtalonnages
     {
         private string name;
-        private List<sEtalonnage> etalonnages;
+        private List<sEtalonnage> lEtalonnages;
 
         public string Name { get => name; set => name = value; }
-        public List<sEtalonnage> Etalonnages { get => etalonnages; set => etalonnages = value; }
+        public List<sEtalonnage> LEtalonnages { get => lEtalonnages; set => lEtalonnages = value; }
     }
 }

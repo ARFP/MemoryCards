@@ -8,6 +8,6 @@ namespace ClassLibraryIPersistance
 {
     public interface IPersistanceUser
     {
-        bool Write(sUser _user);
+        bool Write(sUser _user, string _pathSave);
     }
 }

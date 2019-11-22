@@ -28,7 +28,7 @@ namespace ClassLibraryMemento
             genre = "COD";
             Age = 32;
             dateOfTheDay = DateTime.Now;
-            iPersistance = new Persistance(FirstName + LastName);
+            iPersistance = new Persistance();
         }
 
         public User(string _FirstName, string _LastName, string _genre, int _Age)
@@ -54,7 +54,7 @@ namespace ClassLibraryMemento
 
         public bool Save()
         {
-            return iPersistance.Write(this);
+            return iPersistance.Write(this, FirstName + LastName);
         }
     }
 }

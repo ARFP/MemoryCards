@@ -26,9 +26,10 @@ namespace MemoryCards
         {
             InitializeComponent();
             DataContext = _test;
-            headerTrainee.Text = "Stagiare (Age : " + _test.User.Age + ")";
-            //etalonnageAll.DataContext = Excel.AllRangeEtalonnage();
-            //rangeEtalonnage.DataContext = Excel.ReadEtalonnage(_test.User.Age);
+            headerTrainee.Text = "Stagiare (Age : " + _test.VMUser.Age + ")";
+            ResumeEtalonnagesAllAge rea = new ResumeEtalonnagesAllAge();
+            rea.Load();
+            allEtalonnage.DataContext = rea;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {

@@ -19,7 +19,7 @@ namespace ClassLibraryPersistance
         {
             if (sheet is null)
             {
-                book = new XLWorkbook(ConfigurationManager.AppSettings["ModelResultCrm"]);
+                book = new XLWorkbook(ConfigurationManager.AppSettings["ModelReusltCrm"]);
                 sheet = book.Worksheet("Resultat");
             }
             return sheet;
