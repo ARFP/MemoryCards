@@ -118,7 +118,7 @@
                                         Shuffle="{Binding Path=Shuffle}" 
                                         Move="{Binding Path=Move}" 
                                         Repeat="{Binding Path=Repeat}" 
-                                        ScoreTrial="{Binding Path=ScoreTrial}"/>
+                                        ScoreTrial="{Binding Path=Score}"/>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
@@ -252,13 +252,13 @@
                             
                             <!--Trainee-->
                             <StackPanel DataContext="{Binding Path=.}" Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3">
-                                <ListView ItemsSource="{Binding Path=Trials.LVMTrial}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                <ListView ItemsSource="{Binding Path=VMTrials.LVMTrial}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <local:UserControlResumeScoreOneTrial 
                                             Move="{Binding Path=Move}" 
                                             Repeat="{Binding Path=Repeat}" 
-                                            Score="{Binding Path=ScoreTrial}"
+                                            Score="{Binding Path=Score}"
                                             ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False"/>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>

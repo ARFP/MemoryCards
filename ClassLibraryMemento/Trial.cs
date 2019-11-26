@@ -73,8 +73,8 @@ namespace ClassLibraryMemento
             {
                 Card c = new Card(i.ToString(), (string)_image[i]);
                 Card c1 = new Card(i.ToString(), (string)_image[i]);
-                c.addPairCard(c1);
-                c1.addPairCard(c);
+                c.AddPairCard(c1);
+                c1.AddPairCard(c);
                 listCards.Add(c);
                 listCards.Add(c1);
             }
@@ -92,7 +92,7 @@ namespace ClassLibraryMemento
                 {
                     if ((c.FaceImage == listCards[i].FaceImage) && (c.GetHashCode() != listCards[i].GetHashCode()))
                     {
-                        c.addPairCard(listCards[i]);
+                        c.AddPairCard(listCards[i]);
                     }
                 }
             }

@@ -83,19 +83,14 @@ namespace MemoryCards
                         interrup = true;
                         tsk2 = Task.Factory.StartNew(() => Verrify(vmc));
                         vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddMove();
-                        if (vmc.Tested || firstCard.Tested)
-                        {
-                            vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
-                        }
                         if (vmc.Compare(firstCard))
                         {
                             firstCard.CurrentStatus = StatusCard.found;
                             vmc.CurrentStatus = StatusCard.found;
                             if (vMTest.VMTrials.LVMTrial[vMTest.TrialRun].TrialFinish())
                             {
-                                if(vMTest.TestVerify())
+                                if (vMTest.TestVerify())
                                 {
-                                    //Placer les etalonnages (Classe etalonnage et etalonages List<rtalonnage>) 
                                     //Classe AllEtalonnage Crécation après validation ref user création page user champ
                                     vMTest.VMEtalonnages.Load(vMTest.VMUser.Age);
                                     vMTest.VMEtalonnages.Save(vMTest.VMUser.FirstName + vMTest.VMUser.LastName);
@@ -112,6 +107,20 @@ namespace MemoryCards
                         }
                         else
                         {
+                            if (vMTest.TrialRun == 0)
+                            {
+                                if(vmc.Tested && firstCard.Tested)
+                                {
+                                    vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
+                                }
+                            }
+                            else 
+                            {
+                                if (vmc.Tested || firstCard.Tested)
+                                {
+                                    vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
+                                }
+                            }
                             vmc.Tested = true;
                             firstCard.Tested = true;
                             firstCard.CurrentStatus = StatusCard.back;

@@ -16,6 +16,7 @@ namespace ClassLibraryViewModel
         public bool Shuffle { get { return trial.Shuffle; } set { trial.Shuffle = value; OnPropertyChanged(nameof(Shuffle)); } }
         public int Move { get { return trial.Move; } set { trial.Move = value; OnPropertyChanged(nameof(Move)); } }
         public int Repeat { get { return trial.Repeat; } set { trial.Repeat = value; OnPropertyChanged(nameof(Repeat)); } }
+        public double Score { get { return trial.ScoreTrial(); } }
 
         public ViewModelTrial(Trial _trial)
         {

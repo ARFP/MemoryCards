@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Threading;
 using System.Windows.Input;
 
 namespace ClassLibraryMemento
@@ -48,10 +49,10 @@ namespace ClassLibraryMemento
             tested = false;
             currentStatus = StatusCard.back;
             pairCard = null;
-            CardImage = _card.cardImage;
+            cardImage = _card.cardImage;
         }
 
-        public void addPairCard(Card _pairCard)
+        public void AddPairCard(Card _pairCard)
         {
             pairCard = _pairCard;
         }
@@ -63,6 +64,22 @@ namespace ClassLibraryMemento
                 return 1;
             }
             return 0;
+        }       
+
+        public string ActualyImage()
+        {
+            if(currentStatus == StatusCard.face)
+            {
+                return faceImage;
+            }
+            else if(currentStatus == StatusCard.found)
+            {
+                return validateImage;
+            }
+            else
+            {
+                return backImage;
+            }
         }
 
         public override string ToString()

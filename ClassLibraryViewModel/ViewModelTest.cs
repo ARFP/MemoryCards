@@ -79,7 +79,7 @@ namespace ClassLibraryViewModel
             int minutes;
             var watch = Stopwatch.StartNew();
 
-            if (TrialRun != NumberTrials - 2)
+            if (TrialRun != NumberTrials - 1)
             {
                 seconds = Timer;
                 TimeInProgress = "00 : " + seconds;
