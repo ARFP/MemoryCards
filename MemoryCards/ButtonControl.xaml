@@ -21,7 +21,7 @@
                                             <ImageBrush ImageSource="{StaticResource woodBlack}"/>
                                         </Border.BorderBrush>
                                         <Border.Background>
-                                            <ImageBrush ImageSource="{Binding Path=VMCard.CardImage, UpdateSourceTrigger=PropertyChanged}"/>
+                                            <ImageBrush ImageSource="{Binding Path=VMCard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
                                         </Border.Background>
                                     </Border>
                                 </Grid>

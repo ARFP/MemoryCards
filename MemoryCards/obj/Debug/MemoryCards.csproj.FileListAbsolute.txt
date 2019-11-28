@@ -458,7 +458,6 @@ C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.c
 C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.csproj.CopyComplete
 C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.exe
 C:\Users\benoi\Programmation\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.pdb
-C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\airship.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Abstracts\abstrait1.jpg
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Abstracts\abstrait10.jpg
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Abstracts\abstrait11.jpg
@@ -497,16 +496,17 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Digi
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Digits\753.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Digits\862.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Digits\946.png
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\airship.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\car.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\clock.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\computer.png
-C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\cycle.png
-C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\england.png
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\flag.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\flower.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\girl.png
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\grandbi.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\house.png
-C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\logo.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\scissors.png
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\star.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Images\tree.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Numbers\1.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Numbers\10.png
@@ -533,6 +533,8 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Word
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Words\soleil.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Ressources\Words\tambour.png
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\MemoryCards.exe.config
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\MemoryCards.exe.manifest
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\MemoryCards.application
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\MemoryCards.exe
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\MemoryCards.pdb
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\Microsoft.Win32.Primitives.dll
@@ -687,6 +689,8 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.g.r
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.Properties.Resources.resources
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.csproj.GenerateResource.cache
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.csproj.CoreCompileInputs.cache
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.exe.manifest
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.application
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.csproj.CopyComplete
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.exe
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\obj\Debug\MemoryCards.pdb

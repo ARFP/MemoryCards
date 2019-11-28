@@ -38,6 +38,7 @@ namespace ClassLibraryMemento
             currentStatus = StatusCard.back;
             pairCard = null;
             cardImage = backImage; 
+            //cardImage = faceImage; 
         }
 
         public Card(Card _card)
@@ -64,23 +65,7 @@ namespace ClassLibraryMemento
                 return 1;
             }
             return 0;
-        }       
-
-        public string ActualyImage()
-        {
-            if(currentStatus == StatusCard.face)
-            {
-                return faceImage;
-            }
-            else if(currentStatus == StatusCard.found)
-            {
-                return validateImage;
-            }
-            else
-            {
-                return backImage;
-            }
-        }
+        }           
 
         public override string ToString()
         {

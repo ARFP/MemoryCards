@@ -8,17 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgblack.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgblue.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgbrown.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bggreen.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bggrey.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgorange.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgpink.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgpurple.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgred.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgturquoise.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgwhite.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("couleurs/bgyellow.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/trabant-782799_640-convertimage.png")]
 
 

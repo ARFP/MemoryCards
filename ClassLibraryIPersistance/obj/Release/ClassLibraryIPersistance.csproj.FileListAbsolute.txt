@@ -1,0 +1,17 @@
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\ClassLibraryIPersistance.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\ClassLibraryIPersistance.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\ClosedXML.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\DocumentFormat.OpenXml.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\ExcelNumberFormat.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\FastMember.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\System.IO.Packaging.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\ClosedXML.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\ClosedXML.xml
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\DocumentFormat.OpenXml.xml
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Release\ExcelNumberFormat.xml
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Release\ClassLibraryIPersistance.csprojAssemblyReference.cache
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Release\ClassLibraryIPersistance.csproj.CoreCompileInputs.cache
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Release\ClassLibraryIPersistance.csproj.CopyComplete
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Release\ClassLibraryIPersistance.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Release\ClassLibraryIPersistance.pdb

@@ -17,12 +17,12 @@ namespace ClassLibraryMemento
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\car.png"),
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\clock.png"),
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\computer.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\cycle.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\england.png"),
+                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\grandbi.png"),
+                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\flag.png"),
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\flower.png"),
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\girl.png"),
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\house.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\logo.png"),
+                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\star.png"),
                 String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\scissors.png"),
             };
             AddTrial(listImage, _sound);
