@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/trabant-782799_640-convertimage.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/sound01.wav")]
 
 

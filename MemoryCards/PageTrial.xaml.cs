@@ -24,6 +24,7 @@ namespace MemoryCards
         Task tsk;
         Task tsk2;
         bool interrup;
+        private System.Media.SoundPlayer player;
 
         public PageTrial(ViewModelTest _test)
         {
@@ -58,6 +59,7 @@ namespace MemoryCards
                 }
                 i++;
             }
+            player = new System.Media.SoundPlayer();
         }
 
         private void Button_Click()
@@ -72,6 +74,23 @@ namespace MemoryCards
                 if (!interrup)
                 {
                     vmc.CurrentStatus = StatusCard.face;
+                    if(vMTest.TestName == "Sons")
+                    {
+                        ///Method add to MemoryCards => Properties => Resources.resx => Resources.Designer.cs
+                        //internal static System.IO.UnmanagedMemoryStream SoundValueOf(string _soundName)
+                        //{
+                        //    return ResourceManager.GetStream(_soundName, resourceCulture);
+                        //}
+                        //
+                        //internal static System.Drawing.Bitmap ImageValueOf(string _imageName)
+                        //{
+                        //    object obj = ResourceManager.GetObject(_imageName, resourceCulture);
+                        //    return ((System.Drawing.Bitmap)(obj));
+                        //}
+                        ///
+                        player.Stream = Properties.Resources.SoundValueOf(vmc.FaceImage);
+                        player.Play();
+                    }
                     if ((firstCard == null))
                     {
                         firstCard = vmc;

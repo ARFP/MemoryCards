@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryMemento.dll" size="4936192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryMemento.dll" size="5164544">
       <assemblyIdentity name="ClassLibraryMemento" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9OqWPcj8ClcnXU0OPyfQXG9Dx52rlYlIEasGPDoRViE=</dsig:DigestValue>
+        <dsig:DigestValue>aiTbVo722DAKtEPhW+ZGeuJrfaMRWCIRi7o0oDH38VM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="8715224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="21583832">
       <assemblyIdentity name="MemoryCards" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lgkP5F83yo71/H1HCSBUYRl++KFbm3vyGUQ/XsZmo8Y=</dsig:DigestValue>
+        <dsig:DigestValue>uDlPR3KkE9zFZpqiKV1P8D379ymuONk138HrksJcwUU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1325,13 +1325,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="MemoryCards.exe.config" size="18775">
+  <file name="MemoryCards.exe.config" size="19617">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lRY5SfSf69uuAA+x4irHrni4evWyAGFqYLCqwO9J7hg=</dsig:DigestValue>
+      <dsig:DigestValue>A9uM9P4TRQi1j8TKu2o+k6YYBsbVSHYca8/gqpWQUTk=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

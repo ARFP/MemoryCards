@@ -12,18 +12,18 @@ namespace ClassLibraryMemento
         public TestColor(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Couleurs", _nbrTrials, _timer)
         {
             listColor = new List<object>() {
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgBlack.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgBlue.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgBrown.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgGreen.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgGrey.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgOrange.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgPink.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgPurple.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgRed.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgTurquoise.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgWhite.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Colors\BgYellow.png"),
+                String.Format(@"pack://application:,,,/Resources/BgBlack.png"),
+                String.Format(@"pack://application:,,,/Resources/BgBlue.png"),
+                String.Format(@"pack://application:,,,/Resources/BgBrown.png"),
+                String.Format(@"pack://application:,,,/Resources/BgGreen.png"),
+                String.Format(@"pack://application:,,,/Resources/BgGrey.png"),
+                String.Format(@"pack://application:,,,/Resources/BgOrange.png"),
+                String.Format(@"pack://application:,,,/Resources/BgPink.png"),
+                String.Format(@"pack://application:,,,/Resources/BgPurple.png"),
+                String.Format(@"pack://application:,,,/Resources/BgRed.png"),
+                String.Format(@"pack://application:,,,/Resources/BgTurquoise.png"),
+                String.Format(@"pack://application:,,,/Resources/BgWhite.png"),
+                String.Format(@"pack://application:,,,/Resources/BgYellow.png"),
         };
             AddTrial(listColor, _sound);
         }

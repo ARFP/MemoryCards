@@ -12,18 +12,18 @@ namespace ClassLibraryMemento
         public TestImage(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Images", _nbrTrials, _timer)
         {
             listImage = new List<object>() {
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\airship.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\tree.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\car.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\clock.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\computer.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\grandbi.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\flag.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\flower.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\girl.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\house.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\star.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Images\scissors.png"),
+                String.Format(@"pack://application:,,,/Resources/airship.png"),
+                String.Format(@"pack://application:,,,/Resources/tree.png"),
+                String.Format(@"pack://application:,,,/Resources/car.png"),
+                String.Format(@"pack://application:,,,/Resources/clock.png"),
+                String.Format(@"pack://application:,,,/Resources/computer.png"),
+                String.Format(@"pack://application:,,,/Resources/grandbi.png"),
+                String.Format(@"pack://application:,,,/Resources/flag.png"),
+                String.Format(@"pack://application:,,,/Resources/flower.png"),
+                String.Format(@"pack://application:,,,/Resources/girl.png"),
+                String.Format(@"pack://application:,,,/Resources/house.png"),
+                String.Format(@"pack://application:,,,/Resources/star.png"),
+                String.Format(@"pack://application:,,,/Resources/scissors.png"),
             };
             AddTrial(listImage, _sound);
         }

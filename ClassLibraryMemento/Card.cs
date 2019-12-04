@@ -20,6 +20,8 @@ namespace ClassLibraryMemento
         private StatusCard currentStatus;
         private string cardImage;
 
+            private Stream sound;
+
         public bool Tested { get => tested; set => tested = value; }
         public StatusCard CurrentStatus{ get => currentStatus; set => currentStatus = value; }
         public string Name { get => name; set => name = value; }
@@ -28,7 +30,7 @@ namespace ClassLibraryMemento
         public string ValidateImage { get => validateImage; set => validateImage = value; }
         public string CardImage { get => cardImage; set => cardImage = value; }
 
-        public Card(string _name,string _image)
+        public Card(string _name, string _image)
         {
             name = _name;
             faceImage = _image;
@@ -37,8 +39,8 @@ namespace ClassLibraryMemento
             tested = false;
             currentStatus = StatusCard.back;
             pairCard = null;
-            cardImage = backImage; 
-            //cardImage = faceImage; 
+            //cardImage = backImage; 
+            cardImage = faceImage;
         }
 
         public Card(Card _card)

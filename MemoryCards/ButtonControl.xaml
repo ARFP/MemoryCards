@@ -9,20 +9,22 @@
         <BitmapImage x:Key="woodBlack" UriSource="/Images/woodBlack.png"/>
     </UserControl.Resources>
     <Grid x:Name="UserControlCard">
-        <Button x:Name="ButtonCard" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Command="{Binding Path=commandDisplay}" MinWidth="160" MinHeight="160">
+        <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Command="{Binding Path=commandDisplay}" MinWidth="160" MinHeight="160">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type Button}">
                                 <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
-                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2">
+                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Background="#FF5F3A3A">
                                         <Border.BorderBrush>
                                             <ImageBrush ImageSource="{StaticResource woodBlack}"/>
                                         </Border.BorderBrush>
-                                        <Border.Background>
-                                            <ImageBrush ImageSource="{Binding Path=VMCard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
-                                        </Border.Background>
+                                        <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Width="160" Height="160">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{Binding Path=VMCard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
+                                            </Border.Background>
+                                        </Border>
                                     </Border>
                                 </Grid>
                             </ControlTemplate>

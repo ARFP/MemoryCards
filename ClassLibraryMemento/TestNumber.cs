@@ -12,18 +12,18 @@ namespace ClassLibraryMemento
         public TestNumber(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Chiffres", _nbrTrials, _timer)
         {
             listNumber = new List<object>() {
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\1.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\2.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\3.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\4.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\5.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\6.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\7.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\8.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\9.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\10.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\11.png"),
-                String.Concat(Directory.GetCurrentDirectory(),@"\Ressources\Numbers\12.png"),
+                String.Format(@"pack://application:,,,/Resources/1.png"),
+                String.Format(@"pack://application:,,,/Resources/2.png"),
+                String.Format(@"pack://application:,,,/Resources/3.png"),
+                String.Format(@"pack://application:,,,/Resources/4.png"),
+                String.Format(@"pack://application:,,,/Resources/5.png"),
+                String.Format(@"pack://application:,,,/Resources/6.png"),
+                String.Format(@"pack://application:,,,/Resources/7.png"),
+                String.Format(@"pack://application:,,,/Resources/8.png"),
+                String.Format(@"pack://application:,,,/Resources/9.png"),
+                String.Format(@"pack://application:,,,/Resources/10.png"),
+                String.Format(@"pack://application:,,,/Resources/11.png"),
+                String.Format(@"pack://application:,,,/Resources/12.png"),
             };
             AddTrial(listNumber, _sound);
         }

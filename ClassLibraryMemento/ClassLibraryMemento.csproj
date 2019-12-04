@@ -67,6 +67,18 @@
     <None Remove="Ressources\Numbers\7.png" />
     <None Remove="Ressources\Numbers\8.png" />
     <None Remove="Ressources\Numbers\9.png" />
+    <None Remove="Ressources\Sounds\sound0.mp3" />
+    <None Remove="Ressources\Sounds\sound1.mp3" />
+    <None Remove="Ressources\Sounds\sound10.mp3" />
+    <None Remove="Ressources\Sounds\sound11.mp3" />
+    <None Remove="Ressources\Sounds\sound13.mp3" />
+    <None Remove="Ressources\Sounds\sound16.mp3" />
+    <None Remove="Ressources\Sounds\sound20.mp3" />
+    <None Remove="Ressources\Sounds\sound21.mp3" />
+    <None Remove="Ressources\Sounds\sound3.mp3" />
+    <None Remove="Ressources\Sounds\sound4.mp3" />
+    <None Remove="Ressources\Sounds\sound5.mp3" />
+    <None Remove="Ressources\Sounds\sound9.mp3" />
     <None Remove="Ressources\Words\cuir.png" />
     <None Remove="Ressources\Words\dindon.png" />
     <None Remove="Ressources\Words\ecole.png" />
@@ -271,6 +283,42 @@
     <EmbeddedResource Include="Ressources\Numbers\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound0.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound10.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound11.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound13.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound16.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound20.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound21.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound3.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound4.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound5.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Sounds\sound9.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ressources\Words\cuir.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -317,10 +365,6 @@
     <ProjectReference Include="..\ClassLibraryIPersistance\ClassLibraryIPersistance.csproj" />
     <ProjectReference Include="..\ClassLibraryPersistance\ClassLibraryPersistance.csproj" />
     <ProjectReference Include="..\LibraryCommands\LibraryCommands.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Ressources\Sounds\" />
   </ItemGroup>
 
 </Project>
