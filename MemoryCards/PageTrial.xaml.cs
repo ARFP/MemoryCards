@@ -41,27 +41,34 @@ namespace MemoryCards
                 ButtonControl ControlCard = new ButtonControl();
                 Binding b = new Binding
                 {
-                    Source = c
+                    Source = c,                   
                 };
                 ControlCard.SetBinding(ButtonControl.dependencyPropertyCard, b);
 
-                //ControlCard.SetResourceReference
-                //(
-                //    ButtonControl.dependencyPropertyCardImage, new ImageBrush
+                Binding b3 = new Binding
+                {                   
+                    Source = c.CurrentStatus,
+                };
+                ControlCard.SetBinding(ButtonControl.dependencyPropertyStatuCard, b3);
+
+                //Binding b2 = new Binding
+                //{
+                //    Source = new ImageBrush
                 //        (
                 //            Imaging.CreateBitmapSourceFromHBitmap
                 //                (
-                //                    SearchResources.ImageValueOf(c.CardImage).GetHbitmap(), 
-                //                    IntPtr.Zero, 
-                //                    Int32Rect.Empty, 
+                //                    SearchResources.ImageValueOf(c.CardImage).GetHbitmap(),
+                //                    IntPtr.Zero,
+                //                    Int32Rect.Empty,
                 //                    BitmapSizeOptions.FromEmptyOptions()
                 //                )
                 //        )
-                //);
+                //};
+                //ControlCard.SetBinding(ButtonControl.dependencyPropertyCardImage, b2);
 
                 ControlCard.Tag = i;
                 ControlCard.Padding = new Thickness(5);
-                ControlCard.CommandDisplay = new CmdButtonCheck(p => c.CurrentStatus == StatusCard.back, p => CardEventVerrif(c));
+                ControlCard.CommandDisplay = new CmdButtonCheck(p => c.CurrentStatus == StatusCard.back, p => CardEventVerrif(ControlCard));
                 gridCards.Children.Add(ControlCard);
                 Grid.SetRow(ControlCard, row);
                 Grid.SetColumn(ControlCard, column);
@@ -86,71 +93,75 @@ namespace MemoryCards
 
         private void CardEventVerrif(object sender)
         {
-            if (sender is ViewModelCard vmc)
+            if (sender is ButtonControl se)
             {
-                if (!interrup)
+                if (se.VMCard is ViewModelCard vmc)
                 {
-                    vmc.CurrentStatus = StatusCard.face;
-                    if(vMTest.TestName == "Sons")
+                    if (!interrup)
                     {
-                        player.Stream = SearchResources.SoundValueOf(vmc.FaceImage);
-                        player.Play();
-                    }
-                    if ((firstCard == null))
-                    {
-                        firstCard = vmc;
-                        tsk = Task.Factory.StartNew(() => Verrify(firstCard));
-
-                    }
-                    else if (firstCard != vmc && firstCard != null)
-                    {
-                        interrup = true;
-                        tsk2 = Task.Factory.StartNew(() => Verrify(vmc));
-                        vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddMove();
-                        if (vmc.Compare(firstCard))
+                        vmc.CurrentStatus = StatusCard.face;
+                        se.StatuCard = vmc.CurrentStatus;
+                        if (vMTest.TestName == "Sons")
                         {
-                            firstCard.CurrentStatus = StatusCard.found;
-                            vmc.CurrentStatus = StatusCard.found;
-                            if (vMTest.VMTrials.LVMTrial[vMTest.TrialRun].TrialFinish())
+                            player.Stream = SearchResources.SoundValueOf(vmc.FaceImage);
+                            player.Play();
+                        }
+                        if ((firstCard == null))
+                        {
+                            firstCard = vmc;
+                            tsk = Task.Factory.StartNew(() => Verrify(firstCard));
+
+                        }
+                        else if (firstCard != vmc && firstCard != null)
+                        {
+                            interrup = true;
+                            tsk2 = Task.Factory.StartNew(() => Verrify(vmc));
+                            vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddMove();
+                            if (vmc.Compare(firstCard))
                             {
-                                if (vMTest.TestVerify())
+                                firstCard.CurrentStatus = StatusCard.found;
+                                vmc.CurrentStatus = StatusCard.found;
+                                if (vMTest.VMTrials.LVMTrial[vMTest.TrialRun].TrialFinish())
                                 {
-                                    //Classe AllEtalonnage Crécation après validation ref user création page user champ
-                                    vMTest.VMEtalonnages.Load(vMTest.VMUser.Age);
-                                    vMTest.VMEtalonnages.Save(vMTest.VMUser.FirstName + vMTest.VMUser.LastName);
-                                    vMTest.Save();
-                                    vMTest.VMTrials.Save();
-                                    vMTest.VMUser.Save();
-                                    NavigationService.Navigate(new PageCongratulation(vMTest));
+                                    if (vMTest.TestVerify())
+                                    {
+                                        //Classe AllEtalonnage Crécation après validation ref user création page user champ
+                                        vMTest.VMEtalonnages.Load(vMTest.VMUser.Age);
+                                        vMTest.VMEtalonnages.Save(vMTest.VMUser.FirstName + vMTest.VMUser.LastName);
+                                        vMTest.Save();
+                                        vMTest.VMTrials.Save();
+                                        vMTest.VMUser.Save();
+                                        NavigationService.Navigate(new PageCongratulation(vMTest));
+                                    }
+                                    else
+                                    {
+                                        NavigationService.Navigate(new TimerPage(vMTest));
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                if (vMTest.TrialRun == 0)
+                                {
+                                    if (vmc.Tested && firstCard.Tested)
+                                    {
+                                        vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
+                                    }
                                 }
                                 else
                                 {
-                                    NavigationService.Navigate(new TimerPage(vMTest));
+                                    if (vmc.Tested || firstCard.Tested)
+                                    {
+                                        vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
+                                    }
                                 }
+                                vmc.Tested = true;
+                                firstCard.Tested = true;
+                                firstCard.CurrentStatus = StatusCard.back;
+                                vmc.CurrentStatus = StatusCard.back;
                             }
+                            firstCard = null;
                         }
-                        else
-                        {
-                            if (vMTest.TrialRun == 0)
-                            {
-                                if(vmc.Tested && firstCard.Tested)
-                                {
-                                    vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
-                                }
-                            }
-                            else 
-                            {
-                                if (vmc.Tested || firstCard.Tested)
-                                {
-                                    vMTest.VMTrials.LVMTrial[vMTest.TrialRun].AddRepeat();
-                                }
-                            }
-                            vmc.Tested = true;
-                            firstCard.Tested = true;
-                            firstCard.CurrentStatus = StatusCard.back;
-                            vmc.CurrentStatus = StatusCard.back;
-                        }                      
-                        firstCard = null;
                     }
                 }
             }

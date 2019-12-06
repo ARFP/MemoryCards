@@ -9,7 +9,7 @@
         <BitmapImage x:Key="woodBlack" UriSource="/Images/woodBlack.png"/>
         <local:StatusToImageConverter x:Key="Conv"/>
     </UserControl.Resources>
-    <Grid x:Name="UserControlCard" Background="{Binding Path=cardImage}">
+    <Grid x:Name="UserControlCard">
         <Button Command="{Binding Path=commandDisplay}" MinWidth="160" MinHeight="160">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
@@ -27,6 +27,7 @@
                                             </Border.Background>
                                         </Border>
                                     </Border>
+                                    <Label Content="{Binding Path=statuCard, UpdateSourceTrigger=PropertyChanged}" Height="100" Width="100"/>
                                 </Grid>
                             </ControlTemplate>
                         </Setter.Value>

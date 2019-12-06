@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2OTxUNa1lE2hMJi57fGE40mCfMGzgFm30SQjnBMkNOU=</dsig:DigestValue>
+        <dsig:DigestValue>to5jFyu/vUi6QeRY870tmgVydjzzKW7dBT8MB2h8ya0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="35049432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="35049944">
       <assemblyIdentity name="MemoryCards" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JdGD3c8juLaNeDNAeiCBRZmsI5Zi68viKZmFOPS7W6U=</dsig:DigestValue>
+        <dsig:DigestValue>PgY0F4QGVjXKf9MjFKdrYeGwU96ML086x7qjOsVG8wM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

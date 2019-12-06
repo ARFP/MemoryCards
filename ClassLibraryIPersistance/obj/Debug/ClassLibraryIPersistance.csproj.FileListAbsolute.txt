@@ -26,7 +26,6 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Debug\Cl
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Debug\ClosedXML.xml
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\bin\Debug\ExcelNumberFormat.xml
-C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.csprojAssemblyReference.cache
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.csproj.CoreCompileInputs.cache
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.csproj.CopyComplete
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.dll
