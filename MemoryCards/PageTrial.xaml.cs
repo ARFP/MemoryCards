@@ -2,12 +2,15 @@
 using ClassLibraryViewModel;
 using LibraryCommands;
 using System;
+using System.Drawing;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Windows.Interop;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace MemoryCards
@@ -40,8 +43,22 @@ namespace MemoryCards
                 {
                     Source = c
                 };
-
                 ControlCard.SetBinding(ButtonControl.dependencyPropertyCard, b);
+
+                //ControlCard.SetResourceReference
+                //(
+                //    ButtonControl.dependencyPropertyCardImage, new ImageBrush
+                //        (
+                //            Imaging.CreateBitmapSourceFromHBitmap
+                //                (
+                //                    SearchResources.ImageValueOf(c.CardImage).GetHbitmap(), 
+                //                    IntPtr.Zero, 
+                //                    Int32Rect.Empty, 
+                //                    BitmapSizeOptions.FromEmptyOptions()
+                //                )
+                //        )
+                //);
+
                 ControlCard.Tag = i;
                 ControlCard.Padding = new Thickness(5);
                 ControlCard.CommandDisplay = new CmdButtonCheck(p => c.CurrentStatus == StatusCard.back, p => CardEventVerrif(c));
@@ -76,19 +93,7 @@ namespace MemoryCards
                     vmc.CurrentStatus = StatusCard.face;
                     if(vMTest.TestName == "Sons")
                     {
-                        ///Method add to MemoryCards => Properties => Resources.resx => Resources.Designer.cs
-                        //internal static System.IO.UnmanagedMemoryStream SoundValueOf(string _soundName)
-                        //{
-                        //    return ResourceManager.GetStream(_soundName, resourceCulture);
-                        //}
-                        //
-                        //internal static System.Drawing.Bitmap ImageValueOf(string _imageName)
-                        //{
-                        //    object obj = ResourceManager.GetObject(_imageName, resourceCulture);
-                        //    return ((System.Drawing.Bitmap)(obj));
-                        //}
-                        ///
-                        player.Stream = Properties.Resources.SoundValueOf(vmc.FaceImage);
+                        player.Stream = SearchResources.SoundValueOf(vmc.FaceImage);
                         player.Play();
                     }
                     if ((firstCard == null))

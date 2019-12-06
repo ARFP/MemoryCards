@@ -20,8 +20,6 @@ namespace ClassLibraryMemento
         private StatusCard currentStatus;
         private string cardImage;
 
-            private Stream sound;
-
         public bool Tested { get => tested; set => tested = value; }
         public StatusCard CurrentStatus{ get => currentStatus; set => currentStatus = value; }
         public string Name { get => name; set => name = value; }
@@ -34,13 +32,13 @@ namespace ClassLibraryMemento
         {
             name = _name;
             faceImage = _image;
-            backImage = String.Concat(Directory.GetCurrentDirectory(), @"\Ressources\Card\wood.png");
-            validateImage = String.Concat(Directory.GetCurrentDirectory(), @"\Ressources\Card\woodCheckBtn.png");
+            backImage = String.Format(@"pack://application:,,,/Resources/wood.png");
+            validateImage = String.Format(@"pack://application:,,,/Resources/woodCheckBtn.png");
             tested = false;
             currentStatus = StatusCard.back;
             pairCard = null;
-            //cardImage = backImage; 
-            cardImage = faceImage;
+            cardImage = backImage; 
+            //cardImage = faceImage;
         }
 
         public Card(Card _card)

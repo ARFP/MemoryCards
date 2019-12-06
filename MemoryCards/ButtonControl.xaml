@@ -7,9 +7,10 @@
              mc:Ignorable="d">
     <UserControl.Resources>
         <BitmapImage x:Key="woodBlack" UriSource="/Images/woodBlack.png"/>
+        <local:StatusToImageConverter x:Key="Conv"/>
     </UserControl.Resources>
-    <Grid x:Name="UserControlCard">
-        <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Command="{Binding Path=commandDisplay}" MinWidth="160" MinHeight="160">
+    <Grid x:Name="UserControlCard" Background="{Binding Path=cardImage}">
+        <Button Command="{Binding Path=commandDisplay}" MinWidth="160" MinHeight="160">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -20,9 +21,9 @@
                                         <Border.BorderBrush>
                                             <ImageBrush ImageSource="{StaticResource woodBlack}"/>
                                         </Border.BorderBrush>
-                                        <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Width="160" Height="160">
+                                        <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="0" Width="160" Height="160">
                                             <Border.Background>
-                                                <ImageBrush ImageSource="{Binding Path=VMCard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
+                                                <ImageBrush ImageSource="{Binding Path=vMcard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
                                             </Border.Background>
                                         </Border>
                                     </Border>

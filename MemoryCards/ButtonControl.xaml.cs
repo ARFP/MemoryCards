@@ -2,6 +2,8 @@
 using ClassLibraryViewModel;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +12,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -40,10 +43,29 @@ namespace MemoryCards
         public static readonly DependencyProperty dependencyPropertyCommandDisplay =
             DependencyProperty.Register("commandDisplay", typeof(ICommand), typeof(ButtonControl));
 
+        public StatusCard StatuCard
+        {
+            get { return (StatusCard)GetValue(dependencyPropertyStatuCard); }
+            set { SetValue(dependencyPropertyStatuCard, value); }
+        }
+
+        public static readonly DependencyProperty dependencyPropertyStatuCard =
+            DependencyProperty.Register("statuCard", typeof(StatusCard), typeof(ButtonControl));
+
+        //public ImageBrush CardImage
+        //{
+        //    get { return (ImageBrush)GetValue(dependencyPropertyCardImage); }
+        //    set { SetValue(dependencyPropertyCardImage, new ImageBrush(Imaging.CreateBitmapSourceFromHBitmap(SearchResources.ImageValueOf(VMCard.CardImage).GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions()))); }
+        //}
+
+        //public static readonly DependencyProperty dependencyPropertyCardImage =
+        //    DependencyProperty.Register("cardImage", typeof(ImageBrush), typeof(ButtonControl));   
+
         public ButtonControl()
         {
             InitializeComponent();
-            UserControlCard.DataContext = this;
+            UserControlCard.DataContext = this;            
+            //UserControlCard.Background = new ImageBrush(Imaging.CreateBitmapSourceFromHBitmap(SearchResources.ImageValueOf("BgOrange").GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions()));          
         }
     }
 }

@@ -887,16 +887,85 @@ namespace MemoryCards.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
-        internal static System.IO.UnmanagedMemoryStream SoundValueOf(string _soundName)
-        {
-            return ResourceManager.GetStream(_soundName, resourceCulture);
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wood {
+            get {
+                object obj = ResourceManager.GetObject("wood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
         }
-
-        internal static System.Drawing.Bitmap ImageValueOf(string _imageName)
-        {
-            object obj = ResourceManager.GetObject(_imageName, resourceCulture);
-            return ((System.Drawing.Bitmap)(obj));
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodBlack {
+            get {
+                object obj = ResourceManager.GetObject("woodBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodBlue {
+            get {
+                object obj = ResourceManager.GetObject("woodBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodCheckBtn {
+            get {
+                object obj = ResourceManager.GetObject("woodCheckBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodGold {
+            get {
+                object obj = ResourceManager.GetObject("woodGold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodGrey {
+            get {
+                object obj = ResourceManager.GetObject("woodGrey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodTitle {
+            get {
+                object obj = ResourceManager.GetObject("woodTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodWhite {
+            get {
+                object obj = ResourceManager.GetObject("woodWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
         }
     }
 }

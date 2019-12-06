@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryMemento.dll" size="5164544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryMemento.dll" size="29696">
       <assemblyIdentity name="ClassLibraryMemento" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aiTbVo722DAKtEPhW+ZGeuJrfaMRWCIRi7o0oDH38VM=</dsig:DigestValue>
+        <dsig:DigestValue>2OTxUNa1lE2hMJi57fGE40mCfMGzgFm30SQjnBMkNOU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="21583832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="35049432">
       <assemblyIdentity name="MemoryCards" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uDlPR3KkE9zFZpqiKV1P8D379ymuONk138HrksJcwUU=</dsig:DigestValue>
+        <dsig:DigestValue>JdGD3c8juLaNeDNAeiCBRZmsI5Zi68viKZmFOPS7W6U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
