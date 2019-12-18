@@ -43,32 +43,6 @@ namespace MemoryCards
         public static readonly DependencyProperty dependencyPropertyCommandDisplay =
             DependencyProperty.Register("commandDisplay", typeof(ICommand), typeof(ButtonControl));
 
-        public StatusCard StatuCard
-        {
-            get { return (StatusCard)GetValue(dependencyPropertyStatuCard); }
-            set { SetValue(dependencyPropertyStatuCard, VMCard.CurrentStatus); }
-        }
-
-        public static readonly DependencyProperty dependencyPropertyStatuCard =
-            DependencyProperty.Register("statuCard", typeof(StatusCard), typeof(ButtonControl));
-
-
-
-
-
-        public ImageBrush CardImage
-        {
-            get { return (ImageBrush)GetValue(dependencyPropertyCardImage); }
-            set { SetValue(dependencyPropertyCardImage, value); }
-        }
-
-        public static readonly DependencyProperty dependencyPropertyCardImage =
-            DependencyProperty.Register("cardImage", typeof(ImageBrush), typeof(ButtonControl));
-
-
-
-
-
         public ButtonControl()
         {
             InitializeComponent();

@@ -28,8 +28,8 @@ namespace MemoryCards
 
         private void Run_Click(object sender, RoutedEventArgs e)
         {
-            User u = new User();
-            this.NavigationService.Navigate(new PageMode(new ClassLibraryViewModel.ViewModelUser(u)));
+            
+            this.NavigationService.Navigate(new PageIdentification());
         }
     }
 }

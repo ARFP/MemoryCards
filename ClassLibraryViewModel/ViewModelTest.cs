@@ -68,9 +68,9 @@ namespace ClassLibraryViewModel
             return test.EndTestVerify();
         }
 
-        public bool Save()
+        public bool Save(string _pathSave)
         {
-            return test.Save();
+            return test.Save(_pathSave);
         }
 
         public void TimerUpdate()

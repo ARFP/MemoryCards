@@ -6,7 +6,6 @@
              xmlns:local="clr-namespace:MemoryCards"
              mc:Ignorable="d">
     <UserControl.Resources>
-        <BitmapImage x:Key="woodBlack" UriSource="/Images/woodBlack.png"/>
         <local:StatusToImageConverter x:Key="Conv"/>
     </UserControl.Resources>
     <Grid x:Name="UserControlCard">
@@ -17,9 +16,11 @@
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type Button}">
                                 <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
-                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Background="#FF5F3A3A">
+                                    <!---->
+                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Background="#FFBDADAD">
+                                        <!---->
                                         <Border.BorderBrush>
-                                            <ImageBrush ImageSource="{StaticResource woodBlack}"/>
+                                            <ImageBrush ImageSource="{DynamicResource woodBlack}"/>
                                         </Border.BorderBrush>
                                         <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="0" Width="160" Height="160">
                                             <Border.Background>
@@ -27,7 +28,7 @@
                                             </Border.Background>
                                         </Border>
                                     </Border>
-                                    <Label Content="{Binding Path=statuCard, UpdateSourceTrigger=PropertyChanged}" Height="100" Width="100"/>
+                                    <Label Content="{Binding Path=vMcard.CurrentStatus, UpdateSourceTrigger=PropertyChanged}" Height="100" Width="100"/>
                                 </Grid>
                             </ControlTemplate>
                         </Setter.Value>

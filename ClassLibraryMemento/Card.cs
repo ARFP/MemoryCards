@@ -47,7 +47,7 @@ namespace ClassLibraryMemento
             faceImage = _card.faceImage;
             backImage = _card.BackImage;
             validateImage = _card.validateImage;
-            tested = false;
+            tested = true;
             currentStatus = StatusCard.back;
             pairCard = null;
             cardImage = _card.cardImage;

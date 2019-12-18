@@ -6,12 +6,8 @@
       xmlns:local="clr-namespace:MemoryCards"
       mc:Ignorable="d"
       Title="PageTrial" ShowsNavigationUI="False" MinWidth="1280" MinHeight="960">
-    <Page.Resources>
-        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
-        <BitmapImage x:Key="woodWhite" UriSource="/Images/woodWhite.png"/>
-    </Page.Resources>
     <Page.Background>
-        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+        <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
     </Page.Background>
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -29,10 +25,10 @@
 
         <ContentControl Grid.Column="1" Grid.Row="1" Style="{DynamicResource CustomBorder}" >
             <StackPanel MinHeight="800" MinWidth="900">
-                <TextBlock x:Name="trialName" Style="{DynamicResource CustomTitle}" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDown="TextBlock_MouseDown"/>
+                <TextBlock x:Name="trialName" Style="{DynamicResource CustomTitle}" HorizontalAlignment="Center" VerticalAlignment="Center"/> <!--MouseDown="TextBlock_MouseDown"-->
                 <Border BorderThickness="0,0,0,4" >
                     <Border.BorderBrush>
-                        <ImageBrush ImageSource="{StaticResource woodWhite}"/>
+                        <ImageBrush ImageSource="{DynamicResource woodWhite}"/>
                     </Border.BorderBrush>
                 </Border>
                 <Grid x:Name="gridCards" Margin="40 30">

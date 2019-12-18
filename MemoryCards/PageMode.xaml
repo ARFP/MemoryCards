@@ -6,11 +6,8 @@
       xmlns:local="clr-namespace:MemoryCards"
       mc:Ignorable="d" 
       Title="PageMode" MinWidth="1280" MinHeight="960">
-    <Page.Resources>
-        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
-    </Page.Resources>
     <Page.Background>
-        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+        <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
     </Page.Background>
     <ContentControl Style="{DynamicResource CustomBorder}" Grid.Row="1" Grid.Column="1" Width="600" Height="600">
         <Grid>

@@ -1,0 +1,100 @@
+﻿<Page x:Class="MemoryCards.PageIdentification"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:MemoryCards" 
+      mc:Ignorable="d" 
+       MinWidth="1280" MinHeight="960"
+      Title="PageIdentification">
+    <Page.Background>
+        <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
+    </Page.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <ContentControl Style="{DynamicResource CustomBorder}" Width="700" Height="475"  Grid.Row="1" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Nom : " FontSize="13" FontWeight="Black" 
+                    FontFamily="{DynamicResource GeneralFont}" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Column="0" Grid.Row="0">
+                    <Label.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="Prénom : " FontSize="13" FontWeight="Black" 
+                    FontFamily="{DynamicResource GeneralFont}" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Column="0" Grid.Row="1">
+                    <Label.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="Genre : " FontSize="13" FontWeight="Black" 
+                    FontFamily="{DynamicResource GeneralFont}" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Column="0" Grid.Row="2">
+                    <Label.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="Age : " FontSize="13" FontWeight="Black" 
+                    FontFamily="{DynamicResource GeneralFont}" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Column="0" Grid.Row="3">
+                    <Label.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="Date de naissance : " FontSize="13" FontWeight="Black" 
+                    FontFamily="{DynamicResource GeneralFont}" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Column="0" Grid.Row="4">
+                    <Label.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </Label.Foreground>
+                </Label>
+
+                <xctk:MaskedTextBox x:Name="TBFirstName" Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0"/>
+
+                <xctk:MaskedTextBox x:Name="TBLastName" Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"/>
+
+                <RadioButton x:Name="RBMan" Content="Homme" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" IsChecked="True">
+                    <RadioButton.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </RadioButton.Foreground>
+                </RadioButton>
+
+                <RadioButton x:Name="RBWoman" Content="Femme" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center">
+                    <RadioButton.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </RadioButton.Foreground>
+                </RadioButton>
+
+                <xctk:MaskedTextBox x:Name="TBAge" Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3"/>
+
+                <xctk:MaskedTextBox x:Name="TBBirthDay" Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4"/>
+                
+                <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Width="175" Height="30" Click="BtnValidateClick"/>
+            </Grid>
+        </ContentControl>
+    </Grid>
+</Page>

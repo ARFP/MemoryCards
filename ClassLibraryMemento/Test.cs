@@ -37,7 +37,7 @@ namespace ClassLibraryMemento
             user = _user;
             iPersistance = new Persistance();
             testName = _testName;
-            trials = new Trials(_user.FirstName + _user.LastName);
+            trials = new Trials();
             numberTrials = _numberTrials;
             timer = _timer;
             timeInProgress = "";
@@ -121,9 +121,9 @@ namespace ClassLibraryMemento
             return Math.Round(averageScore / (double)trials.LTrial.Count, 2);
         }
 
-        public bool Save()
+        public bool Save(string _pathSave)
         {
-            return iPersistance.Write(this, user.FirstName + user.LastName);
+            return iPersistance.Write(this, _pathSave);
         }
         #endregion
         #endregion

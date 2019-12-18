@@ -6,12 +6,8 @@
       xmlns:local="clr-namespace:MemoryCards"
       mc:Ignorable="d"  
       Title="PageData" ShowsNavigationUI="False" MinWidth="1280" MinHeight="960">
-    <Page.Resources>
-        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
-        <BitmapImage x:Key="woodWhite" UriSource="/Images/woodWhite.png"/>
-    </Page.Resources>
     <Page.Background>
-        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+        <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
     </Page.Background>
     <ContentControl Style="{DynamicResource CustomBorder}" Width="900" Height="850"  Foreground="White" FontSize="14">
         
@@ -52,7 +48,7 @@
                 </StackPanel>
                 <Border BorderThickness="1" Margin="0 10" Width="900" >
                     <Border.BorderBrush>
-                        <ImageBrush ImageSource="{StaticResource woodWhite}"/>
+                        <ImageBrush ImageSource="{DynamicResource woodWhite}"/>
                     </Border.BorderBrush>
                 </Border>
             </StackPanel>

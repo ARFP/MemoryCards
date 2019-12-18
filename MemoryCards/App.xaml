@@ -2,8 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:MemoryCards"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              StartupUri="MainWindow.xaml">
-
+    <!--PageIdentification.xaml-->
     <Application.Resources>
         <!-- FONTS -->
 
@@ -59,6 +60,54 @@
             </Style>
             <!--#endregion-->
 
+            <!--#region Border TextBox page identification-->
+            <Style x:Key="CustomTextBoxBorder" TargetType="{x:Type xctk:MaskedTextBox}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type xctk:MaskedTextBox}">
+                            <Grid>
+                                <Border BorderThickness="2" CornerRadius="15" MinWidth="150" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Border.BorderBrush>
+                                        <ImageBrush ImageSource="{DynamicResource woodBlack}"/>
+                                    </Border.BorderBrush>
+                                    <Border.Background>
+                                        <ImageBrush ImageSource="{DynamicResource woodWhite}"/>
+                                    </Border.Background>
+                                    <ContentPresenter Content="{TemplateBinding Text}"/>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <MultiTrigger>
+                        <MultiTrigger.Conditions>
+                            <Condition Property="TextBox.IsFocused" Value="true"/>
+                        </MultiTrigger.Conditions>
+                        <MultiTrigger.Setters>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type xctk:MaskedTextBox}">
+                                        <Grid>
+                                            <Border BorderThickness="2" CornerRadius="15" MinWidth="150" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <Border.BorderBrush>
+                                                    <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                                                </Border.BorderBrush>
+                                                <Border.Background>
+                                                    <ImageBrush ImageSource="{DynamicResource woodGrey}"/>
+                                                </Border.Background>
+                                                <ContentPresenter Content="{TemplateBinding Text}"/>
+                                            </Border>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </MultiTrigger.Setters>
+                    </MultiTrigger>
+                </Style.Triggers>
+            </Style>
+            <!--#endregion-->
+            
             <!--<FontFamily x:Key="Tangerine">pack://application:,,,/fonts/#Tangerine</FontFamily>-->
 
             <!--#region ColorBrush-->
@@ -148,11 +197,11 @@
                 </Style.Triggers>
             </Style>
             <!--#endregion-->
-            <BitmapImage x:Key="woodGold" UriSource="/Images/woodGold.png"/>
-            <BitmapImage x:Key="woodGrey" UriSource="/Images/woodGrey.png"/>
-            <BitmapImage x:Key="woodWhite" UriSource="/Images/woodWhite.png"/>
-            <BitmapImage x:Key="woodBlack" UriSource="/Images/woodBlack.png"/>
+            <BitmapImage x:Key="woodGold" UriSource="pack://application:,,,/Resources/woodGold.png"/>
+            <BitmapImage x:Key="woodGrey" UriSource="pack://application:,,,/Resources/woodGrey.png"/>
+            <BitmapImage x:Key="woodWhite" UriSource="pack://application:,,,/Resources/woodWhite.png"/>
+            <BitmapImage x:Key="woodBlack" UriSource="pack://application:,,,/Resources/woodBlack.png"/>
+            <BitmapImage x:Key="backgroundCardsBlue" UriSource="pack://application:,,,/Resources/backgroundCardsBlue.png"/>
         </ResourceDictionary>
-
     </Application.Resources>
 </Application>

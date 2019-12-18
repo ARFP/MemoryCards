@@ -21,16 +21,6 @@ namespace ClassLibraryMemento
         public int Age { get => age; set => age = value; }
         public DateTime DateOfTheDay { get => dateOfTheDay; set => dateOfTheDay = value; }
 
-        public User()
-        {
-            FirstName = "Ben";
-            LastName = "Gabrant";
-            genre = "COD";
-            Age = 32;
-            dateOfTheDay = DateTime.Now;
-            iPersistance = new Persistance();
-        }
-
         public User(string _FirstName, string _LastName, string _genre, int _Age)
         {
             FirstName = _FirstName;
@@ -38,6 +28,7 @@ namespace ClassLibraryMemento
             genre = _genre;
             Age = _Age;
             dateOfTheDay = DateTime.Now;
+            iPersistance = new Persistance();
         }
 
         public static implicit operator sUser(User _user)
@@ -52,9 +43,9 @@ namespace ClassLibraryMemento
             };
         }
 
-        public bool Save()
+        public bool Save(string _pathSave)
         {
-            return iPersistance.Write(this, FirstName + LastName);
+            return iPersistance.Write(this, _pathSave); //-----
         }
     }
 }

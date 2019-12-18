@@ -433,6 +433,16 @@ namespace MemoryCards.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundCardsBlue {
+            get {
+                object obj = ResourceManager.GetObject("backgroundCardsBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BgBlack {
             get {
                 object obj = ResourceManager.GetObject("BgBlack", resourceCulture);

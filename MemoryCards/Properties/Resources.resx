@@ -394,4 +394,7 @@
   <data name="_946" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\946.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backgroundCardsBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundCardsBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -21,9 +21,9 @@ namespace ClassLibraryViewModel
             }
         }
 
-        public bool Save()
+        public bool Save(string _pathSave)
         {
-            return trials.Save();
+            return trials.Save(_pathSave);
         }
     }
 }

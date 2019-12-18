@@ -9,16 +9,14 @@ namespace ClassLibraryMemento
     public class Trials
     {
         private List<Trial> lTrials;
-        private string pathSave;
         private IPersistanceTrialsScore iPersistance;
 
         public List<Trial> LTrial { get => lTrials; set => lTrials = value; }
 
-        public Trials(string _pathSave)
+        public Trials()
         {
             lTrials = new List<Trial>();
             iPersistance = new Persistance();
-            pathSave = _pathSave;
         }
 
         public static implicit operator sTrialsScore(Trials _trials)
@@ -32,9 +30,9 @@ namespace ClassLibraryMemento
             return ts;
         }
 
-        public bool Save()
+        public bool Save(string _pathSave)
         {
-            return iPersistance.Write(this, pathSave);
+            return iPersistance.Write(this, _pathSave);
         }
     }
 }

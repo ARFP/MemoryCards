@@ -7,11 +7,10 @@
       mc:Ignorable="d" 
       Title="TimerPage" ShowsNavigationUI="False" Loaded="Page_Loaded" MinWidth="1280" MinHeight="960">
     <Page.Resources>
-        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
         <BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
     </Page.Resources>
     <Page.Background>
-        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+        <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
     </Page.Background>
     <Grid>
         <Grid.ColumnDefinitions>

@@ -29,6 +29,7 @@ namespace MemoryCards
         bool interrup;
         private System.Media.SoundPlayer player;
 
+
         public PageTrial(ViewModelTest _test)
         {
             InitializeComponent();
@@ -44,12 +45,6 @@ namespace MemoryCards
                     Source = c,                   
                 };
                 ControlCard.SetBinding(ButtonControl.dependencyPropertyCard, b);
-
-                Binding b3 = new Binding
-                {                   
-                    Source = c.CurrentStatus,
-                };
-                ControlCard.SetBinding(ButtonControl.dependencyPropertyStatuCard, b3);
 
                 //Binding b2 = new Binding
                 //{
@@ -91,6 +86,7 @@ namespace MemoryCards
             this.NavigationService.Navigate(new TimerPage(vMTest));
         }
 
+
         private void CardEventVerrif(object sender)
         {
             if (sender is ButtonControl se)
@@ -100,7 +96,6 @@ namespace MemoryCards
                     if (!interrup)
                     {
                         vmc.CurrentStatus = StatusCard.face;
-                        se.StatuCard = vmc.CurrentStatus;
                         if (vMTest.TestName == "Sons")
                         {
                             player.Stream = SearchResources.SoundValueOf(vmc.FaceImage);
@@ -127,10 +122,10 @@ namespace MemoryCards
                                     {
                                         //Classe AllEtalonnage Crécation après validation ref user création page user champ
                                         vMTest.VMEtalonnages.Load(vMTest.VMUser.Age);
-                                        vMTest.VMEtalonnages.Save(vMTest.VMUser.FirstName + vMTest.VMUser.LastName);
-                                        vMTest.Save();
-                                        vMTest.VMTrials.Save();
-                                        vMTest.VMUser.Save();
+                                        vMTest.VMEtalonnages.Save(vMTest.VMUser.FirstName + "_" + vMTest.VMUser.LastName + "_" + vMTest.TestName);
+                                        vMTest.Save(vMTest.VMUser.FirstName + "_" + vMTest.VMUser.LastName + "_" + vMTest.TestName);
+                                        vMTest.VMTrials.Save(vMTest.VMUser.FirstName + "_" + vMTest.VMUser.LastName + "_" + vMTest.TestName);
+                                        vMTest.VMUser.Save(vMTest.VMUser.FirstName + "_" + vMTest.VMUser.LastName + "_" + vMTest.TestName);
                                         NavigationService.Navigate(new PageCongratulation(vMTest));
                                     }
                                     else
@@ -167,6 +162,7 @@ namespace MemoryCards
             }
         }
 
+
         private void Verrify(ViewModelCard vmc)
         {
             //Voir méthode affection EtatImage (Back Found Face) => CardImage par rapport a son etat?
@@ -201,6 +197,10 @@ namespace MemoryCards
             interrup = false;
         }
 
+
+
+
+        //For Test
         private void TextBlock_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (vMTest.TrialRun < vMTest.NumberTrials - 1)

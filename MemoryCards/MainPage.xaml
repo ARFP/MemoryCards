@@ -8,18 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage" ShowsNavigationUI="False"
       MouseDown="Run_Click" MinWidth="1280" MinHeight="960">
-    <Page.Resources>
-        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
-        <BitmapImage x:Key="woodGold" UriSource="/Images/woodGold.png"/>
-    </Page.Resources>
     <Page.Background>
-
-        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
-        <!--C:/Users/CRM/Documents/GitHub/WpfTTS/MemoryCards/Images/backgroundCartesBlue.png-->
-
-        <!--<Grid >
-            <Image Source="{StaticResource lafille}"  HorizontalAlignment="Left" Height="114" Margin="250,173,0,0" VerticalAlignment="Top" Width="314"/>
-        </Grid>-->
+        <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
     </Page.Background>
     <Grid>
         <Grid.RowDefinitions>
@@ -33,7 +23,7 @@
                     FontFamily="{DynamicResource GeneralFont}" TextAlignment="Center" 
                     HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="{x:Null}">
                     <TextBlock.Foreground>
-                        <ImageBrush ImageSource="{StaticResource woodGold}"/>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                     </TextBlock.Foreground>
                 </TextBlock>
             </Grid>

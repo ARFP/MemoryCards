@@ -6,11 +6,8 @@
       xmlns:local="clr-namespace:MemoryCards"
       mc:Ignorable="d" 
       Title="PageRuleTrial" ShowsNavigationUI="False" MinWidth="1280" MinHeight="960">
-    <Page.Resources>
-        <BitmapImage x:Key="backgroundCartesBlue" UriSource="/Images/backgroundCartesBlue.png"/>
-    </Page.Resources>
     <Page.Background>
-        <ImageBrush ImageSource="{StaticResource backgroundCartesBlue}"/>
+        <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
     </Page.Background>
     <Grid>
         <Grid.ColumnDefinitions>
