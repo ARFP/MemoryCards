@@ -152,8 +152,8 @@ namespace ClassLibraryPersistance
                 sheet.Cell("B3").Value = _user.LastName + " " + _user.FirstName;
                 sheet.Cell("B4").Value = _user.Genre;
                 sheet.Cell("B5").Value = _user.Age;
-                sheet.Cell("B6").Value = _user.DateOfTheDay.Date;
-                sheet.Cell("B7").Value = _user.DateOfTheDay.Hour + " : " + _user.DateOfTheDay.Minute + " : " + _user.DateOfTheDay.Second;        
+                sheet.Cell("B6").Value = _user.DateOfTheDay.ToString("dd/MM/yyyy");
+                sheet.Cell("B7").Value = _user.DateOfTheDay.ToString("HH:mm:ss");       
                 return ConnectionResult.Save(_pathSave);
             }
             catch(Exception e)

@@ -56,7 +56,7 @@ namespace ClassLibraryViewModel
                 default:
                     break;
             }
-            vmUser = new ViewModelUser(test.User);
+            vmUser = _user;
             vmTrials = new ViewModelTrials(test.Trials);
             Etalonnages e = new Etalonnages();
             //e.Load(vmUser.Age);

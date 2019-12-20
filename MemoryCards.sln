@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryPersistance", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryIPersistance", "ClassLibraryIPersistance\ClassLibraryIPersistance.csproj", "{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryControl", "ClassLibraryControl\ClassLibraryControl.csproj", "{96E449FD-E454-403A-848D-109181210BE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B3E542D-49F4-4CA9-8AB2-CEDECFAEFA89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E449FD-E454-403A-848D-109181210BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E449FD-E454-403A-848D-109181210BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E449FD-E454-403A-848D-109181210BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E449FD-E454-403A-848D-109181210BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

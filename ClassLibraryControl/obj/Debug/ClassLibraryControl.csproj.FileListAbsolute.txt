@@ -1,0 +1,6 @@
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryControl\bin\Debug\ClassLibraryControl.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryControl\bin\Debug\ClassLibraryControl.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryControl\obj\Debug\ClassLibraryControl.csproj.CoreCompileInputs.cache
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryControl\obj\Debug\ClassLibraryControl.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryControl\obj\Debug\ClassLibraryControl.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryControl\obj\Debug\ClassLibraryControl.csprojAssemblyReference.cache

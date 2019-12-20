@@ -12,22 +12,18 @@ namespace ClassLibraryMemento
         private string lastName;
         private string genre;
         private int age;
-        private DateTime dateOfTheDay;
+        private DateTime currentDate;
         private IPersistanceUser iPersistance;
 
         public string FirstName { get => firstName; set => firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
         public string Genre { get => genre; set => genre = value; }
         public int Age { get => age; set => age = value; }
-        public DateTime DateOfTheDay { get => dateOfTheDay; set => dateOfTheDay = value; }
+        public DateTime CurrentDate { get => currentDate; set => currentDate = value; }
 
-        public User(string _FirstName, string _LastName, string _genre, int _Age)
+        public User(DateTime _currentDate)
         {
-            FirstName = _FirstName;
-            LastName = _LastName;
-            genre = _genre;
-            Age = _Age;
-            dateOfTheDay = DateTime.Now;
+            currentDate = _currentDate;
             iPersistance = new Persistance();
         }
 
@@ -39,7 +35,7 @@ namespace ClassLibraryMemento
                 LastName = _user.LastName,
                 Genre = _user.Genre,
                 Age = _user.Age,
-                DateOfTheDay = _user.DateOfTheDay
+                DateOfTheDay = _user.CurrentDate
             };
         }
 

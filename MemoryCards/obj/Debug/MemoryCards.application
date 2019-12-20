@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="MemoryCards.exe.manifest" size="88410">
+    <dependentAssembly dependencyType="install" codebase="MemoryCards.exe.manifest" size="89065">
       <assemblyIdentity name="MemoryCards.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>T35HISbx2riAq04046YZEV34oB6PHJ/aSIYnMQXAMdU=</dsig:DigestValue>
+        <dsig:DigestValue>zPp4CKmYAGg0knehIBK1ECfZKtNwle4m+Uy82mEtBuo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

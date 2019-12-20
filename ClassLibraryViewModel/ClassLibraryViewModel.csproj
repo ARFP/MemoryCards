@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryControl\ClassLibraryControl.csproj" />
     <ProjectReference Include="..\ClassLibraryMemento\ClassLibraryMemento.csproj" />
   </ItemGroup>
 

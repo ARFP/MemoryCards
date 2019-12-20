@@ -32,7 +32,7 @@
                 </Grid.RowDefinitions>
                 <TextBlock Style="{DynamicResource CustomTitle}" Grid.Row="0" Text="Compteur" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" Background="{x:Null}"/>
                 <TextBlock Style="{DynamicResource CustomText}" Grid.Row="1" Text="{Binding Path=TimeInProgress}" x:Name="TimerTB" Padding="0,20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Background="{x:Null}"/>
-                <Button x:Name="btn" Style="{DynamicResource CustomButton}" Content="Continuer" Margin="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="35" Click="Btn_Click"  Visibility="{Binding Path=EndTimer, Converter={StaticResource BoolToVisConverter} }"/>
+                <Button x:Name="btn" Style="{DynamicResource CustomButton}" Content="Continuer" Margin="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="35" Click="Btn_Click"  Visibility="{Binding Path=EndTimer, Converter={StaticResource BoolToVisConverter} }" TabIndex="50"/>
             </Grid>
         </ContentControl>
     </Grid>

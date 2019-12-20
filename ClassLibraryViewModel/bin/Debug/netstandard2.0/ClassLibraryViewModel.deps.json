@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "ClassLibraryViewModel/1.0.0": {
         "dependencies": {
+          "ClassLibraryControl": "1.0.0",
           "ClassLibraryMemento": "1.0.0",
           "ClosedXML": "0.94.2",
           "NETStandard.Library": "2.0.3"
@@ -1072,6 +1073,11 @@
           }
         }
       },
+      "ClassLibraryControl/1.0.0": {
+        "runtime": {
+          "ClassLibraryControl.dll": {}
+        }
+      },
       "ClassLibraryIPersistance/1.0.0": {
         "runtime": {
           "ClassLibraryIPersistance.dll": {}
@@ -1863,6 +1869,11 @@
       "sha512": "sha512-GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "path": "system.xml.readerwriter/4.3.0",
       "hashPath": "system.xml.readerwriter.4.3.0.nupkg.sha512"
+    },
+    "ClassLibraryControl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ClassLibraryIPersistance/1.0.0": {
       "type": "project",

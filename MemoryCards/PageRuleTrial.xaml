@@ -20,7 +20,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <ContentControl Grid.Row="1" Grid.Column="1" Style="{DynamicResource CustomBorder}">
+        <ContentControl Grid.Row="1" Grid.Column="1" Style="{DynamicResource CustomBorder}" Focusable="False" IsTabStop="False">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="70"/>
@@ -32,7 +32,7 @@
 Toutes les cartes sont étalées faces cachées sur le plateau. Le joueur retourne deux cartes. Si c'est la même image ou le même son qui apparaît sur les deux cartes, le joueur valide les cartes et en retourne à nouveau deux.
 Si les deux cartes ne vont pas ensemble, les cartes se remettent face cachée à l'endroit exact où elles étaient, une fois toutes les cartes trouvées l'essai est validé, quand le joueur valide ses 6 essais la partie est terminée. Le 6ème essai laisse visible toutes les cartes trouvées.
                 </TextBlock>
-                <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Row="2" Click="Validate_Click" Width="250" Height="35" />
+                <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Row="2" Click="Validate_Click" Width="250" Height="35" TabIndex="50" />
             </Grid>
         </ContentControl>
     </Grid>

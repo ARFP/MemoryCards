@@ -258,6 +258,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryControl\ClassLibraryControl.csproj">
+      <Project>{96E449FD-E454-403A-848D-109181210BE2}</Project>
+      <Name>ClassLibraryControl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassLibraryMemento\ClassLibraryMemento.csproj">
       <Project>{AB1FE1B3-C596-4CDE-8A97-65CBCA5FF662}</Project>
       <Name>ClassLibraryMemento</Name>

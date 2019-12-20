@@ -637,3 +637,5 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\ro\Xceed.Wpf.Av
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\ClassLibraryControl.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\MemoryCards\bin\Debug\ClassLibraryControl.pdb

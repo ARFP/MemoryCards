@@ -30,3 +30,4 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\Cl
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.csproj.CopyComplete
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryIPersistance\obj\Debug\ClassLibraryIPersistance.csprojAssemblyReference.cache

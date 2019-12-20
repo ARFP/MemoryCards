@@ -63,3 +63,4 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\LibraryCommands\obj\Debug\netstandard
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\LibraryCommands\obj\Debug\netstandard2.0\LibraryCommands.csproj.CopyComplete
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\LibraryCommands\obj\Debug\netstandard2.0\LibraryCommands.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\LibraryCommands\obj\Debug\netstandard2.0\LibraryCommands.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\LibraryCommands\obj\Debug\netstandard2.0\LibraryCommands.csprojAssemblyReference.cache

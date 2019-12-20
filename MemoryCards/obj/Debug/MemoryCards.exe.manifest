@@ -42,6 +42,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryControl.dll" size="5120">
+      <assemblyIdentity name="ClassLibraryControl" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mm/daWveVXiIaEtjn3H4YHri1O/NLJjt0ufSwMBarCQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryIPersistance.dll" size="8704">
       <assemblyIdentity name="ClassLibraryIPersistance" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -61,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OKkz5QlnOzh8HbN757S+/16i0REs4cwIXpSo9yuESJM=</dsig:DigestValue>
+        <dsig:DigestValue>ho0ksdNJteBAzu42nHHgUul9ZEGj6NpKLJHjHp+WhVk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sizqruDU+/pfhu3f3bBkIx8wJXjIAK6trM/YilMvgT4=</dsig:DigestValue>
+        <dsig:DigestValue>KehrpGEh7UCnDwTWcj0BXPEGiP2sTXp5xJRKVT9BaOE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryViewModel.dll" size="15872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryViewModel.dll" size="17920">
       <assemblyIdentity name="ClassLibraryViewModel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yLjCuUbQxRqGiMtGeWOr04RZsW7O2ha9cVqi0AZb030=</dsig:DigestValue>
+        <dsig:DigestValue>CIzJz5PpZ9aqbU1d9yJqrX3Od3etk6fcggaBJoc6iqk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="31922648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="31924184">
       <assemblyIdentity name="MemoryCards" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>v1KYdf1zIMyJIzIrdVOvtpq85fkxj9kIJaihx2+baQM=</dsig:DigestValue>
+        <dsig:DigestValue>BCWdg6TJyArtMj7DL/V7cUD7L6rwTrNoSQzV7JCw7vs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

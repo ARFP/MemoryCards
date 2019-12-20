@@ -4,14 +4,38 @@
              xmlns:local="clr-namespace:MemoryCards"
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              StartupUri="MainWindow.xaml">
-    <!--PageIdentification.xaml-->
     <Application.Resources>
-        <!-- FONTS -->
-
         <ResourceDictionary>
-
+        <!--#region FontFamily-->
             <FontFamily x:Key="GeneralFont">Times New Roman</FontFamily>
-
+        <!--#endregion-->      
+        
+        <!--#region BitmapImage-->
+            <BitmapImage x:Key="woodGold" UriSource="pack://application:,,,/Resources/woodGold.png"/>
+            <BitmapImage x:Key="woodGrey" UriSource="pack://application:,,,/Resources/woodGrey.png"/>
+            <BitmapImage x:Key="woodWhite" UriSource="pack://application:,,,/Resources/woodWhite.png"/>
+            <BitmapImage x:Key="woodBlack" UriSource="pack://application:,,,/Resources/woodBlack.png"/>
+            <BitmapImage x:Key="backgroundCardsBlue" UriSource="pack://application:,,,/Resources/backgroundCardsBlue.png"/>
+        <!--#endregion-->
+  
+        <!--#region ColorBrush-->
+            <!-- GENERAL COLORS SOLID BRUSH PALETE-->
+            <SolidColorBrush x:Key="ColShadow" Color="#2A3132"/>
+            <SolidColorBrush x:Key="ColLightBlue" Color="#90AFC5"/>
+            <SolidColorBrush x:Key="ColDarkBlue" Color="#336B87"/>
+            <SolidColorBrush x:Key="ColBrown" Color="#763626"/>
+            <SolidColorBrush x:Key="ColWhite" Color="#FFF"/>
+            <!-- GENERAL COLORS FOR GRADIENTBRUSH-->
+            <Color x:Key="RadColShadow" >#FF2A3132</Color>
+            <Color x:Key="RadColLightBlue" >#FF90AFC5</Color>
+            <Color x:Key="RadColDarkBlue" >#FF336B87</Color>
+            <Color x:Key="RadColBrown" >#FF763626</Color>
+            <Color x:Key="RadColWhite" >#FFFF</Color>
+            <Color x:Key="RadColWhiteDim" >#4FFF</Color>
+        <!--#endregion-->
+            
+        <!--#region Style TextBlock-->   
+            <!--#region text-->
             <Style x:Key="CustomText" TargetType="TextBlock">
                 <Setter Property="FontFamily" Value="{DynamicResource GeneralFont}"/>
                 <Setter Property="FontSize" Value="14"/>
@@ -21,7 +45,8 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-
+            <!--#endregion-->
+            <!--#region title-->
             <Style x:Key="CustomTitle" TargetType="TextBlock">
                 <Setter Property="FontFamily" Value="{DynamicResource GeneralFont}"/>
                 <Setter Property="FontWeight" Value="Bold"/>
@@ -32,8 +57,10 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+            <!--#endregion-->
+        <!--#endregion-->
 
-            <!--#region Border Style-->
+        <!--#region Border Style-->
             <Style x:Key="CustomBorder" TargetType="{x:Type ContentControl}">
                 <Setter Property="Template">
                     <Setter.Value>
@@ -58,9 +85,9 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            <!--#endregion-->
+        <!--#endregion-->
 
-            <!--#region Border TextBox page identification-->
+        <!--#region Style TextBox-->
             <Style x:Key="CustomTextBoxBorder" TargetType="{x:Type xctk:MaskedTextBox}">
                 <Setter Property="Template">
                     <Setter.Value>
@@ -94,7 +121,7 @@
                                                     <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                                                 </Border.BorderBrush>
                                                 <Border.Background>
-                                                    <ImageBrush ImageSource="{DynamicResource woodGrey}"/>
+                                                    <ImageBrush ImageSource="{DynamicResource woodWhite}"/>
                                                 </Border.Background>
                                                 <ContentPresenter Content="{TemplateBinding Text}"/>
                                             </Border>
@@ -106,28 +133,9 @@
                     </MultiTrigger>
                 </Style.Triggers>
             </Style>
-            <!--#endregion-->
-            
-            <!--<FontFamily x:Key="Tangerine">pack://application:,,,/fonts/#Tangerine</FontFamily>-->
+        <!--#endregion-->
 
-            <!--#region ColorBrush-->
-            <!-- GENERAL COLORS SOLID BRUSH PALETE-->
-            <SolidColorBrush x:Key="ColShadow" Color="#2A3132"/>
-            <SolidColorBrush x:Key="ColLightBlue" Color="#90AFC5"/>
-            <SolidColorBrush x:Key="ColDarkBlue" Color="#336B87"/>
-            <SolidColorBrush x:Key="ColBrown" Color="#763626"/>
-            <SolidColorBrush x:Key="ColWhite" Color="#FFF"/>
-            <!-- GENERAL COLORS FOR GRADIENTBRUSH-->
-            <Color x:Key="RadColShadow" >#FF2A3132</Color>
-            <Color x:Key="RadColLightBlue" >#FF90AFC5</Color>
-            <Color x:Key="RadColDarkBlue" >#FF336B87</Color>
-            <Color x:Key="RadColBrown" >#FF763626</Color>
-            <Color x:Key="RadColWhite" >#FFFF</Color>
-            <Color x:Key="RadColWhiteDim" >#4FFF</Color>
-            <!--#endregion-->
-
-            <!--#region Button style-->
-            <!--Style for button-->
+        <!--#region Style Button-->
             <Style x:Key="CustomButton" TargetType="{x:Type Button}">
                 <!--Template relation with composent which calls this style-->
                 <Setter Property="Template">
@@ -196,12 +204,7 @@
                     </MultiTrigger>
                 </Style.Triggers>
             </Style>
-            <!--#endregion-->
-            <BitmapImage x:Key="woodGold" UriSource="pack://application:,,,/Resources/woodGold.png"/>
-            <BitmapImage x:Key="woodGrey" UriSource="pack://application:,,,/Resources/woodGrey.png"/>
-            <BitmapImage x:Key="woodWhite" UriSource="pack://application:,,,/Resources/woodWhite.png"/>
-            <BitmapImage x:Key="woodBlack" UriSource="pack://application:,,,/Resources/woodBlack.png"/>
-            <BitmapImage x:Key="backgroundCardsBlue" UriSource="pack://application:,,,/Resources/backgroundCardsBlue.png"/>
+        <!--#endregion-->                             
         </ResourceDictionary>
     </Application.Resources>
 </Application>

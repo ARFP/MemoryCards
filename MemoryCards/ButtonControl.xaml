@@ -5,9 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MemoryCards"
              mc:Ignorable="d">
-    <UserControl.Resources>
-        <local:StatusToImageConverter x:Key="Conv"/>
-    </UserControl.Resources>
     <Grid x:Name="UserControlCard">
         <Button Command="{Binding Path=commandDisplay}" MinWidth="160" MinHeight="160">
             <Button.Style>
@@ -19,20 +16,48 @@
                                     <!---->
                                     <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Background="#FFBDADAD">
                                         <!---->
-                                        <Border.BorderBrush>
-                                            <ImageBrush ImageSource="{DynamicResource woodBlack}"/>
-                                        </Border.BorderBrush>
-                                        <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="0" Width="160" Height="160">
-                                            <Border.Background>
-                                                <ImageBrush ImageSource="{Binding Path=vMcard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
-                                            </Border.Background>
-                                        </Border>
+                                    <Border.BorderBrush>
+                                        <ImageBrush ImageSource="{DynamicResource woodBlack}"/>
+                                    </Border.BorderBrush>
+                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="18" BorderThickness="0" Width="160" Height="160">
+                                        <Border.Background>
+                                            <ImageBrush ImageSource="{Binding Path=vMcard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
+                                        </Border.Background>
                                     </Border>
-                                    <Label Content="{Binding Path=vMcard.CurrentStatus, UpdateSourceTrigger=PropertyChanged}" Height="100" Width="100"/>
+                                    </Border>
                                 </Grid>
                             </ControlTemplate>
                         </Setter.Value>
                     </Setter>
+                    <!--<Style.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="Button.IsFocused" Value="true"/>
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.Setters>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                                                --><!----><!--
+                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Background="#FFBDADAD">
+                                        --><!----><!--
+                                                <Border.BorderBrush>
+                                                    <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                                                </Border.BorderBrush>
+                                                <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="0" Width="160" Height="160">
+                                                    <Border.Background>
+                                                        <ImageBrush ImageSource="{Binding Path=vMcard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
+                                                    </Border.Background>
+                                                </Border>
+                                                </Border>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </MultiTrigger.Setters>
+                        </MultiTrigger>
+                    </Style.Triggers>-->
                 </Style>
             </Button.Style>
         </Button>

@@ -46,8 +46,7 @@ namespace MemoryCards
         public ButtonControl()
         {
             InitializeComponent();
-            UserControlCard.DataContext = this;
-            //UserControlCard.Background = new ImageBrush(Imaging.CreateBitmapSourceFromHBitmap(SearchResources.ImageValueOf("BgOrange").GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions()));          
+            UserControlCard.DataContext = this;        
         }
     }
 }

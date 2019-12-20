@@ -1,4 +1,5 @@
-﻿using ClassLibraryMemento;
+﻿using ClassLibraryControl;
+using ClassLibraryMemento;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,37 +23,34 @@ namespace MemoryCards
     /// </summary>
     public partial class PageIdentification : Page
     {
+        private ClassLibraryViewModel.ViewModelUser vmUser;
+
         public PageIdentification()
         {
             InitializeComponent();
+            vmUser = new ClassLibraryViewModel.ViewModelUser(DateTime.Now);
+            MTBCurrentDate.Text = vmUser.CurrentDate.ToString("dd/MM/yyyy HH:mm:ss");
+            DataContext = vmUser;
+            RBMan.IsChecked = true;
+            
         }
 
         public void BtnValidateClick(object sender, RoutedEventArgs e)
         {
-            bool error = false;
-            string genre = string.Empty;
-            if (RBMan.IsChecked == true)
+            if(vmUser._validationErrors.Count == 0)
             {
-                genre = "Homme";
+                this.NavigationService.Navigate(new PageMode(vmUser));
             }
-            else if (RBWoman.IsChecked == true)
-            {
-                genre = "Femme";
-            }
-            else
-            {
-                error = true;
-            }
+        }
 
-            var a = TBFirstName.Text;
-            //string b = TBLastName.Text;
-            //int c = int.Parse(TBAge.Text);
+        private void RBMan_Checked(object sender, RoutedEventArgs e)
+        {
+            vmUser.Genre = (sender as RadioButton).Content.ToString();
+        }
 
-            if (!error)
-            {
-                User u = new User(TBFirstName.Text, TBLastName.Text, genre, int.Parse(TBAge.Text));
-                this.NavigationService.Navigate(new PageMode(new ClassLibraryViewModel.ViewModelUser(u)));
-            }
+        private void RBWoman_Checked(object sender, RoutedEventArgs e)
+        {
+            vmUser.Genre = (sender as RadioButton).Content.ToString();
         }
     }
 }

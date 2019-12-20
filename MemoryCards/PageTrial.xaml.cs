@@ -64,6 +64,7 @@ namespace MemoryCards
                 ControlCard.Tag = i;
                 ControlCard.Padding = new Thickness(5);
                 ControlCard.CommandDisplay = new CmdButtonCheck(p => c.CurrentStatus == StatusCard.back, p => CardEventVerrif(ControlCard));
+                ControlCard.TabIndex = 10 + i;
                 gridCards.Children.Add(ControlCard);
                 Grid.SetRow(ControlCard, row);
                 Grid.SetColumn(ControlCard, column);
@@ -121,7 +122,7 @@ namespace MemoryCards
                                     if (vMTest.TestVerify())
                                     {
                                         //Classe AllEtalonnage Crécation après validation ref user création page user champ
-                                        vMTest.VMEtalonnages.Load(vMTest.VMUser.Age);
+                                        vMTest.VMEtalonnages.Load(int.Parse(vMTest.VMUser.Age));
                                         vMTest.VMEtalonnages.Save(vMTest.VMUser.FirstName + "_" + vMTest.VMUser.LastName + "_" + vMTest.TestName);
                                         vMTest.Save(vMTest.VMUser.FirstName + "_" + vMTest.VMUser.LastName + "_" + vMTest.TestName);
                                         vMTest.VMTrials.Save(vMTest.VMUser.FirstName + "_" + vMTest.VMUser.LastName + "_" + vMTest.TestName);

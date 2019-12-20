@@ -17,7 +17,7 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <ContentControl Style="{DynamicResource CustomBorder}" Width="700" Height="475"  Grid.Row="1" Grid.Column="1">
+        <ContentControl Style="{DynamicResource CustomBorder}" Width="700" Height="475"  Grid.Row="1" Grid.Column="1" IsTabStop="False" Focusable="False">
             <Grid>
                 <TextBlock Text="Memory Cards" FontSize="72" FontWeight="Black" 
                     FontFamily="{DynamicResource GeneralFont}" TextAlignment="Center" 

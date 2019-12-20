@@ -1567,6 +1567,15 @@
           "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {}
         }
       },
+      "ClassLibraryControl/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ClassLibraryControl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibraryControl.dll": {}
+        }
+      },
       "ClassLibraryIPersistance/1.0.0": {
         "type": "project",
         "compile": {
@@ -5428,6 +5437,11 @@
         "system.xml.readerwriter.nuspec"
       ]
     },
+    "ClassLibraryControl/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibraryControl/ClassLibraryControl.csproj",
+      "msbuildProject": "../ClassLibraryControl/ClassLibraryControl.csproj"
+    },
     "ClassLibraryIPersistance/1.0.0": {
       "type": "project",
       "path": "../ClassLibraryIPersistance/ClassLibraryIPersistance.csproj",
@@ -5451,6 +5465,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "ClassLibraryControl >= 1.0.0",
       "ClassLibraryMemento >= 1.0.0",
       "ClosedXML >= 0.94.2",
       "NETStandard.Library >= 2.0.3"
@@ -5486,6 +5501,9 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+            "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryControl\\ClassLibraryControl.csproj": {
+              "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryControl\\ClassLibraryControl.csproj"
+            },
             "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
               "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
             }

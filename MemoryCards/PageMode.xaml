@@ -9,7 +9,7 @@
     <Page.Background>
         <ImageBrush ImageSource="{DynamicResource backgroundCardsBlue}"/>
     </Page.Background>
-    <ContentControl Style="{DynamicResource CustomBorder}" Grid.Row="1" Grid.Column="1" Width="600" Height="600">
+    <ContentControl Style="{DynamicResource CustomBorder}" Grid.Row="1" Grid.Column="1" Width="600" Height="600" Focusable="False" IsTabStop="False">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -22,13 +22,13 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Style="{DynamicResource CustomButton}" Content="Images" Margin="20" Grid.Row="2" Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="images"/>
-            <Button Style="{DynamicResource CustomButton}" Content="Couleurs" Grid.ColumnSpan="2" Margin="20" Grid.Row="1" Grid.Column="0" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="colors"/>
-            <Button Style="{DynamicResource CustomButton}" Content="Mots" Margin="20" Grid.Row="2" Grid.Column="0" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="words"/>
-            <Button Style="{DynamicResource CustomButton}" Content="Abstrait" Grid.ColumnSpan="2" Margin="20" Grid.Row="1" Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="abstract"/>
-            <Button Style="{DynamicResource CustomButton}" Content="Sons" Grid.ColumnSpan="2" Margin="20" Grid.Row="3" Grid.Column="0" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="sounds"/>
-            <Button Style="{DynamicResource CustomButton}" Content="Nombres" Grid.ColumnSpan="2" Margin="20" Grid.Row="3" Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="numbers"/>
-            <Button Style="{DynamicResource CustomButton}" Content="Chiffres" Margin="20" Grid.Row="2" Grid.Column="3" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="digits"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Images" Margin="20" Grid.Row="2" Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="images" TabIndex="10"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Couleurs" Grid.ColumnSpan="2" Margin="20" Grid.Row="1" Grid.Column="0" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="colors" TabIndex="11"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Mots" Margin="20" Grid.Row="2" Grid.Column="0" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="words" TabIndex="16"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Abstrait" Grid.ColumnSpan="2" Margin="20" Grid.Row="1" Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="abstract" TabIndex="12"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Sons" Grid.ColumnSpan="2" Margin="20" Grid.Row="3" Grid.Column="0" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="sounds" TabIndex="15"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Nombres" Grid.ColumnSpan="2" Margin="20" Grid.Row="3" Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="numbers" TabIndex="14"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Chiffres" Margin="20" Grid.Row="2" Grid.Column="3" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" Height="125" Tag="digits" TabIndex="13"/>
         </Grid>
     </ContentControl>
 </Page>

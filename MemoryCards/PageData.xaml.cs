@@ -30,6 +30,9 @@ namespace MemoryCards
             ResumeEtalonnagesAllAge rea = new ResumeEtalonnagesAllAge();
             rea.Load();
             allEtalonnage.DataContext = rea;
+
+            TBTime.Text = _test.VMUser.CurrentDate.ToString("HH:mm:ss");
+            TBDate.Text = _test.VMUser.CurrentDate.ToString("dd/MM/yyyy");
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {

@@ -232,3 +232,5 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netst
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netstandard2.0\ClassLibraryViewModel.csproj.CopyComplete
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netstandard2.0\ClassLibraryViewModel.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netstandard2.0\ClassLibraryViewModel.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryControl.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryControl.pdb
