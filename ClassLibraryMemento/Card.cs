@@ -38,7 +38,8 @@ namespace ClassLibraryMemento
             currentStatus = StatusCard.back;
             pairCard = null;
             cardImage = backImage; 
-            //cardImage = faceImage;
+            //Debug mode
+            //cardImage = faceImage; 
         }
 
         public Card(Card _card)

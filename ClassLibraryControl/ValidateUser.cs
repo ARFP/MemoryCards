@@ -14,9 +14,9 @@ namespace ClassLibraryControl
         {
             _validationErrors = new List<string>();
 
-            if (!Regex.IsMatch(_name, @"^[A-Z][a-z -]*$"))
+            if (!Regex.IsMatch(_name, @"^[A-Za-z][A-Za-z -]*$"))
             {
-                _validationErrors.Add("Doit commencer par une majuscule et comporter des lettres, espace, ou tiret(-)");
+                _validationErrors.Add("Doit comporter des lettres, espace, ou tiret (-)");
             }
             if(string.IsNullOrEmpty(_name))
             {
@@ -48,7 +48,7 @@ namespace ClassLibraryControl
             {
                 if(i < 18)
                 {
-                    _validationErrors.Add("La valuer doit être supérieur a 17");
+                    _validationErrors.Add("La valeur doit être supérieur a 17");
                 }
             }
 

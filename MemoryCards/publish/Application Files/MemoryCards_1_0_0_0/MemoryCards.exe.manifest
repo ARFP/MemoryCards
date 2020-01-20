@@ -42,6 +42,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryControl.dll" size="5120">
+      <assemblyIdentity name="ClassLibraryControl" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>x4hrz+ezk98qWONOkI6XqFXvXnI/6iIUPfbot5FkWsA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryIPersistance.dll" size="8704">
       <assemblyIdentity name="ClassLibraryIPersistance" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -54,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryMemento.dll" size="29184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryMemento.dll" size="29696">
       <assemblyIdentity name="ClassLibraryMemento" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>io0e885TO+h4h1Aafpu3okKSeMPITPosRjkCoxkXqlo=</dsig:DigestValue>
+        <dsig:DigestValue>3XQPrJ/d9e1bsduAiqGrVXl2ZTZlZz+AZGlHztjty7U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sizqruDU+/pfhu3f3bBkIx8wJXjIAK6trM/YilMvgT4=</dsig:DigestValue>
+        <dsig:DigestValue>KehrpGEh7UCnDwTWcj0BXPEGiP2sTXp5xJRKVT9BaOE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryViewModel.dll" size="15872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryViewModel.dll" size="17920">
       <assemblyIdentity name="ClassLibraryViewModel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DqYh9tyySmgz1cY/OPp4njY1O9hsGUv/Ty8xa6SLALo=</dsig:DigestValue>
+        <dsig:DigestValue>bbM7MDLDtYwU7BRrgkbFtuTQ2cyqVAJpDBg7Lx5hQSk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="8715224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="31925208">
       <assemblyIdentity name="MemoryCards" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lgkP5F83yo71/H1HCSBUYRl++KFbm3vyGUQ/XsZmo8Y=</dsig:DigestValue>
+        <dsig:DigestValue>sx1huCHaZmhwkKHYuSrnu403FcDHwSfsBssvUPrZjaw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1325,13 +1337,193 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="MemoryCards.exe.config" size="18775">
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.AvalonDock.dll" size="430080">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nAQ4RdKZwm6UmXp4qrpC51IiaYkIY3vi3XBjxZqGVlQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ipMWY3DB0cicDEpr0sdirlUytQXja7vbLeiYaosV+Mc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PtJcrM/pIelKIP/7tK19UjL754dhFj/HOj78n6XB5V4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FJ8RAcT50xMfTkKl9Ps/GQGj5QAMsPbv4QeBgfxyw8g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SmL+QIQnrhNlmV5E+ZGWOhgb1Pfb7l0SZALaZlj+/oA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="it" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IqU8ACVAQFXCybp/H4ZgiqzsQkJ2jtpm/PMjWghodrw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ii+h8M1+MUKnvL9VJjBR+JXdTnmLIQvsZ9blEupdcm8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ro\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="ro" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DwOKpyAccq/cSyYpuX7lctRgW6FNYsoD2/HaZv4f9zU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tkXVxaT9AwUqClVUYQ8ds5OpP5nO66TpaQolbRv4qo4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sv\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="sv" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WXB1BQHFJ1nvX2xr+I1lAIOMJci99EDNpP/9PhZOB1M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hans\Xceed.Wpf.AvalonDock.resources.dll" size="6144">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.resources" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="zh-Hans" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>muQm9B2qHwxiPofq2EiPMoqBiul5XrfhY1DDRhMiuyQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.AvalonDock.Themes.Aero.dll" size="87552">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.Themes.Aero" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xEI9nakSBYLIwuxAxuZFJaHh4aefhp1X8oxfaw9LS70=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.AvalonDock.Themes.Metro.dll" size="79872">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.Themes.Metro" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2LCmRKhNjTVIOvwYuTrLHcYMTyk2nosHWndcHgTpyNg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.AvalonDock.Themes.VS2010.dll" size="84992">
+      <assemblyIdentity name="Xceed.Wpf.AvalonDock.Themes.VS2010" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6tpvw7ItmZzVwEl2AJV03rXBBPMryBmFVKNtZ2B9Udo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.Toolkit.dll" size="1162240">
+      <assemblyIdentity name="Xceed.Wpf.Toolkit" version="3.7.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hqGe7SlgIimRUAxym5L8wa061NwvhpP4qBF1aFdZwIk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MemoryCards.exe.config" size="19617">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lRY5SfSf69uuAA+x4irHrni4evWyAGFqYLCqwO9J7hg=</dsig:DigestValue>
+      <dsig:DigestValue>A9uM9P4TRQi1j8TKu2o+k6YYBsbVSHYca8/gqpWQUTk=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=DESKTOP-3NO8MF4\CRM" issuerKeyHash="8e8681fbce299525e77cc24e22f24f513d7bda86" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ZrYSkQohnGKjB4WIwF4ICKlV37GzZhnpx3Zi4thhwpo=</DigestValue></Reference></SignedInfo><SignatureValue>Pk/G0lK/APTFF/WEHayImxkjiB6GfWq7yV+6OkOzesOCwEUm8DanDYH/HhtXrsmDTCQx72dE9PZv+JcMVZE6SgGC56wtWxpFsU2sl3VmYKMWpMQT/WtXOUEol09vuDA8T/qo6LAKYa0oc1SqVlG64JbHa25+WD8KmOuV59Cjduk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1tSv+UdjbVts33TQ4Hgt8s5teEYCfEznPhPOZR5XaotYlC3ezG2pBXaiDTFvs17SaFv7R8+NWrCWKsAMss0snX1uORUquhchaaEBpcekc443KJtCtMl2LiOpEXUui1iMPsz9evHul4E3dIz12AiAHWwmjscFeM+DOtArdw0sfpU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9ac261d8e26276c7e91966b3b1df55a908085ec0888507a3629c210a9112b666" Description="" Url=""><as:assemblyIdentity name="MemoryCards.exe" version="1.0.0.0" publicKeyToken="ccaeb2138d69521f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-3NO8MF4\CRM</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sNJNdFg3SxM1Sf5zE0PNv+8Fhs8qn32j2ypFXYJ2M6w=</DigestValue></Reference></SignedInfo><SignatureValue>YtvP+/oiIYjtJ1LvsIbtDdmZYCq+yX2nWg4GGfY5mN84apUmlv8RgEIty0uUgw3SWqwP/4hxyhILIgPXwaQkMbLg2jw7kVD1CRtUvtcb+ejwKuwHlarG6WeVxtJGIZzI7tWMBpYCtZ9gNVF4aI2c4K0qsA8udMcgV+dGZ1AItH0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1tSv+UdjbVts33TQ4Hgt8s5teEYCfEznPhPOZR5XaotYlC3ezG2pBXaiDTFvs17SaFv7R8+NWrCWKsAMss0snX1uORUquhchaaEBpcekc443KJtCtMl2LiOpEXUui1iMPsz9evHul4E3dIz12AiAHWwmjscFeM+DOtArdw0sfpU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQF7fXc2oUIZBEolfkuAxeiDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtADMATgBPADgATQBGADQAXABDAFIATTAeFw0xOTExMjcwOTIwMzlaFw0yMDExMjYxNTIwMzlaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0AMwBOAE8AOABNAEYANABcAEMAUgBNMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDW1K/5R2NtW2zfdNDgeC3yzm14RgJ8TOc+E85lHldqi1iULd7MbakFdqINMW+zXtJoW/tHz41asJYqwAyyzSydfW45FSq6FyFpoQGlx6Rzjjcom0K0yXYuI6kRdS6LWIw+zP168e6XgTd0jPXYCIAdbCaOxwV4z4M60Ct3DSx+lQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBALWeqaWbDferTMVjTzvmIkrvMm5J+HC4rLrdBjhtpgg1aN7TqmpFrXYWMoaDfo5zDMtpEnhvjwVQ1bevPn//PeDKmftalEfU2r3+Juyfo1JV7R1gAokOWygOR+xCuIc/44gQPGZqmcHrNXgdW+GIpr7ZIDU3lPLA1XJyJ4GeF0Ud</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-3NO8MF4\CRM" issuerKeyHash="8e8681fbce299525e77cc24e22f24f513d7bda86" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>U3fUX3YzFtnQHgRuSsqMW35UzUys5hSRadKVuaqHe0g=</DigestValue></Reference></SignedInfo><SignatureValue>WWUp7VflY7fAhOQznrVZw/G9+SuvemoNh5Yy30VrGjWWx/v3mP8czFmKHfSeJICIil5tI41vMxdMz0IvTXt+xivzOHo9AmkwYvv/7baQFXFChyyUifNeXUXE/sWk9HwS6Wewt5TFiQ799f+xFZ34mAefGcFRVl8LXaqrux+fDHg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1tSv+UdjbVts33TQ4Hgt8s5teEYCfEznPhPOZR5XaotYlC3ezG2pBXaiDTFvs17SaFv7R8+NWrCWKsAMss0snX1uORUquhchaaEBpcekc443KJtCtMl2LiOpEXUui1iMPsz9evHul4E3dIz12AiAHWwmjscFeM+DOtArdw0sfpU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="487b87aab995d2699114e6ac4ccd547e5b8cca4a6e041ed0d91633765fd47753" Description="" Url=""><as:assemblyIdentity name="MemoryCards.exe" version="1.0.0.0" publicKeyToken="ccaeb2138d69521f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-3NO8MF4\CRM</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Asmvx/HSZilMw2A6Xyz8llWsY5mqZieDp0h/2/UapcQ=</DigestValue></Reference></SignedInfo><SignatureValue>YQg/Gnf8HQP8QfHBQDArlPwj8aTcgQJyYPOrI05bfpIWvAIdd0J91JJDKiSKkKNjkkCabozKTwAHBCcoE8Yi1Kp55U0nH9b5UIi0jz7V1QztNEbZZkMUpBow2wQ/GwJXbDzGgLJQk5PFUdN+ni40ht9l80MJTkC+AoVnVhainr4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1tSv+UdjbVts33TQ4Hgt8s5teEYCfEznPhPOZR5XaotYlC3ezG2pBXaiDTFvs17SaFv7R8+NWrCWKsAMss0snX1uORUquhchaaEBpcekc443KJtCtMl2LiOpEXUui1iMPsz9evHul4E3dIz12AiAHWwmjscFeM+DOtArdw0sfpU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQF7fXc2oUIZBEolfkuAxeiDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtADMATgBPADgATQBGADQAXABDAFIATTAeFw0xOTExMjcwOTIwMzlaFw0yMDExMjYxNTIwMzlaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0AMwBOAE8AOABNAEYANABcAEMAUgBNMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDW1K/5R2NtW2zfdNDgeC3yzm14RgJ8TOc+E85lHldqi1iULd7MbakFdqINMW+zXtJoW/tHz41asJYqwAyyzSydfW45FSq6FyFpoQGlx6Rzjjcom0K0yXYuI6kRdS6LWIw+zP168e6XgTd0jPXYCIAdbCaOxwV4z4M60Ct3DSx+lQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBALWeqaWbDferTMVjTzvmIkrvMm5J+HC4rLrdBjhtpgg1aN7TqmpFrXYWMoaDfo5zDMtpEnhvjwVQ1bevPn//PeDKmftalEfU2r3+Juyfo1JV7R1gAokOWygOR+xCuIc/44gQPGZqmcHrNXgdW+GIpr7ZIDU3lPLA1XJyJ4GeF0Ud</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

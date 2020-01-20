@@ -87,11 +87,11 @@
             </Style>
         <!--#endregion-->
 
-        <!--#region Style TextBox-->
-            <Style x:Key="CustomTextBoxBorder" TargetType="{x:Type xctk:MaskedTextBox}">
+        <!--#region Style TextBox user inforamtion-->
+            <Style x:Key="CustomTextBoxBorder" TargetType="{x:Type ContentControl}">
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type xctk:MaskedTextBox}">
+                        <ControlTemplate TargetType="{x:Type ContentControl}">
                             <Grid>
                                 <Border BorderThickness="2" CornerRadius="15" MinWidth="150" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
                                     <Border.BorderBrush>
@@ -100,7 +100,7 @@
                                     <Border.Background>
                                         <ImageBrush ImageSource="{DynamicResource woodWhite}"/>
                                     </Border.Background>
-                                    <ContentPresenter Content="{TemplateBinding Text}"/>
+                                    <ContentPresenter />
                                 </Border>
                             </Grid>
                         </ControlTemplate>
@@ -109,12 +109,12 @@
                 <Style.Triggers>
                     <MultiTrigger>
                         <MultiTrigger.Conditions>
-                            <Condition Property="TextBox.IsFocused" Value="true"/>
+                            <Condition Property="IsFocused" Value="true"/>
                         </MultiTrigger.Conditions>
                         <MultiTrigger.Setters>
                             <Setter Property="Template">
                                 <Setter.Value>
-                                    <ControlTemplate TargetType="{x:Type xctk:MaskedTextBox}">
+                                    <ControlTemplate TargetType="{x:Type ContentControl}">
                                         <Grid>
                                             <Border BorderThickness="2" CornerRadius="15" MinWidth="150" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
                                                 <Border.BorderBrush>
@@ -123,7 +123,7 @@
                                                 <Border.Background>
                                                     <ImageBrush ImageSource="{DynamicResource woodWhite}"/>
                                                 </Border.Background>
-                                                <ContentPresenter Content="{TemplateBinding Text}"/>
+                                                <ContentPresenter/>
                                             </Border>
                                         </Grid>
                                     </ControlTemplate>
@@ -131,6 +131,22 @@
                             </Setter>
                         </MultiTrigger.Setters>
                     </MultiTrigger>
+                    <Trigger Property="Validation.HasError" Value="True">
+                        <Setter Property="Validation.ErrorTemplate">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <Grid>
+                                        <Border BorderThickness="2" CornerRadius="15" MinWidth="150" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Red">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{DynamicResource woodWhite}"/>
+                                            </Border.Background>
+                                            <ContentPresenter/>
+                                        </Border>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
                 </Style.Triggers>
             </Style>
         <!--#endregion-->

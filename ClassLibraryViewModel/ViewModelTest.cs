@@ -36,7 +36,7 @@ namespace ClassLibraryViewModel
                     test = Fabrique.FabriqueTestImage(_user, 6, 20, false);
                     break;
                 case "colors":
-                    test = Fabrique.FabriqueTestColor(_user, 1, 20, false);
+                    test = Fabrique.FabriqueTestColor(_user, 6, 20, false);
                     break;
                 case "words":
                     test = Fabrique.FabriqueTestWord(_user, 6, 20, false);
@@ -59,7 +59,6 @@ namespace ClassLibraryViewModel
             vmUser = _user;
             vmTrials = new ViewModelTrials(test.Trials);
             Etalonnages e = new Etalonnages();
-            //e.Load(vmUser.Age);
             vmEtalonnages = new ViewModelEtalonnages(e);
         }
 

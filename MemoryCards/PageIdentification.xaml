@@ -72,10 +72,46 @@
                         <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                     </Label.Foreground>
                 </Label>
-                
-                <xctk:MaskedTextBox Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" TabIndex="10"/>
 
-                <xctk:MaskedTextBox Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"  Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" TabIndex="11"/>
+                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0">
+                    <TextBox Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="10" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <!--Text Erreur-->
+                        <!--<Validation.ErrorTemplate>
+                            <ControlTemplate>
+                                <StackPanel>
+                                    <AdornedElementPlaceholder x:Name="textBox"/>
+                                    <ItemsControl ItemsSource="{Binding}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </Validation.ErrorTemplate>-->
+                    </TextBox>
+                </ContentControl>
+
+                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
+                    <TextBox Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="11" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <!--Text Erreur-->
+                        <!--<Validation.ErrorTemplate>
+                            <ControlTemplate>
+                                <StackPanel>
+                                    <AdornedElementPlaceholder x:Name="textBox"/>
+                                    <ItemsControl ItemsSource="{Binding}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </Validation.ErrorTemplate>-->
+                    </TextBox>
+                </ContentControl>
 
                 <RadioButton x:Name="RBMan" Content="Homme" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" TabIndex="15" Checked="RBMan_Checked">
                     <RadioButton.Foreground>
@@ -89,10 +125,45 @@
                     </RadioButton.Foreground>
                 </RadioButton>
 
-                <xctk:MaskedTextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" Mask="99" PromptChar="0" Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" TabIndex="20"/>
-
-                <xctk:MaskedTextBox x:Name="MTBCurrentDate" Style="{DynamicResource CustomTextBoxBorder}" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" Focusable="False" IsTabStop="False" TabIndex="21"/>
-
+                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3">
+                    <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="20" Background="{x:Null}" BorderBrush="{x:Null}">
+                      <!--Text Erreur-->
+                        <!--<Validation.ErrorTemplate>
+                            <ControlTemplate>
+                                <StackPanel>
+                                    <AdornedElementPlaceholder x:Name="textBox"/>
+                                    <ItemsControl ItemsSource="{Binding}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </Validation.ErrorTemplate>-->
+                    </TextBox>
+                </ContentControl>
+                
+                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4">
+                    <TextBox x:Name="MTBCurrentDate" TextAlignment="Center" Focusable="False" IsTabStop="False" TabIndex="21" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <Validation.ErrorTemplate>
+                            <ControlTemplate>
+                                <StackPanel>
+                                    <AdornedElementPlaceholder x:Name="textBox"/>
+                                    <ItemsControl ItemsSource="{Binding}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </Validation.ErrorTemplate>
+                    </TextBox>
+                </ContentControl>
+                
                 <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Width="175" Height="30" Click="BtnValidateClick" TabIndex="50"/>
             </Grid>
         </ContentControl>

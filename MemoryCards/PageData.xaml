@@ -74,6 +74,7 @@
                 </StackPanel>-->
             <!--
             </StackPanel>-->
+            
             <!--Trainee score-->
             <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible" Margin="5" Focusable="False">
                 <StackPanel >
@@ -241,9 +242,7 @@
                                     </ListView.ItemTemplate>
                                 </ListView>
                             </StackPanel>
-                            
-                            
-                            
+
                             <!--Trainee-->
                             <StackPanel DataContext="{Binding Path=.}" Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3">
                                 <ListView ItemsSource="{Binding Path=VMTrials.LVMTrial}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
@@ -253,7 +252,8 @@
                                             Move="{Binding Path=Move}" 
                                             Repeat="{Binding Path=Repeat}" 
                                             Score="{Binding Path=Score}"
-                                            ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False"/>
+                                            ScrollViewer.VerticalScrollBarVisibility="Disabled" 
+                                            ScrollViewer.CanContentScroll="False"/>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
                                 </ListView>
@@ -261,7 +261,8 @@
                                         Move="{Binding Path=AverageMove}"
                                         Repeat="{Binding Path=AverageRepeat}"
                                         Score="{Binding Path=AverageScore}"
-                                         ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False"/>
+                                         ScrollViewer.VerticalScrollBarVisibility="Disabled" 
+                                        ScrollViewer.CanContentScroll="False" Margin="7,0,0,0"/>
                             </StackPanel>
                         </Grid>
                     </StackPanel>

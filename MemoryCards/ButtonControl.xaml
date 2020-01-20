@@ -12,14 +12,14 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type Button}">
-                                <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                                <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="0">
                                     <!---->
-                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Background="#FFBDADAD">
+                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Margin="0" Padding="0" Background="#FFBDADAD">
                                         <!---->
                                     <Border.BorderBrush>
                                         <ImageBrush ImageSource="{DynamicResource woodBlack}"/>
                                     </Border.BorderBrush>
-                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="18" BorderThickness="0" Width="160" Height="160">
+                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="18" BorderThickness="0" Width="160" Height="160" Margin="0" Padding="0">
                                         <Border.Background>
                                             <ImageBrush ImageSource="{Binding Path=vMcard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
                                         </Border.Background>
@@ -29,35 +29,6 @@
                             </ControlTemplate>
                         </Setter.Value>
                     </Setter>
-                    <!--<Style.Triggers>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="Button.IsFocused" Value="true"/>
-                            </MultiTrigger.Conditions>
-                            <MultiTrigger.Setters>
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type Button}">
-                                            <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
-                                                --><!----><!--
-                                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="2" Background="#FFBDADAD">
-                                        --><!----><!--
-                                                <Border.BorderBrush>
-                                                    <ImageBrush ImageSource="{DynamicResource woodGold}"/>
-                                                </Border.BorderBrush>
-                                                <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="20" BorderThickness="0" Width="160" Height="160">
-                                                    <Border.Background>
-                                                        <ImageBrush ImageSource="{Binding Path=vMcard.CardImage, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform"/>
-                                                    </Border.Background>
-                                                </Border>
-                                                </Border>
-                                            </Grid>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </MultiTrigger.Setters>
-                        </MultiTrigger>
-                    </Style.Triggers>-->
                 </Style>
             </Button.Style>
         </Button>

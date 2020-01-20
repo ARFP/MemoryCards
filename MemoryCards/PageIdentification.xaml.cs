@@ -31,8 +31,7 @@ namespace MemoryCards
             vmUser = new ClassLibraryViewModel.ViewModelUser(DateTime.Now);
             MTBCurrentDate.Text = vmUser.CurrentDate.ToString("dd/MM/yyyy HH:mm:ss");
             DataContext = vmUser;
-            RBMan.IsChecked = true;
-            
+            RBMan.IsChecked = true;      
         }
 
         public void BtnValidateClick(object sender, RoutedEventArgs e)
