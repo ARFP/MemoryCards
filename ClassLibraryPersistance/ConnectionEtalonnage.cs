@@ -10,9 +10,16 @@ namespace ClassLibraryPersistance
 {
     public static class ConnectionEtalonnage
     {
+        #region Propriétées
         private static XLWorkbook book;
         private static IXLWorksheet sheet;
+        #endregion
 
+        #region
+        /// <summary>
+        /// Connection au fichier excel, des etalonnages
+        /// </summary>
+        /// <returns>L'instance de connection du fichier</returns>
         public static IXLWorksheet Connect()
         {
             if (sheet is null)
@@ -22,5 +29,6 @@ namespace ClassLibraryPersistance
             }
             return sheet;
         }
+        #endregion
     }
 }

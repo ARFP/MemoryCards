@@ -7,30 +7,42 @@ namespace ClassLibraryViewModel
 {
     public class ViewModelUser : ObservableObject
     {
+        #region Propriétées
         private User user;
         private ValidateUser validateUser;
+        private string age;
+        #endregion
 
+        #region Accesseurs
+        /// <summary>
+        /// Chaque accesseur font référence a une propriété de la Carte
+        /// Leur état est survéillé par NotifyPropertyChanged
+        /// </summary>
         public string FirstName { get { return user.FirstName; } set { user.FirstName = value; FirstNameValidation(FirstName); OnPropertyChanged(nameof(FirstName)); } }
         public string LastName { get {return user.LastName; } set { user.LastName = value; LastNameValidation(LastName); OnPropertyChanged(nameof(LastName)); } }
         public string Genre { get { return user.Genre; } set { user.Genre = value; GenreValidation(Genre); OnPropertyChanged(nameof(Genre)); } }
-        public string Age { get {return user.Age.ToString(); } set { user.Age = (int.TryParse(value, out int a)) ? int.Parse(value) : 0 ; AgeValidation(Age); OnPropertyChanged(Age); } }
+        public string DateOfBirth { get { return user.DateOfBirth.ToString("dd/MM/yyyy"); } set { user.DateOfBirth = (DateTime.TryParse(value, out DateTime a)) ? DateTime.Parse(value) : new DateTime(); DateOfBirthValidation(DateOfBirth); OnPropertyChanged(nameof(DateOfBirth)); } }
         public DateTime CurrentDate { get { return user.CurrentDate; } set { user.CurrentDate = value; } }
+        public string Age { get { return age ; } set { age = value; OnPropertyChanged(nameof(Age)); } }
+        #endregion
 
-        public ViewModelUser(DateTime _currentdate)
+        #region Constructeur
+        public ViewModelUser()
         {
             validateUser = new ValidateUser();
-            user = new User(_currentdate);
+            user = new User();
             FirstName = string.Empty;
             LastName = string.Empty;
             Genre = string.Empty;
-            Age = string.Empty;
+            DateOfBirth = string.Empty;
         }
+        #endregion
 
+        #region Méthodes
         public static implicit operator User(ViewModelUser _user)
         {
             return _user.user;
         }
-
 
         public bool Save(string _pathSave)
         {
@@ -40,7 +52,6 @@ namespace ClassLibraryViewModel
         private void FirstNameValidation(string _firstName)
         {
             ICollection<string> validationErrors = null;
-            //bool isValid = validateUser.NameValidation(_firstName, out validationErrors);
             if (!validateUser.NameValidation(_firstName, out validationErrors))
             {
                 _validationErrors["FirstName"] = validationErrors;
@@ -56,7 +67,6 @@ namespace ClassLibraryViewModel
         private void LastNameValidation(string _lastName)
         {
             ICollection<string> validationErrors = null;
-            //bool isValid = validateUser.NameValidation(_lastName, out validationErrors);
             if (!validateUser.NameValidation(_lastName, out validationErrors))
             {
                 _validationErrors["LastName"] = validationErrors;
@@ -72,7 +82,6 @@ namespace ClassLibraryViewModel
         private void GenreValidation(string genre)
         {
             ICollection<string> validationErrors = null;
-            //bool isValid = validateUser.GenreValidation(genre, out validationErrors);
             if (!validateUser.GenreValidation(genre, out validationErrors))
             {
                 _validationErrors["Genre"] = validationErrors;
@@ -85,20 +94,21 @@ namespace ClassLibraryViewModel
             }
         }
 
-        private void AgeValidation(string _firstName)
+        private void DateOfBirthValidation(string _dateOfBirth)
         {
             ICollection<string> validationErrors = null;
-            //bool isValid = validateUser.AgeValidation(_firstName, out validationErrors);
-            if (!validateUser.AgeValidation(_firstName, out validationErrors))
+            if (!validateUser.DateOfBirthValidation(_dateOfBirth, out validationErrors))
             {
-                _validationErrors["Age"] = validationErrors;
-                RaiseErrorsChanged("Age");
+                _validationErrors["DateOfBirth"] = validationErrors;
+                RaiseErrorsChanged("DateOfBirth");
             }
-            else if (_validationErrors.ContainsKey("Age"))
+            else if (_validationErrors.ContainsKey("DateOfBirth"))
             {
-                _validationErrors.Remove("Age");
-                RaiseErrorsChanged("Age");
+                _validationErrors.Remove("DateOfBirth");
+                RaiseErrorsChanged("DateOfBirth");
             }
+            Age = user.GetAge().ToString();
         }
+        #endregion
     }
 }

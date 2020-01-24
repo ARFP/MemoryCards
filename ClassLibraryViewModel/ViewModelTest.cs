@@ -10,11 +10,18 @@ namespace ClassLibraryViewModel
 {
     public class ViewModelTest : ObservableObject
     {
+        #region Propriétées
         private Test test;
         private ViewModelUser vmUser;
         private ViewModelTrials vmTrials;
         private ViewModelEtalonnages vmEtalonnages;
+        #endregion
 
+        #region Accesseurs
+        /// <summary>
+        /// Chaque accesseur font référence a une propriété de la Carte
+        /// Leur état est survéillé par NotifyPropertyChanged
+        /// </summary>
         public string TestName { get { return test.TestName; } set { test.TestName = value; OnPropertyChanged(nameof(TestName)); } }
         public int NumberTrials { get { return test.NumberTrials; } set { test.NumberTrials = value; OnPropertyChanged(nameof(NumberTrials)); } }
         public int Timer { get { return test.Timer; } set { test.Timer = value; OnPropertyChanged(nameof(Timer)); } }
@@ -27,7 +34,9 @@ namespace ClassLibraryViewModel
         public ViewModelUser VMUser { get { return vmUser; } set { vmUser = value; OnPropertyChanged(nameof(VMUser)); } }
         public ViewModelTrials VMTrials { get { return vmTrials; } set { vmTrials = value; OnPropertyChanged(nameof(VMTrials)); } }
         public ViewModelEtalonnages VMEtalonnages { get => vmEtalonnages; set => vmEtalonnages = value; }
+        #endregion
 
+        #region Constructeur
         public ViewModelTest(ViewModelUser _user, string _mode)
         {
             switch (_mode)
@@ -36,7 +45,7 @@ namespace ClassLibraryViewModel
                     test = Fabrique.FabriqueTestImage(_user, 6, 20, false);
                     break;
                 case "colors":
-                    test = Fabrique.FabriqueTestColor(_user, 6, 20, false);
+                    test = Fabrique.FabriqueTestColor(_user, 1, 20, false);
                     break;
                 case "words":
                     test = Fabrique.FabriqueTestWord(_user, 6, 20, false);
@@ -61,7 +70,9 @@ namespace ClassLibraryViewModel
             Etalonnages e = new Etalonnages();
             vmEtalonnages = new ViewModelEtalonnages(e);
         }
+        #endregion
 
+        #region Méthodes
         public bool TestVerify()
         {
             return test.EndTestVerify();
@@ -127,5 +138,6 @@ namespace ClassLibraryViewModel
             watch.Stop();
             EndTimer = true;
         }
+        #endregion
     }
 }

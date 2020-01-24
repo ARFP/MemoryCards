@@ -8,10 +8,14 @@ namespace ClassLibraryIPersistance
 {
     public struct sResumeEtalonnagesAllAge
     {
+        #region Propriétées
         private string totalNumber;
         private List<sResumeEtalonnageAllAge> lEtalonnageAllAges;
+        #endregion
 
+        #region Accesseurs
         public string TotalNumber { get => totalNumber; set => totalNumber = value; }
         public List<sResumeEtalonnageAllAge> LEtalonnageAllAges { get => lEtalonnageAllAges; set => lEtalonnageAllAges = value; }
+        #endregion
     }
 }

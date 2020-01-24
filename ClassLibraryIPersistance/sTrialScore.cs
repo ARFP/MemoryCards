@@ -8,6 +8,7 @@ namespace ClassLibraryIPersistance
 {
     public struct sTrialScore
     {
+        #region Propriétées
         private int trialNumber;
         private string typeTest;
         private int numberCards;
@@ -16,7 +17,9 @@ namespace ClassLibraryIPersistance
         private int move;
         private int repeat;
         private double scoreTrial;
+        #endregion
 
+        #region Accesseurs
         public int TrialNumber { get => trialNumber; set => trialNumber = value; }
         public string TypeTest { get => typeTest; set => typeTest = value; }
         public int NumberCards { get => numberCards; set => numberCards = value; }
@@ -25,5 +28,6 @@ namespace ClassLibraryIPersistance
         public int Move { get => move; set => move = value; }
         public int Repeat { get => repeat; set => repeat = value; }
         public double ScoreTrial { get => scoreTrial; set => scoreTrial = value; }
+        #endregion
     }
 }

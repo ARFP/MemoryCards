@@ -29,10 +29,12 @@ namespace MemoryCards
             DataContext = null;
             test = _test;
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new MainPage());
+            this.NavigationService.Navigate(new MainPage(test.VMUser));
         }
+
         private void BtnResult_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new PageData(test));

@@ -28,10 +28,18 @@
                     <RowDefinition Height="70"/>
                 </Grid.RowDefinitions>
                 <TextBlock Style="{DynamicResource CustomTitle}" Grid.Row="0" Text="Régles du jeu" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="36" FontFamily="{DynamicResource GeneralFont}" TextDecorations="{x:Null}" />
-                <TextBlock Style="{DynamicResource CustomText}" Padding="20 0" Grid.Row="1" x:Name="RegleTB" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Justify" FontFamily="{DynamicResource GeneralFont}" FontSize="18" Margin="0,20" >
-Toutes les cartes sont étalées faces cachées sur le plateau. Le joueur retourne deux cartes. Si c'est la même image ou le même son qui apparaît sur les deux cartes, le joueur valide les cartes et en retourne à nouveau deux.
-Si les deux cartes ne vont pas ensemble, les cartes se remettent face cachée à l'endroit exact où elles étaient, une fois toutes les cartes trouvées l'essai est validé, quand le joueur valide ses 6 essais la partie est terminée. Le 6ème essai laisse visible toutes les cartes trouvées.
-                </TextBlock>
+                <StackPanel Grid.Row="1">
+                    <TextBlock Style="{DynamicResource CustomText}" Padding="20 0" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Justify" FontFamily="{DynamicResource GeneralFont}" FontSize="18" Margin="0,20,0,0" >
+                    Toutes les cartes sont étalées faces cachées sur le plateau. Le joueur retourne deux cartes. Si c'est la même image ou le même son qui apparaît sur les deux cartes, le joueur valide les cartes et en retourne à nouveau deux.
+                    Si les deux cartes ne vont pas ensemble, les cartes se remettent face cachée à l'endroit exact où elles étaient.
+                    </TextBlock>
+                    <TextBlock Style="{DynamicResource CustomText}" Padding="20 0"  HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Justify" FontFamily="{DynamicResource GeneralFont}" FontSize="18" Margin="0" >
+                        Une fois toutes les cartes trouvées l'essai est validé.
+                    </TextBlock>
+                    <TextBlock Style="{DynamicResource CustomText}" Padding="20 0" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Justify" FontFamily="{DynamicResource GeneralFont}" FontSize="18" Margin="0,0,0,20" >
+                        Quand le joueur valide ses 6 essais la partie est terminée. Le 6ème essai laisse visible toutes les cartes trouvées.
+                    </TextBlock>
+                </StackPanel>
                 <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Row="2" Click="Validate_Click" Width="250" Height="35" TabIndex="50" />
             </Grid>
         </ContentControl>

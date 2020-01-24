@@ -49,6 +49,7 @@ namespace ClassLibraryMemento
         {
             return new sTestScore
             {
+                TestName = _test.TestName,
                 AverageMove = _test.AverageMove(),
                 AverageRepeat = _test.AverageRepeat(),
                 AverageScore = _test.AverageScore(),

@@ -9,6 +9,13 @@ namespace ClassLibraryPersistance
 {
     public class Persistance : IPersistanceTestScore, IPersistanceTrialsScore, IPersistanceUser, IPersistancesEtalonnages, IPersistanceResumeEtalonnageAllAge
     {
+        #region Méthodes
+        #region Etalonnages
+        /// <summary>
+        /// Récupères les données des l'étalonnages tout ages dans
+        /// le fichier de données
+        /// </summary>
+        /// <returns>Structure de données de l'étalonnage tout ages</returns>
         sResumeEtalonnagesAllAge IPersistanceResumeEtalonnageAllAge.Read()
         {
             sResumeEtalonnagesAllAge resaa = new sResumeEtalonnagesAllAge
@@ -37,6 +44,12 @@ namespace ClassLibraryPersistance
             return resaa;
         }
 
+        /// <summary>
+        /// Récupères les données de l'étalonnage de l'age mentionné
+        /// dans le fichier de données
+        /// </summary>
+        /// <param name="_age">Age de la personne passant le test</param>
+        /// <returns>Structure de données de l'étalonnage de l'age mentionné</returns>
         sEtalonnages IPersistancesEtalonnages.Read(int _age)
         {
             int i = 0;
@@ -75,7 +88,14 @@ namespace ClassLibraryPersistance
             return etalonnages;
         }
 
-        bool IPersistancesEtalonnages.Write(sEtalonnages _sEtalonnages, string _pathSave)
+        /// <summary>
+        /// Ecrit les données d'étalonnages récupéré dans 
+        /// le fichier de résultat de l'utilisateur du test
+        /// </summary>
+        /// <param name="_sEtalonnages">Structure de données a sauvegarder</param>
+        /// <param name="_nameSave">Nom pour la sauvegarde du fichier</param>
+        /// <returns>Si la sauvegarde a réussi</returns>
+        bool IPersistancesEtalonnages.Write(sEtalonnages _sEtalonnages, string _nameSave)
         {
             int i = 0;
             try
@@ -93,24 +113,33 @@ namespace ClassLibraryPersistance
                     sheet.Cell(28 + i, "H").Value = etalonnage.SDScore;
                     i++;
                 }
-                return ConnectionResult.Save(_pathSave);
+                return ConnectionResult.Save(_nameSave);
             }
             catch(Exception e)
             {
                 return false;
             }
-
         }
+        #endregion
 
-        bool IPersistanceTestScore.Write(sTestScore _score, string _pathSave)
+        #region Resultat test score
+        /// <summary>
+        /// Ecrit : le nom du test, Moyenne de mouvement, Moyenne de répétition, Moyenne du score
+        /// dans le fichier de données
+        /// </summary>
+        /// <param name="_score">Structure des données générale du test</param>
+        /// <param name="_nameSave">Nom pour la sauvegarde du fichier</param>
+        /// <returns>Si la sauvegarde a réussi</returns>
+        bool IPersistanceTestScore.Write(sTestScore _score, string _nameSave)
         {
             try
             {
                 var sheet = ConnectionResult.Connect();
+                sheet.Cell("B10").Value = _score.TestName;
                 sheet.Cell("B20").Value = _score.AverageMove;
                 sheet.Cell("B21").Value = _score.AverageRepeat;
                 sheet.Cell("B22").Value = _score.AverageScore;
-                return ConnectionResult.Save(_pathSave);
+                return ConnectionResult.Save(_nameSave);
             }
             catch(Exception e)
             {
@@ -118,7 +147,14 @@ namespace ClassLibraryPersistance
             }
         }
 
-        bool IPersistanceTrialsScore.Write(sTrialsScore _score, string _pathSave)
+
+        /// <summary>
+        /// Ecrit : le resultat pour chaque manche du test
+        /// </summary>
+        /// <param name="_score">Structure de données de chaque manche du test</param>
+        /// <param name="_nameSave">Nom pour la sauvegarde du fichier</param>
+        /// <returns>Si la sauvegarde a réussi</returns>
+        bool IPersistanceTrialsScore.Write(sTrialsScore _score, string _nameSave)
         {
             int i = 0;
             try
@@ -136,7 +172,7 @@ namespace ClassLibraryPersistance
                     sheet.Cell(13 + i, "H").Value = t.ScoreTrial;
                     i++;
                 }
-                return ConnectionResult.Save(_pathSave);
+                return ConnectionResult.Save(_nameSave);
             }
             catch(Exception e)
             {
@@ -144,22 +180,31 @@ namespace ClassLibraryPersistance
             }
         }
 
-        bool IPersistanceUser.Write(sUser _user, string _pathSave)
+        /// <summary>
+        /// Ecrit : les inforamtions de l'utilisateur
+        /// </summary>
+        /// <param name="_user">Structure contenant les inforamtions de l'utilisateur</param>
+        /// <param name="_nameSave">Nom pour la sauvegarde du fichier</param>
+        /// <returns>Si la sauvegarde a réussi</returns>
+        bool IPersistanceUser.Write(sUser _user, string _nameSave)
         {
             try
             {
                 var sheet = ConnectionResult.Connect();
                 sheet.Cell("B3").Value = _user.LastName + " " + _user.FirstName;
                 sheet.Cell("B4").Value = _user.Genre;
-                sheet.Cell("B5").Value = _user.Age;
-                sheet.Cell("B6").Value = _user.DateOfTheDay.ToString("dd/MM/yyyy");
-                sheet.Cell("B7").Value = _user.DateOfTheDay.ToString("HH:mm:ss");       
-                return ConnectionResult.Save(_pathSave);
+                sheet.Cell("B5").Value = _user.DateOfBirth.ToString("dd/MM/yyyy");
+                sheet.Cell("B6").Value = _user.Age;
+                sheet.Cell("B7").Value = _user.DateOfTheDay.ToString("dd/MM/yyyy");
+                sheet.Cell("B8").Value = _user.DateOfTheDay.ToString("HH:mm:ss");       
+                return ConnectionResult.Save(_nameSave);
             }
             catch(Exception e)
             {
                 return false;
             }
         }
+        #endregion
+        #endregion
     }
 }

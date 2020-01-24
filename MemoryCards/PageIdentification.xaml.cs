@@ -1,5 +1,6 @@
 ﻿using ClassLibraryControl;
 using ClassLibraryMemento;
+using ClassLibraryViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +24,13 @@ namespace MemoryCards
     /// </summary>
     public partial class PageIdentification : Page
     {
-        private ClassLibraryViewModel.ViewModelUser vmUser;
+        private ViewModelUser vmUser;
 
-        public PageIdentification()
+        public PageIdentification(ViewModelUser _vmUser)
         {
             InitializeComponent();
-            vmUser = new ClassLibraryViewModel.ViewModelUser(DateTime.Now);
+            vmUser = _vmUser;
+            vmUser.CurrentDate = DateTime.Now;
             MTBCurrentDate.Text = vmUser.CurrentDate.ToString("dd/MM/yyyy HH:mm:ss");
             DataContext = vmUser;
             RBMan.IsChecked = true;      

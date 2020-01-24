@@ -26,6 +26,7 @@
                     <RowDefinition Height="45"/>
                     <RowDefinition Height="45"/>
                     <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -56,7 +57,7 @@
                         <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                     </Label.Foreground>
                 </Label>
-                <Label Content="Age : " FontSize="13" FontWeight="Black" 
+                <Label Content="Date de naissance : " FontSize="13" FontWeight="Black" 
                     FontFamily="{DynamicResource GeneralFont}" 
                     HorizontalAlignment="Center" VerticalAlignment="Center"
                     Grid.Column="0" Grid.Row="3">
@@ -64,7 +65,7 @@
                         <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                     </Label.Foreground>
                 </Label>
-                <Label Content="Date du jour : " FontSize="13" FontWeight="Black" 
+                <Label Content="Age : " FontSize="13" FontWeight="Black" 
                     FontFamily="{DynamicResource GeneralFont}" 
                     HorizontalAlignment="Center" VerticalAlignment="Center"
                     Grid.Column="0" Grid.Row="4">
@@ -72,45 +73,21 @@
                         <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                     </Label.Foreground>
                 </Label>
+                <Label Content="Date du jour : " FontSize="13" FontWeight="Black" 
+                    FontFamily="{DynamicResource GeneralFont}" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Column="0" Grid.Row="5">
+                    <Label.Foreground>
+                        <ImageBrush ImageSource="{DynamicResource woodGold}"/>
+                    </Label.Foreground>
+                </Label>
 
                 <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0">
-                    <TextBox Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="10" Background="{x:Null}" BorderBrush="{x:Null}">
-                        <!--Text Erreur-->
-                        <!--<Validation.ErrorTemplate>
-                            <ControlTemplate>
-                                <StackPanel>
-                                    <AdornedElementPlaceholder x:Name="textBox"/>
-                                    <ItemsControl ItemsSource="{Binding}">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-                                </StackPanel>
-                            </ControlTemplate>
-                        </Validation.ErrorTemplate>-->
-                    </TextBox>
+                    <TextBox Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="10" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 </ContentControl>
 
                 <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
-                    <TextBox Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="11" Background="{x:Null}" BorderBrush="{x:Null}">
-                        <!--Text Erreur-->
-                        <!--<Validation.ErrorTemplate>
-                            <ControlTemplate>
-                                <StackPanel>
-                                    <AdornedElementPlaceholder x:Name="textBox"/>
-                                    <ItemsControl ItemsSource="{Binding}">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-                                </StackPanel>
-                            </ControlTemplate>
-                        </Validation.ErrorTemplate>-->
-                    </TextBox>
+                    <TextBox Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="11" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 </ContentControl>
 
                 <RadioButton x:Name="RBMan" Content="Homme" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" TabIndex="15" Checked="RBMan_Checked">
@@ -125,8 +102,12 @@
                     </RadioButton.Foreground>
                 </RadioButton>
 
-                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3">
-                    <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="20" Background="{x:Null}" BorderBrush="{x:Null}">
+                <ContentControl x:Name="tbDateOfBirth" Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3">
+                    <TextBox Text="{Binding DateOfBirth, UpdateSourceTrigger=LostFocus, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="20" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                </ContentControl>
+
+                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4">
+                    <TextBox x:Name="age" Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" TextAlignment="Center" Focusable="False" IsTabStop="False" TabIndex="21" Background="{x:Null}" BorderBrush="{x:Null}">
                       <!--Text Erreur-->
                         <!--<Validation.ErrorTemplate>
                             <ControlTemplate>
@@ -145,9 +126,9 @@
                     </TextBox>
                 </ContentControl>
                 
-                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4">
-                    <TextBox x:Name="MTBCurrentDate" TextAlignment="Center" Focusable="False" IsTabStop="False" TabIndex="21" Background="{x:Null}" BorderBrush="{x:Null}">
-                        <Validation.ErrorTemplate>
+                <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5">
+                    <TextBox x:Name="MTBCurrentDate" TextAlignment="Center" Focusable="False" IsTabStop="False" TabIndex="22" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <!--<Validation.ErrorTemplate>
                             <ControlTemplate>
                                 <StackPanel>
                                     <AdornedElementPlaceholder x:Name="textBox"/>
@@ -160,11 +141,11 @@
                                     </ItemsControl>
                                 </StackPanel>
                             </ControlTemplate>
-                        </Validation.ErrorTemplate>
+                        </Validation.ErrorTemplate>-->
                     </TextBox>
                 </ContentControl>
                 
-                <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Width="175" Height="30" Click="BtnValidateClick" TabIndex="50"/>
+                <Button Style="{DynamicResource CustomButton}" Content="Valider" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="6" Width="175" Height="30" Click="BtnValidateClick" TabIndex="50"/>
             </Grid>
         </ContentControl>
     </Grid>

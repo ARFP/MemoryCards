@@ -1,4 +1,5 @@
 ﻿using ClassLibraryMemento;
+using ClassLibraryViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,15 +22,24 @@ namespace MemoryCards
     /// </summary>
     public partial class MainPage : Page
     {
+        private ViewModelUser vmUser;
+
         public MainPage()
         {
-            InitializeComponent();           
+            InitializeComponent();
+            vmUser = new ViewModelUser();
+        }
+
+        public MainPage(ViewModelUser _vmUser)
+        {
+            InitializeComponent();
+            vmUser = _vmUser;      
         }
 
         private void Run_Click(object sender, RoutedEventArgs e)
         {
             
-            this.NavigationService.Navigate(new PageIdentification());
+            this.NavigationService.Navigate(new PageIdentification(vmUser));
         }
     }
 }

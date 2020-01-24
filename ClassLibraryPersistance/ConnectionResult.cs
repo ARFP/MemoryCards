@@ -12,9 +12,16 @@ namespace ClassLibraryPersistance
     {
         //Chemin sauvegarde des donées--------------------------------------------------------------------
         // System.Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        #region Propriétées
         private static XLWorkbook book;
         private static IXLWorksheet sheet;
+        #endregion
 
+        #region Méthodes
+        /// <summary>
+        /// Connection au fichier excel, de sauvegarde des données du test
+        /// </summary>
+        /// <returns>L'instance de connection du fichier</returns>
         public static IXLWorksheet Connect()
         {
             if (sheet is null)
@@ -25,11 +32,16 @@ namespace ClassLibraryPersistance
             return sheet;
         }
 
-        public static bool Save(string _path)
+        /// <summary>
+        /// Sauvegarde le fichier de résultat au format "xlsx"
+        /// </summary>
+        /// <param name="_name">Nom du fichier a sauvegarder</param>
+        /// <returns>Si la sauvegarde du fichier a réussi</returns>
+        public static bool Save(string _name)
         {
             try
             {
-                book.SaveAs(ConfigurationManager.AppSettings["SaveExcelCrm"] + _path + ".xlsx");
+                book.SaveAs(ConfigurationManager.AppSettings["SaveExcelCrm"] + _name + ".xlsx");
                 return true;
             }
             catch(Exception e)
@@ -37,5 +49,6 @@ namespace ClassLibraryPersistance
                 return false;
             }
         }
+        #endregion
     }
 }

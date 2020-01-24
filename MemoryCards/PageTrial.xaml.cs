@@ -189,7 +189,7 @@ namespace MemoryCards
             }
             if (vmc.CurrentStatus == StatusCard.found)
             {
-                Thread.Sleep(500);//
+                Thread.Sleep(1500);//
                 if (vMTest.TrialRun != (vMTest.NumberTrials - 1))
                 {  
                     vmc.CardImage = vmc.ValidateImage;

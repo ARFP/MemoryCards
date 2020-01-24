@@ -22,11 +22,14 @@ namespace MemoryCards
     /// </summary>
     public partial class PageData : Page
     {
+        private ViewModelTest vmTest;
+
         public PageData(ViewModelTest _test)
         {
             InitializeComponent();
-            DataContext = _test;
-            headerTrainee.Text = "Stagiare (Age : " + _test.VMUser.Age + ")";
+            vmTest = _test;
+            DataContext = vmTest;
+            headerTrainee.Text = "Stagiare (Age : " + vmTest.VMUser.DateOfBirth + ")";
             ResumeEtalonnagesAllAge rea = new ResumeEtalonnagesAllAge();
             rea.Load();
             allEtalonnage.DataContext = rea;
@@ -36,7 +39,7 @@ namespace MemoryCards
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new MainPage());
+            this.NavigationService.Navigate(new MainPage(vmTest.VMUser));
         }
     }
 }

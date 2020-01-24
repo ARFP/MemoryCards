@@ -34,6 +34,10 @@
                     <TextBlock Text="{Binding Path=Genre}"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5 0">
+                    <TextBlock Text="Date de naissance : "/>
+                    <TextBlock Text="{Binding Path=DateOfBirth}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5 0">
                     <TextBlock Text="Age : "/>
                     <TextBlock Text="{Binding Path=Age}"/>
                 </StackPanel>
@@ -53,31 +57,15 @@
                 </Border>
             </StackPanel>
 
-            
-            
-            <!--<StackPanel Grid.Row="1">
-                -->
-            <!--Type of test-->
-            <!--<StackPanel Orientation="Horizontal" Margin="5 0">
-                    <TextBlock Text="Test : "/>
-                    <TextBlock Text="Normal"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5 10 0 0">
-                    <TextBlock Text="Temps d'affichage d'une paire trouvée : "/>
-                    <TextBlock Text="3.0"/>
-                    <TextBlock Text=" sec"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5 0">
-                    <TextBlock Text="Temps d'affichage maximum d'une carte : "/>
-                    <TextBlock Text="10.0"/>
-                    <TextBlock Text=" sec"/>
-                </StackPanel>-->
-            <!--
-            </StackPanel>-->
-            
             <!--Trainee score-->
-            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible" Margin="5" Focusable="False">
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible" Margin="5,5,5,5" Focusable="False">
                 <StackPanel >
+                    <!--Type of test-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Test : "/>
+                        <TextBlock Text="{Binding Path=TestName}"/>
+                    </StackPanel>
+                    
                     <StackPanel >
                         <Grid Margin="0 10 0 10">
                             <Grid.RowDefinitions>
