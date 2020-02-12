@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,8 @@ namespace ClassLibraryPersistance
         {
             if (sheet is null)
             {
-                book = new XLWorkbook(ConfigurationManager.AppSettings["ModelReusltCrm"]);
+                //book = new XLWorkbook(ConfigurationManager.AppSettings["Template"]);
+                book = new XLWorkbook("./Config/Template.xlsx");
                 sheet = book.Worksheet("Resultat");
             }
             return sheet;

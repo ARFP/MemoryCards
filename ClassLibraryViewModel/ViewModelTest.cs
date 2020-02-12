@@ -1,4 +1,5 @@
-﻿using ClassLibraryMemento;
+﻿using ClassLibraryIPersistance;
+using ClassLibraryMemento;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -83,61 +84,61 @@ namespace ClassLibraryViewModel
             return test.Save(_pathSave);
         }
 
-        public void TimerUpdate()
-        {
-            int seconds;
-            int minutes;
-            var watch = Stopwatch.StartNew();
+        //public void TimerUpdate()
+        //{
+        //    int seconds;
+        //    int minutes;
+        //    var watch = Stopwatch.StartNew();
 
-            if (TrialRun != NumberTrials - 1)
-            {
-                seconds = Timer;
-                TimeInProgress = "00 : " + seconds;
-                for (int i = 0; i < Timer; i++)
-                {
-                    Thread.Sleep(1000);
-                    seconds = Timer - watch.Elapsed.Seconds;
-                    if (seconds < 10)
-                    {
-                        TimeInProgress = "00 : 0" + seconds;
-                    }
-                    else
-                    {
-                        TimeInProgress = "00 : " + seconds;
-                    }
-                }
-            }
-            else
-            {
-                minutes = Timer - 1;
-                seconds = 59;
-                TimeInProgress = minutes + " : " + seconds;
-                while (minutes != 0 || seconds != 0)
-                {
-                    Thread.Sleep(1000);
-                    seconds = 59 - watch.Elapsed.Seconds;
-                    minutes = (Timer - 1) - watch.Elapsed.Minutes;
-                    if (minutes < 10 && seconds < 10)
-                    {
-                        TimeInProgress = "0" + minutes + " : " + "0" + seconds;
-                    }
-                    else if (minutes < 10)
-                    {
-                        TimeInProgress = "0" + minutes + " : " + seconds;
-                    }
-                    else if (seconds < 10)
-                    {
-                        TimeInProgress = minutes + " : " + "0" + seconds;
-                    }
-                    else
-                    {
-                        TimeInProgress = minutes + " : " + seconds;
-                    }
-                }
-            }
-            watch.Stop();
-            EndTimer = true;
-        }
+        //    if (TrialRun != NumberTrials - 1)
+        //    {
+        //        seconds = Timer;
+        //        TimeInProgress = "00 : " + seconds;
+        //        for (int i = 0; i < Timer; i++)
+        //        {
+        //            Thread.Sleep(1000);
+        //            seconds = Timer - watch.Elapsed.Seconds;
+        //            if (seconds < 10)
+        //            {
+        //                TimeInProgress = "00 : 0" + seconds;
+        //            }
+        //            else
+        //            {
+        //                TimeInProgress = "00 : " + seconds;
+        //            }
+        //        }
+        //    }
+        //    else
+        //    {
+        //        minutes = Timer - 1;
+        //        seconds = 59;
+        //        TimeInProgress = minutes + " : " + seconds;
+        //        while (minutes != 0 || seconds != 0)
+        //        {
+        //            Thread.Sleep(1000);
+        //            seconds = 59 - watch.Elapsed.Seconds;
+        //            minutes = (Timer - 1) - watch.Elapsed.Minutes;
+        //            if (minutes < 10 && seconds < 10)
+        //            {
+        //                TimeInProgress = "0" + minutes + " : " + "0" + seconds;
+        //            }
+        //            else if (minutes < 10)
+        //            {
+        //                TimeInProgress = "0" + minutes + " : " + seconds;
+        //            }
+        //            else if (seconds < 10)
+        //            {
+        //                TimeInProgress = minutes + " : " + "0" + seconds;
+        //            }
+        //            else
+        //            {
+        //                TimeInProgress = minutes + " : " + seconds;
+        //            }
+        //        }
+        //    }
+        //    watch.Stop();
+        //    EndTimer = true;
+        //}
         #endregion
     }
 }

@@ -27,12 +27,14 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
                 </Grid.RowDefinitions>
-                <TextBlock Style="{DynamicResource CustomTitle}" Text="Nous vous remercions pour votre participation" Margin="0 30"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <Button Style="{DynamicResource CustomButton}" Content="Continuer" Click="Button_Click" HorizontalAlignment="Center"  Margin="0" Grid.Row="1"  Grid.Column="0" VerticalAlignment="Bottom" Width="250"  Height="35" TabIndex="50"/>
-                <Button Style="{DynamicResource CustomButton}" Content="Résultat" Click="BtnResult_Click" HorizontalAlignment="Center"  Margin="0" Grid.Row="1"  Grid.Column="1" VerticalAlignment="Bottom" Width="250"  Height="35" TabIndex="51"/>
+                <TextBlock Style="{DynamicResource CustomTitle}" Text="Nous vous remercions pour votre participation" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="58"/>
+                <Button Style="{DynamicResource CustomButton}" Content="Continuer" Click="Button_Click" HorizontalAlignment="Center"  Margin="0" Grid.Row="1"  Grid.Column="0" VerticalAlignment="Center" Width="250"  Height="35" TabIndex="50"/>
+                <Button Style="{DynamicResource CustomButton}" Content="Résultat" Click="BtnResult_Click" HorizontalAlignment="Center" Margin="0" Grid.Row="1"  Grid.Column="1" VerticalAlignment="Center" Width="250"  Height="35" TabIndex="51"/>
+                <Button Style="{DynamicResource CustomButton}" Content="Nouvel utilisateur" Click="BtnNewUser_Click" HorizontalAlignment="Center" Margin="0" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Width="250" Height="35" TabIndex="52"/>
             </Grid>
         </ContentControl>
     </Grid>

@@ -24,18 +24,6 @@ namespace ClassLibraryMemento
                 String.Format(@"pack://application:,,,/Resources/house.png"),
                 String.Format(@"pack://application:,,,/Resources/star.png"),
                 String.Format(@"pack://application:,,,/Resources/scissors.png"),
-                //"airship",
-                //"tree",
-                //"car",
-                //"clock",
-                //"computer",
-                //"grandbi",
-                //"flag",
-                //"flower",
-                //"girl",
-                //"house",
-                //"star",
-                //"scissors",
             };
             AddTrial(listImage, _sound);
         }

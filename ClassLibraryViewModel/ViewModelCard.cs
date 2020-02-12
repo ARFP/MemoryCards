@@ -8,6 +8,9 @@ namespace ClassLibraryViewModel
     public class ViewModelCard : ObservableObject
     {
         #region Propriétées
+        /// <summary>
+        /// Sa carte
+        /// </summary>
         private Card card;
         #endregion
 
@@ -30,11 +33,15 @@ namespace ClassLibraryViewModel
         public string ValidateImage { get { return card.ValidateImage; } set { card.ValidateImage = value; OnPropertyChanged(nameof(ValidateImage)); } }
         public bool Tested { get { return card.Tested; } set { card.Tested = value; OnPropertyChanged(nameof(Tested)); } }
         public StatusCard CurrentStatus { get { return card.CurrentStatus; } set { card.CurrentStatus = value; OnPropertyChanged(nameof(CurrentStatus)); } }
-        public Card PairCard { get { return card.pairCard; } set { card.pairCard = value; OnPropertyChanged(nameof(PairCard)); } }
+        public Card PairCard { get { return card.Paircard; } set { card.Paircard = value; OnPropertyChanged(nameof(PairCard)); } }
         public string CardImage { get { return card.CardImage; } set { card.CardImage = value; OnPropertyChanged(nameof(CardImage)); } }
         #endregion
 
         #region Constructeur
+        /// <summary>
+        /// Constructeur du vue model de la carte
+        /// </summary>
+        /// <param name="_card">Carte a associer au vue model</param>
         public ViewModelCard(Card _card)
         {
             card = _card;
@@ -43,15 +50,13 @@ namespace ClassLibraryViewModel
 
         #region Méthodes
         /// <summary>
-        /// Compare si la carte du ViewModelCard mis en paramètre 
-        /// correspond a la carte paire de l'instance de carte 
-        /// courante de ce ViewModelCard
+        /// Appel la méthode compareTo de sa carte
         /// </summary>
-        /// <param name="_vmc">ViewModelCard qui doit comparé ca carte</param>
+        /// <param name="_vmc">ViewModelCard qui doit comparé sa carte</param>
         /// <returns>le résultat de la comparaison des cartes</returns>
         public bool Compare(ViewModelCard _vmc)
         {
-            return PairCard == _vmc.card;
+            return card.CompareTo(_vmc.card) == 1; 
         }
         #endregion
     }

@@ -90,20 +90,20 @@
                     <TextBox Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="11" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 </ContentControl>
 
-                <RadioButton x:Name="RBMan" Content="Homme" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" TabIndex="15" Checked="RBMan_Checked">
+                <RadioButton x:Name="RBMan" Content="Homme" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" IsTabStop="False" Checked="RBMan_Checked">
                     <RadioButton.Foreground>
                         <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                     </RadioButton.Foreground>
                 </RadioButton>
 
-                <RadioButton x:Name="RBWoman" Content="Femme" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" TabIndex="16" Checked="RBWoman_Checked">
+                <RadioButton x:Name="RBWoman" Content="Femme" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" IsTabStop="False" Checked="RBWoman_Checked">
                     <RadioButton.Foreground>
                         <ImageBrush ImageSource="{DynamicResource woodGold}"/>
                     </RadioButton.Foreground>
                 </RadioButton>
 
                 <ContentControl x:Name="tbDateOfBirth" Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3">
-                    <TextBox Text="{Binding DateOfBirth, UpdateSourceTrigger=LostFocus, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="20" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                    <TextBox Text="{Binding DateOfBirth, UpdateSourceTrigger=LostFocus, ValidatesOnNotifyDataErrors=True}" TextAlignment="Center" TabIndex="20" Background="{x:Null}" BorderBrush="{x:Null}" GotFocus="TextBoxBirthDate_SelectText"/>
                 </ContentControl>
 
                 <ContentControl Style="{StaticResource CustomTextBoxBorder}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4">

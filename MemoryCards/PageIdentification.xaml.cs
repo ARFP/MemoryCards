@@ -53,5 +53,10 @@ namespace MemoryCards
         {
             vmUser.Genre = (sender as RadioButton).Content.ToString();
         }
+
+        private void TextBoxBirthDate_SelectText(object sender, RoutedEventArgs e)
+        {
+            (sender as TextBox).SelectAll();
+        }
     }
 }

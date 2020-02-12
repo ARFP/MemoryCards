@@ -37,9 +37,15 @@ namespace MemoryCards
             TBTime.Text = _test.VMUser.CurrentDate.ToString("HH:mm:ss");
             TBDate.Text = _test.VMUser.CurrentDate.ToString("dd/MM/yyyy");
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new MainPage(vmTest.VMUser));
+        }
+
+        private void ButtonNewUser_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new MainPage());
         }
     }
 }

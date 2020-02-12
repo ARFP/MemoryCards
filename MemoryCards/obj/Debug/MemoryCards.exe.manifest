@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SmGG9Huorz883rPLIVOsTAMBOZYI1JwE0KShUtp+qUA=</dsig:DigestValue>
+        <dsig:DigestValue>X8bna5RfDZac3Z40rqHPQP5xiH70e2Ifn8teSIIAw40=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ypt194CrhAMaWn/zlNbw+veMM+t3OvdODeSdqUNoZWU=</dsig:DigestValue>
+        <dsig:DigestValue>1cnvXYwRufeX7yrFuCkjOmXBkfwqGQicc4rhVDsojM4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2zMPtYwkLFYMsExC2rVL4tekdaiQ6CbgyR+qTl6rjes=</dsig:DigestValue>
+        <dsig:DigestValue>V2gOl8ecreSXqhL/v5YzW5CjsGwTuBOqaTpXT4P/yP4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O66Dd9bfytQQ0NbQxsGJgkum4dLIWx0hpiiJQxgbWzc=</dsig:DigestValue>
+        <dsig:DigestValue>uDc8cvsUEQng4KvUuJerX7ynBhvEU2vmIdwj4CNmbNk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryViewModel.dll" size="18432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassLibraryViewModel.dll" size="17408">
       <assemblyIdentity name="ClassLibraryViewModel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MKsKfV2TAB3jErk/IP9E8+qZBUywQlRDi+Wuj+4AagA=</dsig:DigestValue>
+        <dsig:DigestValue>98NF2v0lCh89AfQ1UNUkKWvyxAffjiEhkW0Za31ozHQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -162,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="31925208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="31647704">
       <assemblyIdentity name="MemoryCards" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WlEiXybXW6gjIoq9wRFGXn0ptcPVEoRjB+p5mMECLzg=</dsig:DigestValue>
+        <dsig:DigestValue>S2MvSXVURuaG8AQgMdSNriGbGeWu+eFcwZ5PIxw0LgA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1517,13 +1517,31 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="MemoryCards.exe.config" size="19280">
+  <file name="Config\Etalonnage.xlsx" size="173907">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>v1vXx26466PwVxtllrCXkR2LBRNdHKnvGclbtIhRf8k=</dsig:DigestValue>
+      <dsig:DigestValue>XXgLHI4s8CJ1f4vJhggonky1uvHl+QVpwRVgIrEfoGI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Config\Template.xlsx" size="8391">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C0cv+3ONoTuR1fK4HnEN6YoyfhnoiWcEGg8s9l28yU4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MemoryCards.exe.config" size="19282">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4IRVHJVXVOrVsB1NYRdib6aS85Apnsv7lU/hRzuNz9I=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

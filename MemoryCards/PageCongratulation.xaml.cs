@@ -39,5 +39,10 @@ namespace MemoryCards
         {
             this.NavigationService.Navigate(new PageData(test));
         }
+
+        private void BtnNewUser_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new MainPage());
+        }
     }
 }

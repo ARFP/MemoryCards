@@ -205,6 +205,7 @@ C:\Users\benoi\Programmation\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\net
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryViewModel.deps.json
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryViewModel.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryViewModel.pdb
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryControl.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryIPersistance.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryMemento.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryPersistance.dll
@@ -221,6 +222,7 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netst
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\Accessibility.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\System.Windows.Forms.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryControl.pdb
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryMemento.pdb
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryIPersistance.pdb
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryPersistance.pdb
@@ -232,5 +234,3 @@ C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netst
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netstandard2.0\ClassLibraryViewModel.csproj.CopyComplete
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netstandard2.0\ClassLibraryViewModel.dll
 C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\obj\Debug\netstandard2.0\ClassLibraryViewModel.pdb
-C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryControl.dll
-C:\Users\CRM\Desktop\Objet\WPF\MemoryCards\ClassLibraryViewModel\bin\Debug\netstandard2.0\ClassLibraryControl.pdb

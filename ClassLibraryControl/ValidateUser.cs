@@ -4,9 +4,6 @@ using System.Text.RegularExpressions;
 
 namespace ClassLibraryControl
 {
-    /// <summary>
-    /// Contient la validation des données entrées par l'utilisateur
-    /// </summary>
     public class ValidateUser 
     {
         #region Propriétées
@@ -25,7 +22,7 @@ namespace ClassLibraryControl
         /// Vérification des champs textes nom, prénom de l'utilisateur
         /// </summary>
         /// <param name="_name">contient nom ou prénom entrée par l'utilisateur</param>
-        /// <param name="_validationErrors"></param>
+        /// <param name="_validationErrors">Le résultat de la validation</param>
         /// <returns>Si il y a une erreur ou non</returns>
         public bool NameValidation(string _name, out ICollection<string> _validationErrors)
         {
@@ -47,7 +44,7 @@ namespace ClassLibraryControl
         /// Vérification que le champ genre correspond bien a "homme" ou "femme"
         /// </summary>
         /// <param name="_genre">contient le genre sélectionné par l'utilisateur</param>
-        /// <param name="_validationErrors"></param>
+        /// <param name="_validationErrors">Le résultat de la validation</param>
         /// <returns>Si il y a une erreur ou non</returns>
         public bool GenreValidation(string _genre, out ICollection<string> _validationErrors)
         {
@@ -64,7 +61,7 @@ namespace ClassLibraryControl
         /// Verification de l'age de l'utilisateur
         /// </summary>
         /// <param name="_age">contient l'age entrée par l'utilisateur</param>
-        /// <param name="_validationErrors"></param>
+        /// <param name="_validationErrors">Le résultat de la validation</param>
         /// <returns>Si il y a une erreur ou non</returns>
         public bool DateOfBirthValidation(string _age, out ICollection<string> _validationErrors)
         {
