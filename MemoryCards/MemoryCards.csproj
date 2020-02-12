@@ -150,7 +150,6 @@
       <DependentUpon>PageTrial.xaml</DependentUpon>
     </Compile>
     <Compile Include="SearchResources.cs" />
-    <Compile Include="StatusToImageConverter.cs" />
     <Compile Include="TimerPage.xaml.cs">
       <DependentUpon>TimerPage.xaml</DependentUpon>
     </Compile>

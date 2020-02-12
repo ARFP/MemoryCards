@@ -13,7 +13,7 @@ namespace ClassLibraryMemento
         /// <see cref="firstName">Prénom de l'ultilisateur</see>
         /// <see cref="lastName">Nom de l'utilisiteur</see>
         /// <see cref="genre">Sexe de l'utilisateur</see>
-        /// <see cref="dateOfBirth">Date d'anniversaire</see>
+        /// <see cref="dateOfBirth">Date de naissance de l'utilisateur</see>
         /// <see cref="currentDate">Date du jour</see>
         /// <see cref="iPersistance">persistance de l'utilisateur</see>
         /// </summary>

@@ -44,23 +44,7 @@ namespace MemoryCards
                 {
                     Source = c,                   
                 };
-                ControlCard.SetBinding(ButtonControl.dependencyPropertyCard, b);
-
-                //Binding b2 = new Binding
-                //{
-                //    Source = new ImageBrush
-                //        (
-                //            Imaging.CreateBitmapSourceFromHBitmap
-                //                (
-                //                    SearchResources.ImageValueOf(c.CardImage).GetHbitmap(),
-                //                    IntPtr.Zero,
-                //                    Int32Rect.Empty,
-                //                    BitmapSizeOptions.FromEmptyOptions()
-                //                )
-                //        )
-                //};
-                //ControlCard.SetBinding(ButtonControl.dependencyPropertyCardImage, b2);
-
+                ControlCard.SetBinding(ButtonControl.dependencyPropertyCard, b);               
                 ControlCard.Tag = i;
                 ControlCard.Padding = new Thickness(5);
                 ControlCard.CommandDisplay = new CmdButtonCheck(p => c.CurrentStatus == StatusCard.back, p => CardEventVerrif(ControlCard));

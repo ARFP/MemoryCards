@@ -9,6 +9,12 @@ namespace ClassLibraryIPersistance
     public struct sResumeEtalonnageAllAge
     {
         #region Propriétées
+        /// <summary>
+        /// <see cref="ageRange">Tranche d'age</see>
+        /// <see cref="numberPersoneTest">Nombre de personne testée de la tranche d'age</see>
+        /// <see cref="averageAge">Moyenne de la tranche d'age</see>
+        /// <see cref="sDAge">Ecart type de de la tranche d'age</see>
+        /// </summary>
         private string ageRange;
         private int numberPersoneTest;
         private double averageAge;
@@ -16,6 +22,9 @@ namespace ClassLibraryIPersistance
         #endregion
 
         #region Accesseurs
+        /// <summary>
+        /// Accesseur des propriétées
+        /// </summary>
         public string AgeRange { get => ageRange; set => ageRange = value; }
         public int NumberPersoneTest { get => numberPersoneTest; set => numberPersoneTest = value; }
         public double AverageAge { get => averageAge; set => averageAge = value; }
