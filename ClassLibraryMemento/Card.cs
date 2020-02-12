@@ -61,7 +61,7 @@ namespace ClassLibraryMemento
             currentStatus = StatusCard.back;
             pairCard = null;
             cardImage = backImage; 
-            //debug 
+            //Debug Mode
             //cardImage = faceImage; 
             //faceImage = String.Format(@"pack://application:,,,/Resources/wood.png");
             //backImage = _image;

@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1cnvXYwRufeX7yrFuCkjOmXBkfwqGQicc4rhVDsojM4=</dsig:DigestValue>
+        <dsig:DigestValue>rbATLGu/zELrpyR99+8rEGIdN89f+fX4u+zgi8GnDRQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>V2gOl8ecreSXqhL/v5YzW5CjsGwTuBOqaTpXT4P/yP4=</dsig:DigestValue>
+        <dsig:DigestValue>BOjSkMNuc1QSmxpPdYDxbixq+RhAHRKwMk/wthUm86Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -162,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="31647704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MemoryCards.exe" size="31647192">
       <assemblyIdentity name="MemoryCards" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>S2MvSXVURuaG8AQgMdSNriGbGeWu+eFcwZ5PIxw0LgA=</dsig:DigestValue>
+        <dsig:DigestValue>cAvQQU9LLGsgvJ0oigisfu1j3hPYEl7amzpdjb53LCc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1535,13 +1535,13 @@
       <dsig:DigestValue>C0cv+3ONoTuR1fK4HnEN6YoyfhnoiWcEGg8s9l28yU4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="MemoryCards.exe.config" size="19282">
+  <file name="MemoryCards.exe.config" size="19048">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>4IRVHJVXVOrVsB1NYRdib6aS85Apnsv7lU/hRzuNz9I=</dsig:DigestValue>
+      <dsig:DigestValue>0YZPndmc9DihIAfzUutTjjeQzThzTUQrI9o9RQE7wxs=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

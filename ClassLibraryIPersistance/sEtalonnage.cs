@@ -9,6 +9,15 @@ namespace ClassLibraryIPersistance
     public struct sEtalonnage
     {
         #region Propriétées
+        /// <summary>
+        /// <see cref="numberTrial">Numéro de manche de l'étalonnage</see>
+        /// <see cref="averageMove">Moyenne de mouvement de l'étalonnage</see>
+        /// <see cref="sDMove">Ecart type du nombre de mouvement de l'étalonnage</see>
+        /// <see cref="averageRepeat">Moyenne de répétition de l'étalonnage</see>
+        /// <see cref="sDRepeat">Ecart type du nombre de répétition de l'étalonnage</see>
+        /// <see cref="averageScore">Moyenne des scores de l'étalonnage</see>
+        /// <see cref="sDScore">Ecart type du score de l'étalonnage</see>
+        /// </summary>
         private string numberTrial;
         private double averageMove;
         private double sDMove;
@@ -19,6 +28,9 @@ namespace ClassLibraryIPersistance
         #endregion
 
         #region Accesseurs
+        /// <summary>
+        /// Accesseur des propriétées
+        /// </summary>
         public string NumberTrial { get => numberTrial; set => numberTrial = value; }
         public double AverageMove { get => averageMove; set => averageMove = value; }
         public double SDMove { get => sDMove; set => sDMove = value; }

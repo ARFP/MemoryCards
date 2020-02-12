@@ -9,6 +9,12 @@ namespace ClassLibraryIPersistance
     public struct sTestScore
     {
         #region Propriétées
+        /// <summary>
+        /// <see cref="testname">Nom du test</see>
+        /// <see cref="averageMove">Moyenne des mouvements du test</see>
+        /// <see cref="averageRepeat">Moyenne des répétitions du test</see>
+        /// <see cref="averageScore">Moyenne des scores du test</see>
+        /// </summary>
         private string testname;
         private double averageMove;
         private double averageRepeat;
@@ -16,6 +22,9 @@ namespace ClassLibraryIPersistance
         #endregion
 
         #region Accesseurs
+        /// <summary>
+        /// Accesseur des propriétées
+        /// </summary>
         public string TestName { get => testname; set => testname = value; }
         public double AverageMove { get => averageMove; set => averageMove = value; }
         public double AverageRepeat { get => averageRepeat; set => averageRepeat = value; }
