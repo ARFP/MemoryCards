@@ -5392,11 +5392,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
+      "projectUniqueName": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
       "projectName": "LibraryCommands",
-      "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
+      "projectPath": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\LibraryCommands\\LibraryCommands.csproj",
       "packagesPath": "C:\\Users\\CRM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\LibraryCommands\\obj\\",
+      "outputPath": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\LibraryCommands\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

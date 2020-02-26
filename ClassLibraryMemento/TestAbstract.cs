@@ -7,8 +7,22 @@ namespace ClassLibraryMemento
 {
     public class TestAbstract : Test
     {
+        #region Propriétées
+        /// <summary>
+        /// Liste de cartes
+        /// </summary>
         private List<object> listAbstract;
-        public TestAbstract(User _user,  int _nbrTrials, int _timer, bool _sound) : base(_user, "Abstrait", _nbrTrials, _timer)
+        #endregion
+
+        #region Constructeur
+        /// <summary>
+        /// Instancie la liste d'objets avec les images du test 
+        /// </summary>
+        /// <param name="_user">Utilisateur</param>
+        /// <param name="_nbrTrials">Nombre de trials</param>
+        /// <param name="_timer">Le temps</param>
+        /// <param name="_sound">Sons activé ou non</param>
+        public TestAbstract(User _user, int _nbrTrials, int _timer, bool _sound) : base(_user, "Abstrait", _nbrTrials, _timer)
         {
             listAbstract = new List<object>() {
                 String.Format(@"pack://application:,,,/Resources/abstrait1.jpg"),
@@ -26,5 +40,7 @@ namespace ClassLibraryMemento
             };
             AddTrial(listAbstract, _sound);
         }
+        #endregion
+
     }
 }

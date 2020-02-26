@@ -5478,11 +5478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
+      "projectUniqueName": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
       "projectName": "ClassLibraryViewModel",
-      "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
+      "projectPath": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\ClassLibraryViewModel\\ClassLibraryViewModel.csproj",
       "packagesPath": "C:\\Users\\CRM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryViewModel\\obj\\",
+      "outputPath": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\ClassLibraryViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5501,11 +5501,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryControl\\ClassLibraryControl.csproj": {
-              "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryControl\\ClassLibraryControl.csproj"
+            "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\ClassLibraryControl\\ClassLibraryControl.csproj": {
+              "projectPath": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\ClassLibraryControl\\ClassLibraryControl.csproj"
             },
-            "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
-              "projectPath": "C:\\Users\\CRM\\Desktop\\Objet\\WPF\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
+            "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj": {
+              "projectPath": "C:\\Users\\CRM\\Documents\\GitHub\\MemoryCards\\ClassLibraryMemento\\ClassLibraryMemento.csproj"
             }
           }
         }

@@ -11,6 +11,7 @@ namespace ClassLibraryMemento
 {
     public abstract class Test
     {
+        #region Propriétées
         private IPersistanceTestScore iPersistance;
         private string testName;
         private Trials trials;
@@ -20,7 +21,9 @@ namespace ClassLibraryMemento
         private int trialRun;
         private bool endTimer;
         private User user;
+        #endregion
 
+        #region Accesseurs
         public User User { get => user; set => user = value; }
         public string TestName { get => testName; set => testName = value; }
         
@@ -30,6 +33,7 @@ namespace ClassLibraryMemento
         public int TrialRun { get => trialRun; set => trialRun = value; }
         public bool EndTimer { get => endTimer; set => endTimer = value; }
         public Trials Trials { get => trials; set => trials = value; }
+        #endregion
 
         #region Constructor
         public Test(User _user, string _testName, int _numberTrials, int _timer)
@@ -77,7 +81,6 @@ namespace ClassLibraryMemento
         {
             return trials.LTrial[trialRun];
         }
-        #endregion
 
         public bool EndTestVerify()
         {
@@ -88,6 +91,7 @@ namespace ClassLibraryMemento
             trialRun++;
             return false;
         }
+        #endregion
 
         #region Score
         #region Average
